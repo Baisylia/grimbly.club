@@ -59,6 +59,12 @@ html, body {
   left: 20px;
   z-index: 999;
 }
+.side-bar-main {
+  position: absolute;
+  top: 200;
+  left: 20px;
+  z-index: 999;
+}
 
 
 /* Text Styles */
@@ -107,17 +113,20 @@ html, body {
 .button-right{
   position: relative;
   right: 40px;
+  float: right;
 }
 .button-center {
   display: flex;
   justify-content: center;
+}
+.button-margined {
+  margin-bottom: 35px; 
 }
 .button-style {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-radius: 20px;
   transition: 0s;
-  margin: 0 auto;
   overflow: visible;
   line-height: 85px;
   font-weight: bold;

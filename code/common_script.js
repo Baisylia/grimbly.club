@@ -11,6 +11,12 @@ function navigate(page) {
   }, 100);
 }
 
+// Open New Tab
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+}
+
+
 // Paragraph Button
 function textButtonPress(textId) {
   var moreText = document.getElementById(textId);

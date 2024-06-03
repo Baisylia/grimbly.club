@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles3.css">
+        <link rel="stylesheet" href="code/styles4.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -47,6 +47,8 @@
             <br>
 
 
+
+
             <!-- Side Bar Left -->
             <div class="side-bar-left">
 
@@ -68,7 +70,7 @@
                 <!-- Credits -->
                 <div>
                     <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('creditsText')"> 
-                            Credits
+                        Credits
                     </button> 
                 </div>
                 <div>
@@ -82,7 +84,6 @@
                                     Zapsplat
                                 </a>
                             </p>
-                            
                         </div>
                     </p>
                 </div>
@@ -92,26 +93,21 @@
                 <!-- Changelog -->
                 <div>
                     <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('changelogText')"> 
-                            Changelog
+                        Changelog
                     </button> 
                 </div>
                 <div>
                     <span id="changelogText" style="display: none;">
                         <p class="align-left paragraph">
-                            Website Version: 0.03 <br> <br>
-                            - Linked website to github <br>
-                            - Altered title <br> 
-                            <br>
-                            - Added left sidebar <br>
-                            - Added about section <br>
-                            - Added credits button <br>
-                            - Added credits <br>
-                            - Moved changelog button <br> 
-                            <br>
-                            - Added right sidebar <br>
-                            - Added directory <br>
-                            - Added minecraft 2 button <br>
-                            - Added minecraft 2 page
+                            Website Version: 0.04 <br> <br>
+                            - Added directory information <br> 
+                            - Added mods button <br>
+                            - Added mods page <br> 
+                            - Added mod links <br> 
+                            - Added alternate timeline button <br>
+                            - Added alternate timeline page <br> 
+                            - Added alternate timeline information <br> 
+                            - Altered changelog title
                             <br>
                         </p>
                         <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
@@ -126,19 +122,33 @@
             </div>
             
 
+
+
             <!-- Side Bar Right -->
             <div class="side-bar-right">
 
 
-                <!-- About -->
+                <!-- Directory -->
                 <h2 class="align-right title">
                     Directory <br>
                 </h2>
-                
+                <p class="align-right paragraph">
+                    This is an index for all the pages grimbly.club has to offer. <br>
+                    Take a look at what's being worked on and explore topics of interest.
+                </p>
+                <br>
+
                 
                 <!-- Minecraft 2: The Alternate Timeline -->
-                <button class="button-large button-right button-style" onmousedown="soundPress()" onclick="navigate('alternate-timeline.html')"> 
+                <button class="button-large button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('alternate-timeline.html')"> 
                     Minecraft 2: The Alternate Timeline
+                </button> 
+                <br>
+
+
+                <!-- Minecraft Mods -->
+                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('mods.html')"> 
+                    Minecraft Mods
                 </button> 
                 <br>
 

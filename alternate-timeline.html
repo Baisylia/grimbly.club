@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles3.css">
+        <link rel="stylesheet" href="code/styles4.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -35,9 +35,86 @@
             <br>
             
 
-            
+
+
+            <!-- Side Bar Left -->
+            <div class="side-bar-main">
+
+
+                <!-- About -->
+                <h2 class="align-left title">
+                    About the Alternate Timeline <br>
+                </h2>
+                <p class="align-left paragraph">
+                    Minecraft is fundamentally flawed in many ways. <br>
+                    The progression and combat are limited, exploration gets boring fast, and there's 10 years of content bloat. <br>
+                    Not to mention how fast SMP's die out. <br>
+                    <br>
+                    Often when a game is in the mainstream for as long as Minecraft, a new version or update of the game is released to fix problems and remove unnecessary features. <br>
+                    This can't happen for Minecraft though, as people don't want to lose their worlds, and whenever an old feature is changed the community reacts quite loudly. <br>
+                    (eg: the combat update, zombified piglins, ore retextures, etc.) <br>
+                    <br>
+                    So this modpack explores an alternate timeline where Minecraft was developed slightly differently, and aims to create what Mojang can't, a version of Minecraft that is fundamentally fixed. <br>
+                    But this is more than just a return to alpha, or adding a bunch of 'vanilla enhancing' mods like certain modpacks that claim to be 'better'. <br>
+                    It's a foundational rework of the game, where almost every mechanic has been altered. <br>
+                    <br>
+                    ...Which is why it's still in development after all this time. You can read about it here though! Hopefully I made this wall of text enticing enough. <br>
+                    And in the meantime, perhaps check out 
+                    <a href="https://www.curseforge.com/minecraft/modpacks/raspberry-flavoured" target="_blank">
+                        Raspberry Flavoured
+                    </a>
+                    , a pack aimed at taking it slow.
+                </p>
+                <br>
+
+
+                <!-- Development Blog -->
+                <div>
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('blogText')"> 
+                        Development Blog
+                    </button> 
+                </div>
+                <div>
+                    <p>
+                        <div id="blogText" style="display: none;">
+                            <p class="align-left paragraph">
+                                Development Blog is coming soon!
+                                <br>
+                            </p>
+                        </div>
+                    </p>
+                </div>
+                <br>
+
+
+                <!-- Timeline Comparison -->
+                <div>
+                    <button class="button-regular button-left button-style button-margined" onmousedown="soundPress()" onclick="textButtonPress('changelogText')"> 
+                        Timeline Comparison
+                    </button> 
+                </div>
+                <div>
+                    <span id="changelogText" style="display: none;">
+                        <p class="align-left paragraph">
+                            Timeline Comparison is coming soon!
+                            <br>
+                        </p>
+                    </span>
+                </div>
+
+
+                <!-- My Other Mods -->
+                <button class="button-regular button-left button-style button-margined" onmousedown="soundPress()" onclick="navigate('mods.html')"> 
+                    My Other Mods
+                </button> 
+                <br>
+
+
+            <!-- End Side Bar Left -->    
+            </div>
 
             
+
 
             <br>
             <br>
