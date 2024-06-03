@@ -1,0 +1,202 @@
+/* Variables */
+:root {
+  --colour-carousel: rgb(31, 31, 37);
+  --image-num: 10;
+  --duration: 12s; /* Always * 2 of Image Num */
+  --right1: calc((var(--image-num) - 1) * (-100% / var(--image-num)));
+  --right2: calc((var(--image-num) - 2) * (-100% / var(--image-num)));
+  --right3: calc((var(--image-num) - 3) * (-100% / var(--image-num)));
+  --right4: calc((var(--image-num) - 4) * (-100% / var(--image-num)));
+  --right5: calc((var(--image-num) - 5) * (-100% / var(--image-num)));
+  --right6: calc((var(--image-num) - 6) * (-100% / var(--image-num)));
+  --right7: calc((var(--image-num) - 7) * (-100% / var(--image-num)));
+  --right8: calc((var(--image-num) - 8) * (-100% / var(--image-num)));
+  --right9: calc((var(--image-num) - 9) * (-100% / var(--image-num)));
+  --right10: calc((var(--image-num) - 10) * (-100% / var(--image-num)));
+  --delay2: calc(var(--duration) / var(--image-num));
+  --delay3: calc(2 * var(--duration) / var(--image-num));
+  --delay4: calc(3 * var(--duration) / var(--image-num));
+  --delay5: calc(4 * var(--duration) / var(--image-num));
+  --delay6: calc(5 * var(--duration) / var(--image-num));
+  --delay7: calc(6 * var(--duration) / var(--image-num));
+  --delay8: calc(7 * var(--duration) / var(--image-num));
+  --delay9: calc(8 * var(--duration) / var(--image-num));
+  --delay10: calc(9 * var(--duration) / var(--image-num));
+}
+
+
+/* Main Styles */
+html, body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.background {
+  background-image: url("../images/space.png");
+  background-attachment: fixed;
+  width: 100%;
+  padding: 1px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.hidden {
+  visibility: hidden;
+}
+
+
+/* Text Styles */
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.title {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.header {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button Styles */
+.button-regular{
+  height: 80px;
+  width: 211px;
+  background-image: url("../images/button.png");
+}
+.button-large{
+  height: 80px;
+  width: 333px;
+  background-image: url("../images/button_large.png");
+}
+.button-small{
+  height: 80px;
+  width: 89px;
+  background-image: url("../images/button_small.png");
+}
+.button-style {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 20px;
+  transition: 0s;
+  margin: 0 auto;
+  overflow: visible;
+  line-height: 85px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.button-style:hover {
+  filter: brightness(0.9);
+}
+.button-style:active {
+  filter: brightness(0.8);
+  transform: scale(0.95);
+}
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 999; /* Ensure the button appears above other content */
+  /* Additional styling for the button */
+}
+
+
+/* Grimbly Carousel Styles */
+.carousel-wrapper {
+  width: 1650px;
+  height: 220px;
+  margin: 0 auto;
+  overflow: visible;
+  transform: scale(0.95);
+  transform-origin: center;
+  justify-content: center;
+  align-self: center;
+}
+.carousel {
+  background-image: url("../images/border_back.png");
+  width: 1500px;
+  height: 200px;
+  top: 12px;
+  left: 8px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+}
+.carousel-border {
+  position: absolute;
+  width: 1650px;
+  height: 220px;
+  z-index: 1;
+  pointer-events: none;
+}
+.carousel-img-base {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  animation: carouselAnimation 12s linear infinite; 
+}
+.carousel-img1 {
+  right: var(--right1);
+  animation-delay: var(--delay1);
+}
+.carousel-img2 {
+  right: var(--right2);
+  animation-delay: var(--delay2);
+}
+.carousel-img3 {
+  right: var(--right3);
+  animation-delay: var(--delay3);
+}
+.carousel-img4 {
+  right: var(--right4);
+  animation-delay: var(--delay4);
+}
+.carousel-img5 {
+  right: var(--right5);
+  animation-delay: var(--delay5);
+}
+.carousel-img6 {
+  right: var(--right6);
+  animation-delay: var(--delay6);
+}
+.carousel-img7 {
+  right: var(--right7);
+  animation-delay: var(--delay7);
+}
+.carousel-img8 {
+  right: var(--right8);
+  animation-delay: var(--delay8);
+}
+.carousel-img9 {
+  right: var(--right9);
+  animation-delay: var(--delay9);
+}
+.carousel-img10 {
+  right: var(--right10);
+  animation-delay: var(--delay10);
+}
+@keyframes carouselAnimation {
+    0% {
+      right: calc(100% + 100px);
+    }
+    100% {
+      right: 0;
+    }
+}
+  
+/* Changelog Styles */
+.changelog {
+  display: flex;
+  justify-content: center;
+}
