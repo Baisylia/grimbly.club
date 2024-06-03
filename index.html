@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles2.css">
+        <link rel="stylesheet" href="code/styles3.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -24,11 +24,8 @@
 
             <!-- Title -->
             <h1 class="align-center title">
-                Welcome to grimbly.club!
+                grimbly.club
             </h1>
-            <h2 class="align-center header">
-                This website is under construction, come back later!
-            </h2>
             <br>
 
             <!-- Grimbly Carousel -->
@@ -50,36 +47,106 @@
             <br>
 
 
-            <!-- Version Info -->
-            <div class="changelog">
-                <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('changelogText')" id="textButton"> 
-                        Website Version: 0.02
-                </button> 
-            </div>
-            <div class="changelog">
-                <p>
-                    <span id="changelogText" style="display: none;" class="header">
-                        - Added button icons <br>
-                        - Added button sounds <br>
-                        - Added changelog page <br>
-                        - Added home button
-                        <br>
-                        <br>
-                        <button class="button-regular button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')" id="changelogButton"> 
+            <!-- Side Bar Left -->
+            <div class="side-bar-left">
+
+
+                <!-- About -->
+                <h2 class="align-left title">
+                    About grimbly.club <br>
+                </h2>
+                <p class="align-left paragraph">
+                    Welcome to grimbly.club! <br>
+                    I am Bailey, the webmaster, and this is where I reside on the world wide web. <br>
+                    <br>
+                    This website is under construction, come back later! <br>
+                    The layout currently does not work for mobile.
+                </p>
+                <br>
+
+
+                <!-- Credits -->
+                <div>
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('creditsText')"> 
+                            Credits
+                    </button> 
+                </div>
+                <div>
+                    <p>
+                        <div id="creditsText" style="display: none;">
+                            <p class="align-left paragraph">
+                                This website was made by me using html, css, and javascript, and is hosted on Hostinger. <br>
+                                The art was made by me using Blender, Unreal Engine, and Photoshop. <br>
+                                The button sounds are from
+                                <a href="https://www.zapsplat.com/sound-effect-category/button-clicks/" target="_blank">
+                                    Zapsplat
+                                </a>
+                            </p>
+                            
+                        </div>
+                    </p>
+                </div>
+                <br>
+
+
+                <!-- Changelog -->
+                <div>
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('changelogText')"> 
+                            Changelog
+                    </button> 
+                </div>
+                <div>
+                    <span id="changelogText" style="display: none;">
+                        <p class="align-left paragraph">
+                            Website Version: 0.03 <br> <br>
+                            - Linked website to github <br>
+                            - Altered title <br> 
+                            <br>
+                            - Added left sidebar <br>
+                            - Added about section <br>
+                            - Added credits button <br>
+                            - Added credits <br>
+                            - Moved changelog button <br> 
+                            <br>
+                            - Added right sidebar <br>
+                            - Added directory <br>
+                            - Added minecraft 2 button <br>
+                            - Added minecraft 2 page
+                            <br>
+                        </p>
+                        <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
                             View All Changelogs
                         </button> 
                     </span>
-                </p>
+                </div>
+                <br>
+
+
+            <!-- End Side Bar Left -->    
             </div>
-            <br>
+            
+
+            <!-- Side Bar Right -->
+            <div class="side-bar-right">
 
 
-            <a class="header" href="https://www.zapsplat.com/sound-effect-category/button-clicks/" target="_blank">
-                Sounds by Zapsplat
-            </a>
-            <br>
+                <!-- About -->
+                <h2 class="align-right title">
+                    Directory <br>
+                </h2>
+                
+                
+                <!-- Minecraft 2: The Alternate Timeline -->
+                <button class="button-large button-right button-style" onmousedown="soundPress()" onclick="navigate('alternate-timeline.html')"> 
+                    Minecraft 2: The Alternate Timeline
+                </button> 
+                <br>
 
-            <br>
+
+            <!-- End Side Bar Right -->    
+            </div>
+
+
             <br>
             <br>
             <br>
