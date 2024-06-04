@@ -114,6 +114,7 @@ html, body {
   position: relative;
   right: 40px;
   float: right;
+  margin-left: 200px; 
 }
 .button-center {
   display: flex;
