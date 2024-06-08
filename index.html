@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles5.css">
+        <link rel="stylesheet" href="code/styles6.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -19,7 +19,7 @@
         <div class="background">
             <!-- Home Button -->
             <button class="button-small button-style home-button" onmousedown="soundPress()" onclick="navigate('index.html')" id="homeButton"> 
-                Home
+                Refresh
             </button> 
 
             <!-- Title -->
@@ -60,7 +60,6 @@
                 <p class="align-left paragraph">
                     Welcome to grimbly.club! <br>
                     I am Bailey, the webmaster, and this is where I reside on the world wide web. <br>
-                    You can contact me via discord and instagram as ncpbails. <br>
                     <br>
                     This website is under construction, stay tuned! <br>
                     The layout currently does not work for mobile.
@@ -91,6 +90,38 @@
                 <br>
 
 
+                <!-- Links -->
+                <div>
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('linksText')"> 
+                        Links
+                    </button> 
+                </div>
+                <div>
+                    <p>
+                        <div id="linksText" style="display: none;">
+                            <p class="align-left paragraph">
+                                This website does not have any user interactivity elements, but you can contact me elsewhere! <br>
+                                I have a 
+                                <a href="https://www.youtube.com/channel/UCCdeoKmYPRCq-4WQcYAGAEg" target="_blank">
+                                    Youtube Channel
+                                </a>
+                                , a 
+                                <a href="https://www.curseforge.com/members/ncp_bails/projects" target="_blank">
+                                    Curseforge Page
+                                </a>
+                                , and a 
+                                <a href="https://modrinth.com/user/NCP_Bails" target="_blank">
+                                    Modrinth Page
+                                </a>
+                                <br>
+                                You can contact me via discord and instagram as ncpbails. <br>
+                            </p>
+                        </div>
+                    </p>
+                </div>
+                <br>
+
+
                 <!-- Changelog -->
                 <div>
                     <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('changelogText')"> 
@@ -100,11 +131,17 @@
                 <div>
                     <span id="changelogText" style="display: none;">
                         <p class="align-left paragraph">
-                            Website Version: 0.06 <br> <br>
-                            - Tweaked button texts <br>
-                            - Added Grimbly Schmeggle button <br> 
-                            - Added Grimbly Schmeggle page <br>
-                            - Added Grimbly Schmeggle information
+                            Website Version: 0.07 <br> <br>
+                            - Added Intertwined button <br>
+                            - Added Intertwined page <br>
+                            - Added games button <br>
+                            - Added games page <br>
+                            - Added games to games page <br> 
+                            <br>
+                            - Simplified directory <br>
+                            - Added back buttons to pages <br>
+                            - Added wayback machine to changelog <br>
+                            - Added links button to home page
                             <br>
                         </p>
                         <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
@@ -135,10 +172,10 @@
                 </p>
                 <br>
 
-                
-                <!-- Minecraft 2: The Alternate Timeline -->
-                <button class="button-large button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('alternate-timeline.html')"> 
-                    Minecraft 2: The Alternate Timeline
+
+                <!-- Pinned Pages -->
+                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('pinned-pages.html')"> 
+                    Pinned Pages
                 </button> 
                 <br>
 
@@ -150,16 +187,16 @@
                 <br>
 
 
-                <!-- Verditen -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('verditen.html')"> 
-                    Verditen
+                <!-- Games -->
+                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('games.html')"> 
+                    My Games
                 </button> 
                 <br>
 
 
-                <!-- Grimbly Schmeggle -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('grimbly-schmeggle.html')"> 
-                    Grimbly Schmeggle
+                <!-- Intertwined -->
+                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('intertwined.html')"> 
+                    Intertwined
                 </button> 
                 <br>
 

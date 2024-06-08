@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles5.css">
+        <link rel="stylesheet" href="code/styles6.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -33,6 +33,29 @@
             
 
             <!-- Version Info -->
+            <div class="button-center">
+                <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-07-changelogText')"> 
+                    Website Version: 0.07
+                </button> 
+            </div>
+            <div class="button-center">
+                <p>
+                    <span id="0-07-changelogText" style="display: none;" class="header paragraph">
+                        - Added Intertwined button <br>
+                        - Added Intertwined page <br>
+                        - Added games button <br>
+                        - Added games page <br>
+                        - Added games to games page <br> 
+                        <br>
+                        - Simplified directory <br>
+                        - Added back buttons to pages <br>
+                        - Added wayback machine to changelog <br>
+                        - Added links button to home page
+                    </span>
+                </p>
+            </div>
+            <br>
+
             <div class="button-center">
                 <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-06-changelogText')"> 
                     Website Version: 0.06
@@ -149,6 +172,13 @@
             <br>
 
             
+            <!-- Wayback Machine -->
+            <div class="button-center">
+                <button class="button-large button-style" onmousedown="soundPress()" onclick="openInNewTab('https://web.archive.org/web/20240528060933/https://grimbly.club/')"> 
+                    Wayback Machine History
+                </button> 
+            </div>
+            <br>
 
             <br>
             <br>

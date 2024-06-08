@@ -146,6 +146,18 @@ html, body {
   left: 40px;
   z-index: 999;
 }
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  z-index: 999;
+}
+.back-button-alt {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+  z-index: 999;
+}
 
 
 /* Grimbly Carousel Styles */
