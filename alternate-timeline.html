@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles6.css">
+        <link rel="stylesheet" href="code/styles7.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -79,7 +79,7 @@
 
 
                 <!-- Development Blog -->
-                <div>
+                <div class="button-margined">
                     <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('blogText')"> 
                         Development Blog
                     </button> 
@@ -88,13 +88,381 @@
                     <p>
                         <div id="blogText" style="display: none;">
                             <p class="align-left paragraph">
-                                Development Blog is coming soon!
+                                Some of these blog posts may look a bit long, but they are as clear and concise as I could make them. <br>
+                                You could always just look at the pictures! <br>
+                                Remember that everything documented here is subject to change, especially the textures. <br>
                                 <br>
                             </p>
+
+
+                            <!-- Stamina System -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('hungerText')"> 
+                                    Reworked Hunger System
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="hungerText" style="display: none;">
+                                        <h2 class="align-left">
+                                            Stamina, Hunger's Final Form <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-hotbar.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Minecraft's hunger system is more of a chore than anything. You have to constantly eat to avoid death, and that's about all there is to it. <br>
+                                            Many people prefer beta for its lack of hunger system, but personally I think that sprinting is a very important mechanic. and instantly healing is a tad OP. <br>
+                                            <br>
+                                            So I opted to create a new system, a stamina system, that doesn't punish the player for not eating but rather rewards you for doing so. <br>
+                                            The hunger bar has been replaced with a stamina bar, which only goes down when you heal and sprint. <br>
+                                            Every time you heal half a heart through natural generation, you lose half a stamina, and sprinting will slowly reduce stamina over time. <br>
+                                            You will not take damage for having no stamina. <br>
+                                            <br>
+                                            But there is no stamina limit to healing, as long as you have even 1 half of a stamina, you will be able to heal. <br>
+                                            Stamina also slowly regenerates over time as long as you aren't sprinting. Every 30 seconds your stamina will increase by 1 half. <br>
+                                            <br>
+                                            The rate of which your stamina is restored can be increased through many means, the most common way being eating. <br>
+                                            Eating food will now give you the stamina equivalent of regeneration, which better foods granting faster stamina regeneration. <br>
+                                            Some especially good foods will even grant you instant stamina, as will sleeping. <br>
+                                            <br>                                          
+                                            Foods such as rotten flesh will now weaken your stamina rather than giving you hunger, making it impossible to regenerate stamina in any way. <br>
+                                            Stamina also has an absorption equivalent, adding extra stamina for you to exhaust slower.
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                            <!-- Leather Mechanics -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('leatherText')"> 
+                                    New Leather Mechanics
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="leatherText" style="display: none;">
+                                        <h2 class="align-left">
+                                            Obtaining and Using Leather <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-leather.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Leather is one of the more difficult resources to obtain in Minecraft, but not because it's rare or high up in progression. <br>
+                                            It's just difficult to get a lot of it in the early-game, and while it has very limited uses, when you need it you really need it. <br>
+                                            As I've given leather a lot more uses; insulation, belts, etc, I've decided to rework leather as a whole. <br>
+                                            <br>
+                                            Leather is now made with the drying rack, a new workstation that can be used to dry out items and tan others into leather. <br>
+                                            Different animals will drop different hides, which can be tanned into leather. <br>
+                                            <br>
+                                            Animals such as cows, rabbits, and llamas will drop mammal hide. Animals such as crocodiles, snakes, and turtles will drop reptile hide. <br>
+                                            Rotten flesh can be tanned into flesh, 9 of which can be crafted into leather. <br>
+                                            There's also hoglin hide and ravager hide, which can only be dropped by hoglins and ravagers. These hides produce more leather and have other uses too. <br>
+                                            <br>
+                                            As there is now a temperature system, leather armour is ideal for keeping yourself insulated, but if you're in the late-game and want to wear better gear, there is another way. <br>
+                                            You can use the sewing table to insulate any armour piece with with leather armour, leather itself, and other related items such as hides and furs. <br>
+                                            Hoglin hide will grant extra heat resistance, while reptile hide grants extra cold resistance. Mammal hide gives a bit of both, and ravager hide gives adaptive resistance. <br>
+                                            Fur, hair, and feathers can be droppd by many types of animals, and can also be used to insulate armour. Wool can do so as well, with some colours granting different resistances. <br>
+                                            More details on temperature can be found in another blog post. <br>
+                                            <br>                                          
+                                            In some recipes, canvas, which is made of straw, can be used in place of leather. <br>
+                                            Canvas and other straw related items such as rope can also be used as insulation.
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                            <!-- Animal Mechanics -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('animalText')"> 
+                                    New Animal Mechanics
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="animalText" style="display: none;">
+                                        <h2 class="align-left">
+                                            No More Cow Holes! <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-hitbox.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Minecraft has an annoying problem where it's fairly easy to farm materials from mobs with exploits. <br>
+                                            While I've killed iron golem farms with a simple loot table check, the solution for animal farms is a bit more complex. <br>
+                                            <br>
+                                            I wanted to incentivise players to build actual farmlands for their animals, rather than just cram a bunch of cows into a hole, and add some variety to the animal types. <br>
+                                            To do this I made mob hitboxes collideable, meaning that if you try to compact animals in a tight space, they'll just die or climb onto each other. <br>
+                                            I also made animal sizes random, gave certain mobs texture variants, and made some animals give birth to more babies at a time. <br>
+                                            With these simple changes animals have a lot more variety, and require a more inventive farming solution than just piling them all together. <br>
+                                            <br>
+                                            As well as these changes, I wanted to streamline animal uses and drops too. <br>
+                                            Along with the leather changes that can be found in other blog posts here are some of the animal changes; <br>
+                                            - All fish are cooked into either saltwater, freshwater, or exotic fish <br>
+                                            - All birds drop fowl or no meat, rather than individual bird meats <br>
+                                            - More animals drop mutton, such as llamas <br>
+                                            - Birds can now be sheared for feathers <br>
+                                            - Animals are now sheared with knives rather than shears, which hve been removed <br>
+                                            - All baby animals and any other small mobs can be put in cages for transportation
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                            <!-- Metals -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('metalText')"> 
+                                    Reworked Metals
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="metalText" style="display: none;">
+                                        <h2 class="align-left">
+                                            Implementing Metals with Actual Uses <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-ingots.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Everyone knows that Minecraft hasn't implemented its metals in the best way possible, basically everything uses iron, while gold does basically nothing and copper does even less. <br>
+                                            I haven't removed these materials due to this fact, rather I've added even more. This may seem counterintuitive, but I've found a way to do so without making them all useless. <br>
+                                            <br>
+                                            The metals in the image above are copper, aluminium, iron, lead, gold, and silver. Then the two base alloys are bronze and steel, followed by the scrap metals infernum and meteorite. <br>
+                                            There are also alloys for each upgrade alternative tier, but those can be found in another blog post. Every metal has a theme, and can be used to create one or more alloys. <br>
+                                            Copper is used for energy related items like lightning rods and wiring, aluminium is used for liquid items like buckts and pipes, steel is used for sharp things like stonecutters and fans, etc. <br>
+                                            <br>
+                                            Random ore blobs are also much harder to find now, as ores will mainly generate in veins within certain cave biomes. <br>
+                                            Copper will be rich in dripstone caves, mushroom caves will be rich with lead, etc. Details on these biomes can be found in another blog post. <br>
+                                            The idea is that the gameplay loop will consist of less strip mining and more finding and searching through caves. <br>
+                                        </p>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-copper.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Each metal has a set of items; raw nuggets, raw ores, dusts, nuggets, ingots, sheets, and a utility item. <br>
+                                            When you mine an ore with a low tier tool in the early-game, it will only drop a small amount of raw nuggets. Once you have better tools and are in the mid/late-game, ores will drop full raw metals.  <br>
+                                            Raw metals can be smelted into ingots as usual, or crushed into multiple dusts to be smelted for more output. This combined with fortune will increase your ore profits tenfold in the late-game. <br>
+                                            Ingots can then be pressed into sheets for many purposes, and forged into utility items. <br>
+                                            <br>
+                                            Each metal, as well as bronze and steel, has a utility item. As any recipe that would require shaping metals is now done in the forge workstation, some recipes use utility items instead. <br>
+                                            For example, iron can be made into a spring, which can be used to make other items without needing to craft them in a forge. <br>
+                                            Utility items can also be added to certain recipes to increase their output, such as the pressure plate recipe giving more pressure plates when crafting them with a spring. <br>
+                                        </p>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-iron.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            All the metals now have a block set as well, consisting of storage blocks for ingots and sheets as well as carved, cut, cubed, and lined variants of the ingot blocks. <br>
+                                            This goes for all the base metals, and all of the alloys. Copper still has its oxidized forms, but they look a bit different! <br>
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                            <!-- Alloys -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('alloyText')"> 
+                                    New Alloys
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="alloyText" style="display: none;">
+                                        <h2 class="align-left">
+                                            Alternatives to Netherite! <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-alloys.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Minecraft shocked the world when they released netherite, a new tool tier even stronger than diamond. But the strangest thing about it, to me at least, was that it was nether themed. <br>
+                                            The strongest tool tier having a theme assigned to it opens the door to having alternative tool tiers, sets of gear with unique traits that apply to different situations. <br>
+                                            <br>
+                                            As I designed such tiers, I realised that a lot of the possible tier effects are already part of the enchanting system. <br>
+                                            This reminded me that Minecraft Dungeons has special tools that have in-built enchantments, allowing you to bypass the enchantment limitations by one. <br>
+                                            As I had already implemented an enchantment limitation system, I realised that this would be the perfect mechanic for the upgrade alternatives. <br>
+                                            <br>
+                                            After much consideration I developed 9 tiers of upgrade alternatives. There's certainly more to them than their basic theming, but this does sum them up pretty well.: <br>
+                                            Netherite = Fire <br>
+                                            Electrum = Speed <br>
+                                            Prismarite = Water <br>
+                                            Chlorophite = Explosions <br>
+                                            Gravitite = Air <br>
+                                            Hallowed  = Undead <br>
+                                            Mythril = Experience <br>
+                                            Voidendum = Potency <br>
+                                            Stoldum = Unbreaking <br>
+                                            <br>
+                                            The alloys are all made in the forge, and just like the metals each alloy has its own block set. <br>
+                                            Not every enchantment has a corresponding upgrade alternative, some of them are enchantment exclusives. Details on enchanting can be found in another blog post. <br>
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                            <!-- Tool System -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('toolText')"> 
+                                    Reworked Tool System
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="toolText" style="display: none;">
+                                        <h2 class="align-left">
+                                            New Tool Progression! <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-tools.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Minecraft's tool progression seems fairly simple, but it has a few flaws that I'm not a huge fan of. <br>
+                                            The only wooden tool that matters is the pickaxe, as it's so easy to get stone tools that you'll never need any other wooden tool. <br>
+                                            Then you're likely to stay at iron-level until you've enchanted your diamond tools in the background to ensure you won't lose them, as diamonds are very precious. <br>
+                                            And finally you begin the process of smithing your gear into netherite, but with how grindy it is the SMP you're playing on is probably dead by that point. <br>
+                                            There's also gold tools which are just useless in almost every situation, and chainmail armour which you can't even craft and isn't worth using anyway. <br>
+                                            <br>
+                                            So I reworked the too system, replacing most of the tiers with new ones that should make the progression feel more fleshed out. <br>
+                                            The goal is to lengthen the early-game, without making it too difficult, and keep the fun of mid-game flowing into late-game without your passion dying out. <br>
+                                            Each tier requires more work than the last, but without relying on microcrafting as many tool system mods tend to do.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            Wooden tools have been replaced with flint tools, requiring you to do more that simply chop down one tree to get your first tools. <br>
+                                            Stone tools have then been replaced with raw copper tools, making the player stay on flint tools for longer as copper is much rarer than stone. <br>
+                                            These tools also require straw to bind the tool together, which can be made with flint knives, meaning the player has to make more than one tool to progress to the next tier. <br>
+                                            <br>
+                                            The next tool tier is bronze, made from smelting copper and aluminium together in a forge, a new workstation that functions like a crafting table but requiring fuel. <br>
+                                            This means that to progress from copper tools, you will need a a copper pickaxe to mine aluminium, a furnace to smelt the resources to craft a forge, as well as the forge itself to smelt the bronze. <br>
+                                            Bronze tools are also crafted in the forge, and require string as the binder, meaning you need to have either engaged in combat with spiders or began farming it through other means. <br>
+                                            <br>
+                                            After bronze comes steel, the replacement for iron tools, made from smelting iron, coke, and optionally lead for a greater output, in a forge. <br>
+                                            Iron of course requires a bronze pickaxe to mine, and coke is made with coal and netherrack powder, gating steel behind the nether. <br>
+                                            Steel tools are crafted in the forge as well, and require rope as the binder. <br>
+                                            <br>                                          
+                                            And after steel is the diamond tier, as what would Minecraft be without it. Diamond tools are now made in the smithing table with steel tools and diamond sheets. <br>
+                                            As diamonds are gems and not metals, I decided to make them an enhancement to steel tools rather than a standalone material. <br>
+                                            Diamond sheets can be forged with diamonds, which of course require steel tools to mine, and silver sheets, silver being found in the aether. <br>
+                                            The aether, requiring glowstone to access, is post nether progression, and thus an important part of the tool system. <br>
+                                            <br>
+                                            From diamond tools you have many options, 9 to be exact. These post-diamond tools all have base stats much higher than diamond, but all have unique traits. <br>
+                                            These traits are essentially in-built enchantments. As there is a limit to how many enchantments you can have on a tool, picking the right tool for the occasion will be crucial. <br>
+                                            For example, netherite has in-built fire resistance, electrum has in-built efficiency, and prismarite has in-built respiration. <br>
+                                            Details on these upgrade alternatives can be found in another blog post. <br>
+                                            <br>
+                                            <br>
+                                            As well as these tier changes there are also changes to the tool types as well. <br>
+                                            The tool types are now pickaxe, axe, shovel, sword, knife, hammer, shield, and staff. Most tiers have each of these tools, except for flint and copper, which both share wooden shovels and swords. <br>
+                                            Axes are no longer meant to be weapons, with their role being replaced by hammers. Hammers are the strongest weapons, but are also very slow, and can be used to crush resources. <br>
+                                            Knives are the weakest weapons, but are also very fast, and can be used to cut resources. <br>
+                                            Staves are magic weapons that serve as an inbetween for melee weapons and ranged weapons. Details on these can be found in another blog post. <br>
+                                            <br>
+                                            Steel, diamond, and the upgrade alternatives also have alternate forms of weaponry, which can be made through smithing. <br>
+                                            Swords can be smithed into glaives and katanas. Glaives have increased attack reach and are very strong but slow, while katanas have increased attack reach but are much faster but weaker as well. <br>
+                                            Hammers can be smithed into maces which have increased range and knockback. <br>
+                                            Knives can be smithed into spears which can be thrown like Tridents in vanilla. <br>
+                                            <br>
+                                            Most tiers have a matching armour set, except for flint and copper, which both share leather armour. <br>
+                                            Shields now have variants too, with a variant for each armour set, including leather. <br>
+                                            Leather armour, as well as leather itself and many leather related items can now be used to insulate any armourset. Details on these can be found in another blog post. <br>
+                                            Many of the somewhat random single use tools have been removed in favour of other items. For example tridents have been removed, but prismarite spears take its place. <br>
+                                            Hoes have been made into a singular tool, not connected to the main tool tiers, though this is subject to change.
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                            <!-- Blocks -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('blocksText')"> 
+                                    Reworked Block Paletes
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="blocksText" style="display: none;">
+                                        <h2 class="align-left">
+                                            Stones, Woods, Bricks; Consistency is Needed <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-stones.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Minecraft is at its core, a block game. It is the game about blocks. So why are all the block palettes so inconsistent? <br>
+                                            Granite has a polished version, stone becomes cobbled when mined, deepslate has both of these but no smooth version, and calcite has nothing? <br>
+                                            Blocks made of wood have wood type versions, except for chests, ladders, and bee hives? <br>
+                                            Some blocks have pillars and walls while others don't for seemingly no reason? <br>
+                                            These inconsistencies had to stop, so I've created a few classes of blocks; stones, woods, tertiaries, and metals. <br>
+                                            <br>
+                                            Stones, as seen above, all have the same types of blocks; cobbled, cobbled bricks, natural, polished, bricks, and smooth. They also have chiseled, pillars, chimneys, pressure plates, buttons, and packed cobble. <br>
+                                            Any block classified as a stone has all of these blocks, but not every stone still exists. All of the real life stones such as granite have been removed, except sandstone. <br>
+                                            These stones, generating anywhere in small blobs, always end up wasting space in the inventory, even though they have no real reason to exist. <br>
+                                            Do not fret however, as while many stones have been removed, many have been added. Some of these include soul sandstone, gorbstone, and altisite. <br>
+                                            All of the overworld stones are now limited to certain cave biomes, to both make the biomes easier to spot and reduce inventory bloat. <br>                                        </p>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-planks.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Rather than have each tree come with an entire wood type, I opted to make 17 wood types that each tree can use, one for each dye and regular wood. <br>
+                                            This way, I can add as many tree types as I want without being restricted by wood bloat, and I don't have to waste time on making a wood type for each tree.  <br>
+                                            Each wood type has the blocks you would expect, as well as panels, pillars, tiles, carved, and chiseled variants. They also have chests, ladders, bee hives, and variants of new blocks that have been aded. <br>
+                                            <br>
+                                            Tertiary blocks are what I call the class of blocks that don't fit into stones, woods, metals, or utilities. <br>
+                                            Blocks such as bricks, purpur, and mud fit into this category. There are also blocksets for blocks that didn't have them before that fit into it, such as glowstone and ice. <br>
+                                            The palettes for these blocks have all been modified to fit a consistent block count. They all have a 'natural' version, 2 blocks with stairs, slabs, and walls, and chisled blocks, pillars, and chimneys. <br>
+                                            Information about the metal blocks can be found in other blog posts.
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                            <!-- Aether -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('aetherText')"> 
+                                    Implementation of the Aether
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="aetherText" style="display: none;">
+                                        <h2 class="align-left">
+                                            The Dimension we all Thought was Real, but Real! <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/blog/AT-aether.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            Everyone who played Minecraft back in the day seems to have a memory of trying to build an aether portal, only to find it doesn't work without mods. <br>
+                                            The aether is undoubtedly one of the most well known mods, and for good reason. There's nothing quite like a flying pig. <br>
+                                            The sky dimension is one that people have wanted for a long time, but ever since the end was added instead, it seems to be off the table. <br>
+                                            <br>
+                                            But not in this timeline! Here we get to experience what life could have been like if the aether was real. <br>
+                                            And this isn't just me adding the aether mod, no. In its normal state it doesn't quite fit in the vanilla game. This is a full recreation, a whole new dimension. <br>
+                                            Many features such as flying pigs and skyroot trees will remain, but the dungeons, tool sets, and vanity features are going the way of the gold pickaxe. Eliminated. <br>
+                                            <br>
+                                            You can think of the aether as the opposite of the nether. Cold, bright, green and white. But it isn't any less dangerous. <br>
+                                            The aether is now the home of the breeze, silver ore, and many more resources you'll need to progress. <br>
+                                            There's far too much content to simply write about here, so you'll just have to wait and see what's in store! 
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                        <!-- Development Blog End -->    
+                        <br>
                         </div>
                     </p>
                 </div>
-                <br>
 
 
                 <!-- Timeline Comparison -->
@@ -107,105 +475,23 @@
                     <span id="changelogText" style="display: none;">
                         <p class="align-left paragraph">
                             Timeline Comparison is coming soon!
-                            <br>
                         </p>
                     </span>
                 </div>
 
 
                 <!-- My Other Mods -->
-                <button class="button-regular button-left button-style button-margined" onmousedown="soundPress()" onclick="navigate('mods.html')"> 
-                    My Other Mods
-                </button> 
+                <div class="button-margined">
+                    <button class="button-regular button-left button-style button-margined" onmousedown="soundPress()" onclick="navigate('mods.html')"> 
+                        My Other Mods
+                    </button> 
+                </div>
                 <br>
 
 
             <!-- End Side Bar Left -->    
             </div>
 
-            
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             
         </div>
     </body>
