@@ -87,6 +87,16 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
 }
+.title-pic {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-25%) scale(0.25);
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
 
 /* Button Styles */
 .button-regular{

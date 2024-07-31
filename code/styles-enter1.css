@@ -109,3 +109,13 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+.title-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  scale: 30%;
+  z-index: 1;
+  pointer-events: none;
+  top: -40px;
+}
