@@ -80,12 +80,29 @@ html, body {
   z-index: 999;
   background-image: url("../images/button.png");
 }
+.counter-alt {
+  position: absolute;
+  height: 80px;
+  width: 211px;
+  bottom: 60px;
+  left: 300;
+  z-index: 999;
+  background-image: url("../images/button.png");
+}
 .counter-text {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20px;
   color: black;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 20px;
+  transition: 0s;
+  overflow: visible;
+  line-height: 85px;
+  font-weight: bold;
+  font-size: 16px;
 }
 .counter-nums {
   display: flex;
