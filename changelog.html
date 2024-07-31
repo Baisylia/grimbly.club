@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles8.css">
+        <link rel="stylesheet" href="code/styles9.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -18,7 +18,7 @@
     <body>
         <div class="background">
             <!-- Home Button -->
-            <button class="button-small button-style home-button" onmousedown="soundPress()" onclick="navigate('index.html')" id="homeButton"> 
+            <button class="button-small button-style home-button" onmousedown="soundPress()" onclick="navigate('home.html')" id="homeButton"> 
                 Home
             </button> 
             
@@ -33,6 +33,24 @@
             
 
             <!-- Version Info -->
+            <div class="button-center">
+                <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-11-changelogText')"> 
+                    Website Version: 0.11
+                </button> 
+            </div>
+            <div class="button-center">
+                <p>
+                    <span id="0-11-changelogText" style="display: none;" class="header paragraph">
+                        - Replaced Index Page with Home Page <br>
+                            - Made Index Page a Welcome Page <br>
+                            - Added Enter Button to Index Page <br>
+                            - Added Counter to Index Page <br>
+                            - Added Background to Index Page 
+                    </span>
+                </p>
+            </div>
+            <br>
+
             <div class="button-center">
                 <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-10-changelogText')"> 
                     Website Version: 0.10

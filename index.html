@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles8.css">
+        <link rel="stylesheet" href="code/style_enter.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -16,200 +16,30 @@
     </head>
 
     <body>
-        <div class="background">
-            <!-- Home Button -->
-            <button class="button-small button-style home-button" onmousedown="soundPress()" onclick="navigate('index.html')" id="homeButton"> 
-                Refresh
-            </button> 
+        <div>
+          
+            
 
-            <!-- Title -->
-            <h1 class="align-center title">
-                grimbly.club
-            </h1>
+            <!-- Counter -->
+            <div class="counter">
+                <p class="counter-text">
+                    Visitors: 
+                </p>
+                <a href="https://www.cutercounter.com/" target="_blank" class="counter-nums">
+                    <img src="https://www.cutercounter.com/hits.php?id=hvxpqfkk&nd=6&style=10" alt="website counter">
+                </a>
+            </div>
 
-
-
-
-            <!-- Grimbly Carousel -->
-            <div class="carousel-wrapper">
-                <img src="images/border.png" class="carousel-border">
-                <div class="carousel">
-                    <img src="images/grimblies/grimblies10.png" class="carousel-img-base carousel-img1">
-                    <img src="images/grimblies/grimblies9.png" class="carousel-img-base carousel-img2">
-                    <img src="images/grimblies/grimblies8.png" class="carousel-img-base carousel-img3">
-                    <img src="images/grimblies/grimblies7.png" class="carousel-img-base carousel-img4">
-                    <img src="images/grimblies/grimblies6.png" class="carousel-img-base carousel-img5">
-                    <img src="images/grimblies/grimblies5.png" class="carousel-img-base carousel-img6">
-                    <img src="images/grimblies/grimblies4.png" class="carousel-img-base carousel-img7">
-                    <img src="images/grimblies/grimblies3.png" class="carousel-img-base carousel-img8">
-                    <img src="images/grimblies/grimblies2.png" class="carousel-img-base carousel-img9">
-                    <img src="images/grimblies/grimblies1.png" class="carousel-img-base carousel-img10">
+            <!-- Enter -->     
+            <div class="space-container">
+                <div class="space">
+                    <h1 class="title">grimbly.club</h1>
+                    <img src="images/enter/border.png" class="border">  
+                    <button class="button-enter button-style" onmousedown="soundPress()" onclick="navigate('home.html')"></button>
                 </div>
             </div>
             <br>
-
-
-
-
-            <!-- Side Bar Left -->
-            <div class="side-bar-left">
-
-
-                <!-- About -->
-                <h2 class="align-left title">
-                    About grimbly.club <br>
-                </h2>
-                <p class="align-left paragraph">
-                    Welcome to grimbly.club! <br>
-                    I am Bailey, the webmaster, and this is where I reside on the world wide web. <br>
-                    <br>
-                    This website is under construction, stay tuned! <br>
-                    The layout currently does not work for mobile.
-                </p>
-                <br>
-
-
-                <!-- Credits -->
-                <div>
-                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('creditsText')"> 
-                        Credits
-                    </button> 
-                </div>
-                <div>
-                    <p>
-                        <div id="creditsText" style="display: none;">
-                            <p class="align-left paragraph">
-                                This website was made by me using html, css, and javascript, and is hosted on Hostinger. <br>
-                                The art was made by me using Blender, Unreal Engine, and Photoshop. <br>
-                                The button sounds are from
-                                <a href="https://www.zapsplat.com/sound-effect-category/button-clicks/" target="_blank">
-                                    Zapsplat
-                                </a>
-                            </p>
-                        </div>
-                    </p>
-                </div>
-                <br>
-
-
-                <!-- Links -->
-                <div>
-                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('linksText')"> 
-                        Links
-                    </button> 
-                </div>
-                <div>
-                    <p>
-                        <div id="linksText" style="display: none;">
-                            <p class="align-left paragraph">
-                                This website does not have any user interactivity elements, but you can contact me elsewhere! <br>
-                                I have a 
-                                <a href="https://www.youtube.com/channel/UCCdeoKmYPRCq-4WQcYAGAEg" target="_blank">
-                                    Youtube Channel
-                                </a>
-                                , a 
-                                <a href="https://www.curseforge.com/members/ncp_bails/projects" target="_blank">
-                                    Curseforge Page
-                                </a>
-                                , and a 
-                                <a href="https://modrinth.com/user/NCP_Bails" target="_blank">
-                                    Modrinth Page
-                                </a>
-                                <br>
-                                You can contact me via discord and instagram as ncpbails. <br>
-                            </p>
-                        </div>
-                    </p>
-                </div>
-                <br>
-
-
-                <!-- Changelog -->
-                <div>
-                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('changelogText')"> 
-                        Changelog
-                    </button> 
-                </div>
-                <div>
-                    <span id="changelogText" style="display: none;">
-                        <p class="align-left paragraph">
-                            Website Version: 0.10 <br> <br>
-                            - Added Videos index page <br>
-                            - Renamed other index pages <br>
-                            - Added Last Card images <br>
-                            - Added Webmaster's Page <br>
-                            - Set template for webmaster subpages <br>
-                            - Added Videos back button to the Alternate Timeline page <br>
-                            - Misc page changes and tweaks
-                            <br>
-                        </p>
-                        <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
-                            View All Changelogs
-                        </button> 
-                    </span>
-                </div>
-                <br>
-
-
-            <!-- End Side Bar Left -->    
-            </div>
             
-
-
-
-            <!-- Side Bar Right -->
-            <div class="side-bar-right">
-
-
-                <!-- Directory -->
-                <h2 class="align-right title">
-                    Directory <br>
-                </h2>
-                <p class="align-right paragraph">
-                    This is an index for all the pages grimbly.club has to offer. <br>
-                    Take a look at what's being worked on and explore topics of interest.
-                </p>
-                <br>
-
-
-                <!-- Pinned Pages -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('pinned-pages.html')"> 
-                    Pinned Pages
-                </button> 
-                <br>
-
-
-                <!-- Webmaster's Page -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('webmaster.html')"> 
-                    Webmaster's Page
-                </button> 
-                <br>
-
-
-                <!-- Minecraft Mods -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('mods.html')"> 
-                    Minecraft Mods
-                </button> 
-                <br>
-
-
-                <!-- Games -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('games.html')"> 
-                    Games
-                </button> 
-                <br>
-
-
-                <!-- Videos -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('videos.html')"> 
-                    Videos
-                </button> 
-                <br>
-
-
-            <!-- End Side Bar Right -->    
-            </div>
-
 
         </div>
     </body>
