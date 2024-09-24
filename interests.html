@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/styles11.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        <script src="code/common_scripts.js"></script>
+        
+        <!-- Page-Specific Imports and Settings -->
+        
+    </head>
+
+    <body>
+        <div class="background">
+            <!-- Home Button -->
+            <button class="button-small button-style home-button" onmousedown="soundPress()" onclick="navigate('home.html')" id="homeButton"> 
+                Home
+            </button> 
+
+            <!-- Webmaster Button -->
+            <button class="button-small button-style back-button" onmousedown="soundPress()" onclick="navigate('webmaster.html')" id="backButton"> 
+                Webm.
+            </button> 
+            
+            <!-- Title -->
+            <img src="images/title.png" class="title-pic">  
+            <br><br><br><br><br>
+            <h2 class="align-center title">
+                Interests
+            </h2>
+            <h3 class="align-center title">
+                This page is under construction, stay tuned!
+            </h3>
+            <br>
+            
+
+
+
+            <!-- Side Bar Left -->
+            <div class="side-bar-main">
+
+
+                <!-- About -->
+                <h2 class="align-left title">
+                    My Interests <br>
+                </h2>
+                <p class="align-left paragraph">
+                    Look through a selection of my interests and recommendations!. <br>
+                    These are some of the things I have hyperfixated on over the years. 
+                </p>
+                <br>
+
+
+
+                <!-- Games Table -->
+                <div>
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('gamesTable')"> 
+                        Games I Play
+                    </button> 
+                </div>
+                <br>
+                
+                <div id="gamesTable" style="display: none;">
+                    <table style="width:100%; border: 1px solid white; border-collapse: collapse;">
+                        <tr>
+                            <th style="border: 1px solid white; padding: 8px;">
+                                Games
+                            </th>
+                            <th style="border: 1px solid white; padding: 8px;">
+                                Description
+                            </th>
+                            <th style="border: 1px solid white; padding: 8px;">
+                                Score
+                            </th>
+                        </tr>
+                        <!-- Lethal Company -->
+                        <tr>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                <img src="https://www.greenmangaming.com/blog/wp-content/uploads/2024/02/BlogPrimary-Lethal-890x606.jpg" alt="Lethal Company Logo" style="width: 300px; height: auto;">
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Lethal company is a multiplayer comedy/horror roguelike game where you venture into <br>
+                                facilities on different planets to collect scrap for the company, avoiding monsters <br>
+                                and traps on the way. You have 3 days to meet a scrap quota, which increases for the <br> 
+                                next 3 days when met. You can use the money earnt from meeting quotas to buy tools, <br>
+                                better planets, and cosmetics, but if the quota isn't met your team is fired. <br>
+                                <br>
+                                It has quickly become one of my favourite multiplayer games of all time, its perfect <br>
+                                blend of horror and humour always making for a great experience, even for a wimp like <br>
+                                me that usually doesn't enjoy horror games. <br>
+                                <br>
+                                The gameplay loop is very addicting, constantly forcing yourself into dangerous <br>
+                                situations to avoid not meeting the quota, and to me at least this loop is extremely <br>
+                                replayable. This combined with the proximity chat creates unique multiplayer <br>
+                                interactions that often start with everybody goofing off, and end with one lone soul <br>
+                                attempting to escape.
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Replayability: 5 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 4 <br>
+                                Enjoyment: 5 <br> 
+                                <br>
+                                Total: 24
+                            </td>
+                        </tr>
+                        
+                        <!-- Inscryption -->
+                        <tr>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                <img src="https://assets-prd.ignimgs.com/2022/11/09/inscryption-button-fin-1668034589939.jpg" alt="Inscryption Logo" style="width: 300px; height: auto;">
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Inscryption is a horror roguelike card game where you attempt to beat a bloodthirsty <br>
+                                game master at his own game, in the hopes that you can escape his fowl cabin. <br>
+                                Or is it? You'll just have to find out. <br>
+                                <br>
+                                This game is full of intruiging mysteries, growing stakes, ever-changing gameplay, <br>
+                                and shocking twists. Because of this, I can't say much about the game here, all I can <br>
+                                do is strongly recommend it for anyone who is yet to play it. Preferably without <br>
+                                looking into it first.
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Replayability: 3 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 5 <br>
+                                Enjoyment: 5 <br> 
+                                <br>
+                                Total: 23
+                            </td>
+                        </tr>
+                        
+                        <!-- Minecraft -->
+                        <tr>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png" alt="Stanley Logo" style="width: 300px; height: auto;">
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                I don't need to explain what Minecraft is, I have no doubt that you already know. <br>
+                                It's the sandbox game that became the best selling game of all time, beating GTA 5 <br>
+                                and becoming the only game to sell over 300,000,000 copies of itself. <br>
+                                <br>
+                                I started playing Minecraft in 2012 on my iPod touch, soon migrating to the official <br>
+                                version on my iPad, and then to the Xbox 360. Eventually I got Java edition, which has <br>
+                                since been my primary version of the game. I played the game when it was new and <br>
+                                exciting, when it was considered cringey, when it had its resurgence, and to this day. <br>
+                                <br>
+                                Currently the trend of the Minecraft community is to hate on Mojang, for being lazy, <br>
+                                or about the mob vote, or for any small change they make to features like redstone. <br>
+                                I find it to be quite disappointing that so many feel the need to hate on developers <br>
+                                that update their 15 year old game for free. Especially when these types of people <br>
+                                don't understand either game design, Minecraft, or both. The game certainly has its <br>
+                                issues though, issues that I'm fixing in
+                                <a onclick="navigate('alternate-timeline.html')" target="_blank">
+                                    Minecraft 2: The Alternate Timeline!!!!!
+                                </a>
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Replayability: 5 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 3 <br>
+                                Enjoyment: 5 <br> 
+                                <br>
+                                Total: 23
+                            </td>
+                        </tr>
+                        
+                        <!-- The Stanley Parable -->
+                        <tr>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202203/2023/eQVuMWucUXgz0WZpFyQVjFQc.png" alt="Stanley Logo" style="width: 300px; height: auto;">
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                The Stanley Parable is a choose-your-own-adventure type comedy game that explores <br>
+                                themes such as choice in games and the relationship between player and creator. <br>
+                                The game has a lot of endings, many of which contradict eachother, so it's hard to <br>
+                                say whether or not the game truly has a main storyline. It walks the line between <br>
+                                satire and sincere, in a perfect balance that shouldn't be as fun as it is. <br>
+                                <br>
+                                In 2022, The Stanley Parable: Ultra Deluxe was released, as an expansion and <br>
+                                re-imagining of the original game. This version builds upon the foundations of the <br>
+                                original game, but also explores the culture of sequels and highlights the true <br>
+                                beauty of buckets.
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Replayability: 3 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 4 <br>
+                                Writing & Lore: 5 <br>
+                                Enjoyment: 5 <br> 
+                                <br>
+                                Total: 22
+                            </td>
+                        </tr>
+                        
+                        <!-- Portal 2 -->
+                        <tr>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                <img src="https://assets-prd.ignimgs.com/2021/12/08/portal2-1638924084230.jpg" alt="Stanley Logo" style="width: 300px; height: auto;">
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Portal 2 is a puzzle/platformer game developed by Valve. I don't have much to say <br>
+                                about this game, other than it is just great. I scrolled through the steam reviews <br>
+                                for 5 minutes straight while writing this, and did not find a single negative review <br>
+                                that wasn't just a joke about adoption or being British. <br>
+                                <br>
+                                The puzzles are great, the portals are fun, the world it builds is intruiging, and <br>
+                                it even has a multiplayer mode. I couldn't ask for anything more in a game.
+                            </td>
+                            <td style="border: 1px solid white; padding: 8px;">
+                                Replayability: 4 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 4 <br>
+                                Writing & Lore: 5 <br>
+                                Enjoyment: 5 <br> 
+                                <br>
+                                Total: 23
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+
+                
+                <!-- More -->
+                <p class="align-left title">
+                    More Interests Coming Soon! <br>
+                </p>
+
+            <!-- End Side Bar Left -->    
+            </div>
+
+            
+        </div>
+    </body>
+</html>

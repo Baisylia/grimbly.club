@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/styles11.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        <script src="code/common_scripts.js"></script>
+        
+        <!-- Page-Specific Imports and Settings -->
+        
+    </head>
+
+    <body>
+        <div class="background">
+            <!-- Home Button -->
+            <button class="button-small button-style home-button" onmousedown="soundPress()" onclick="navigate('home.html')" id="homeButton"> 
+                Home
+            </button> 
+
+            <!-- Games Button -->
+            <button class="button-small button-style back-button" onmousedown="soundPress()" onclick="navigate('games.html')" id="backButton"> 
+                Games
+            </button> 
+
+            <!-- Upcoming Button -->
+            <button class="button-small button-style back-button-alt" onmousedown="soundPress()" onclick="navigate('upcoming.html')" id="backButton"> 
+                Upco.
+            </button> 
+            
+            <!-- Title -->
+            <img src="images/title.png" class="title-pic">  
+            <br><br><br><br><br>
+            <h2 class="align-center title">
+                Terralink
+            </h2>
+            <h3 class="align-center title">
+                This page is under construction, stay tuned!
+            </h3>
+            <br>
+            
+
+
+
+            <!-- Side Bar Left -->
+            <div class="side-bar-main">
+
+
+                <!-- About -->
+                <h2 class="align-left title">
+                    About Terralink <br>
+                </h2>
+                <p class="align-left paragraph">
+                    Terralink is an analogue horror adventure game set in the same universe as
+                    <a onclick="navigate('verditen.html')" target="_blank">
+                        Verditen,
+                    </a>
+                    acting as a prequel of sorts. <br>
+                    It is a 3D first-person game with a pixelated rendering art style, where you collect mods for the company Terralink in order to earn a spot on their waiting list to get a robot body of your own.
+                    You can travel to various planets and locations to battle criminals and outcasts, while mixing and matching different mods to unlock different abilities and attacks. <br>
+                    <br>
+                    The game is currently in the development stage, with the multiplayer framework being developed and the concept art / story being designed. <br>
+                    The game's lore has just about been finalised, but I won't leak too much information about it here, you'll have to play the game when it's released!
+                </p>
+                <br>
+                
+
+                <!-- Development Blog -->
+                <div class="button-margined">
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('blogText')"> 
+                        Development Blog
+                    </button> 
+                </div>
+                <div>
+                    <p>
+                        <div id="blogText" style="display: none;">
+                            <p class="align-left paragraph">
+                                The game's development has just begun! <br>
+                                More development posts will be made as it continues.
+                                <br>
+                            </p>
+
+
+                            <!-- Stamina System -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('hungerText')"> 
+                                    Beginning Development
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="hungerText" style="display: none;">
+                                        <h2 class="align-left">
+                                            Multiplayer Functionality <br>
+                                        </h2>
+                                        <div class="button-left">
+                                            <img src="images/terralink/multiplayer-test.png">
+                                        </div>
+                                        <p class="align-left paragraph">
+                                            I have begun developing the game in Unreal Engine, focusing on the multiplayer framework. <br>
+                                            Multiple players can join/leave a game through LAN, and have the ability to use left hand and <br>
+                                            right hand attacks.
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+
+
+                    </p>
+                </div>
+                <br>
+
+
+
+
+            <!-- End Side Bar Left -->    
+            </div>
+
+            
+        </div>
+    </body>
+</html>

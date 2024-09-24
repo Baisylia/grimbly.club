@@ -172,6 +172,18 @@ html, body {
   left: 340px;
   z-index: 999;
 }
+.back-button-alt-alt-alt {
+  position: absolute;
+  top: 20px;
+  left: 440px;
+  z-index: 999;
+}
+.back-button-alt-alt-alt-alt {
+  position: absolute;
+  top: 20px;
+  left: 540px;
+  z-index: 999;
+}
 .quit-button {
   position: absolute;
   top: 20px;
