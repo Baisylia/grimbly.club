@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles12.css">
+        <link rel="stylesheet" href="code/styles13.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -17,19 +17,10 @@
 
     <body>
         <div class="background">
-            <!-- Home Button -->
-            <button class="button-small button-style home-button" onmousedown="soundPress()" onclick="navigate('home.html')" id="homeButton"> 
-                Home
-            </button> 
-
-            <!-- Upcoming Button -->
-            <button class="button-small button-style back-button" onmousedown="soundPress()" onclick="navigate('pinned-pages.html')" id="backButton"> 
-                Pins
-            </button> 
-            
             <!-- Title -->
-            <img src="images/title.png" class="title-pic">  
-            <br><br><br><br><br>
+            <div class="title-container">
+                <img src="images/title.png" class="title-pic" onmousedown="soundPress()" onclick="navigate('home.html')">
+            </div>
             <h2 class="align-center title">
                 Upcoming Projects
             </h2>
