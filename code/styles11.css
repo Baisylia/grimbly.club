@@ -94,6 +94,8 @@ html, body {
   transform: translateX(-50%) translateY(-25%) scale(0.25);
   width: auto;
   height: auto;
+  /* width: 50vw; */
+  /* height: 9.53vw; */
   z-index: 1;
 }
 
@@ -194,8 +196,10 @@ html, body {
 
 /* Grimbly Carousel Styles */
 .carousel-wrapper {
-  width: 1650px;
-  height: 220px;
+  /* width: 1650px; */
+  /* height: 220px; */
+  width: 90vw;
+  height: 12vw;
   margin: 0 auto;
   overflow: visible;
   transform: scale(0.95);
@@ -203,29 +207,42 @@ html, body {
   justify-content: center;
   align-self: center;
 }
-.carousel {
-  background-image: url("../images/border_back.png");
-  width: 1500px;
-  height: 200px;
-  top: 12px;
-  left: 8px;
+.carousel-holder {
+  /* background-image: url("../images/border_back.png"); */
+  /* width: 1500px; */
+  /* height: 200px; */
+  width: 81.82vw;
+  height: 10.91vw;
+  top: 0.6546vw;;
+  left: 0.436vw;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   justify-content: center;
 }
+.carousel-back {
+  position: absolute;
+  /* width: 1650px; */
+  /* height: 220px; */
+  width: 90vw;
+  height: 12vw;
+  z-index: -1;
+  pointer-events: none;
+}
 .carousel-border {
   position: absolute;
-  width: 1650px;
-  height: 220px;
+  /* width: 1650px; */
+  /* height: 220px; */
+  width: 90vw;
+  height: 12vw;
   z-index: 1;
   pointer-events: none;
 }
 .carousel-img-base {
   position: absolute;
   top: 50%;
-  width: 100px;
-  height: 100px;
+  width: 6vw;
+  height: 6vw;
   transform: translate(-50%, -50%);
   animation: carouselAnimation 12s linear infinite; 
 }
