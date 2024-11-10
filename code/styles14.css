@@ -45,24 +45,58 @@ html, body {
 .hidden {
   visibility: hidden;
 }
-.side-bar-right {
-  position: absolute;
-  top: var(--side-bar-height);
-  right: 20px;
-  z-index: 999;
-}
-.side-bar-left {
-  position: absolute;
-  top: var(--side-bar-height);
-  left: 20px;
-  z-index: 999;
-}
 .side-bar-main {
   position: absolute;
   top: 200;
   left: 20px;
   z-index: 999;
 }
+
+
+/* Desktop Layout */
+.side-bar-left, .side-bar-right {
+  position: absolute;
+  top: var(--side-bar-height);
+  z-index: 999;
+}
+.side-bar-left {
+  left: 20px;
+  width: 650px;
+}
+.side-bar-right {
+  right: 20px;
+  width: 650px;
+}
+
+/* Mobile Layout - Shrink textboxes from 1200px to 700px */
+@media (max-width: 1200px) {
+  .side-bar-left, .side-bar-right {
+    position: absolute;
+    margin-bottom: 20px;
+    transition: width 0.3s ease; /* Smooth transition for resizing */
+  }
+  .side-bar-left, .side-bar-right {
+    width: 500px; /* Start shrinking the width */
+  }
+  @media (max-width: 1000px) {
+    .side-bar-left, .side-bar-right {
+      width: 350px; 
+    }
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 750px) {
+  .side-bar-left, .side-bar-right {
+    position: static;
+    width: 100%;
+  }
+  .side-bar-right {
+    order: 1;
+    margin-top: 20px;
+  }
+}
+
 
 
 /* Text Styles */
