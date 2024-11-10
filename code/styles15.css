@@ -73,10 +73,10 @@ html, body {
   .side-bar-left, .side-bar-right {
     position: absolute;
     margin-bottom: 20px;
-    transition: width 0.3s ease; /* Smooth transition for resizing */
+    transition: width 0.3s ease;
   }
   .side-bar-left, .side-bar-right {
-    width: 500px; /* Start shrinking the width */
+    width: 500px;
   }
   @media (max-width: 1000px) {
     .side-bar-left, .side-bar-right {
@@ -184,6 +184,9 @@ html, body {
   line-height: 85px;
   font-weight: bold;
   font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
 }
 .button-style:hover {
   filter: brightness(0.9);
