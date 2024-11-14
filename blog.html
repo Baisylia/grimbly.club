@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/styles16.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        <script src="code/common_scripts.js"></script>
+        
+        <!-- Page-Specific Imports and Settings -->
+        
+    </head>
+
+    <body>
+        <div class="background">
+            <!-- Title -->
+            <div class="title-container">
+                <img src="images/title.png" class="title-pic" onmousedown="soundPress()" onclick="navigate('home.html')">
+            </div>
+            <h2 class="align-center title">
+                Blog
+            </h2>
+            <br>
+            
+
+
+
+            <!-- Side Bar Left -->
+            <div class="side-bar-main">
+
+
+                <!-- About -->
+                <h2 class="align-left title">
+                    My Thoughts and Ramblings <br>
+                </h2>
+                <p class="align-left paragraph">
+                    Welcome to the blog page, where I unload my thoughts for the world to see. <br>
+                    The buttons below contain my blog 'posts' in order of most recent to oldest, though it's likely they will be updated over time. <br>
+                </p>
+                <br>
+
+
+                <!-- Minecraft Lore -->
+                <div class="button-margined">
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('minecraftLoreText')"> 
+                        Minecraft Lore
+                    </button> 
+                </div>
+                <div>
+                    <span id="minecraftLoreText" style="display: none;">
+                        <p class="align-left paragraph">
+                            According to Jeb's Minecraft design book, Minecraft is a multiverse. Every world has its own lore that is decided by the player. <br>
+                            This is great, Minecraft is a game driven by the player's imagination after all, but it is clear that Mojang has its own lore in <br>
+                            mind as well, that's how the creative process works. I like to think of their intended lore as the prime timeline, the true Minecraft <br>
+                            world in the Minecraft multiverse. This prime world consists of all the lore set in the base game, as well as Minecraft Dungeons (MCD) <br>
+                            and even Minecraft Legends (MCL).<br>
+                            <br>
+                            There is a case to be made that MCL is just a story told by villagers, but just like how MCD was the reason illagers were added to <br>
+                            the base game, Mojang had MCL in mind when adding piglins to the base game. Whether or not all of MCL is completely factual, it is <br>
+                            clear that it is at least based on their intentions for the prime timeline. This idea is assisted by the fact that the trailer for A <br>
+                            Minecraft Movie (MCM) has an important Minecraft Legends character in it, the ideas established in MCL are persistent in other MC media. <br>
+                            It could then also be argued that MCM is also canon to the prime timeline, but it is impossible to say for certain until it is released.<br>
+                            <br>
+                            The lore of the prime timeline is actually more set in stone than you may think at first, as the spinoff games are full of confirmed <br>
+                            pieces of lore information, and Minecraft itself is full of small lore details. The following is lore that is inarguably confirmed, <br>
+                            strongly assumed, and educatedly theorised. <br>
+                            <br>
+                            Confirmed by Media: <br>
+                            - MCL takes place before the base game <br>
+                            - Desert temples were made by necromancers <br>
+                            - Piglins mined out all of the pure netherite <br>
+                            - There are 3 deities that live in their own plane of existence <br>
+                            - Prismarine is from the deity plane <br>
+                            - The deities converted some of the villagers into the first illagers  <br>
+                            - The ender is a physical being and their life force resides within the heart of ender <br>
+                            - The heart of ender has been used by both piglins and illagers <br>
+                            - Villagers are peaceful beings and never fight <br>
+                            - Endermen have a form of sentience <br>
+                            - Ghasts are living creatures  <br>
+                            - Sculk consumes and is powered by souls <br>
+                            - Soul sand contains souls <br>
+                            - Sniffers are extinct dinosaurs <br>
+                            - Being killed by the undead can convert you to being undead <br>
+                            - Zombification can be cured in some cases <br>
+                            - Piglins are scared of zombification and soul light <br>
+                            - Hoglins are scared of warped fungi and nether portals <br>
+                            - Piglins require a spore-filled atmosphere to avoid becoming zombified <br>
+                            - End portals are made out of endstone <br>
+                            - Fire frees souls from soul sand but not sculk <br>
+                            <br>
+                            Assumptions of Media: <br>
+                            - MCD takes place after the base game <br>
+                            - Vexes are corrupted allays <br>
+                            - Illagers visited ancient cities <br>
+                            - Ocean monuments were built by the deities <br>
+                            - Guardians, elder guardians, blazes, wildfires, and breeze are all golems <br>
+                            - The centre monuments in ancient cities are portals <br>
+                            - Witches are former clerics and created igloos <br>
+                            - Players can respawn in-canon because of the deities <br>
+                            - Slimes can be adapted to other environments by combining their slimy essence with other materials such as blaze powder <br>
+                            - Ghast tears have regenerative properties  <br>
+                            - Gold has enhancement properties  <br>
+                            - Some of the fossil structures are relatives of sniffers <br>
+                            - Withering is stronger than regular zombification <br>
+                            - Yellow allays are no longer present in the overworld <br>
+                            <br>
+                            Theories of Media: <br>
+                            - MCM takes place after MCL but before the base game  <br>
+                            - The ender is a fallen deity <br>
+                            - Players are isekai-ed into the game <br>
+                            - End cities act as shulker farms <br>
+                            - Trail ruins are from the MCL time period <br>
+                            - Experience is literal knowledge essence <br>
+                            - Ravagers were once villagers  <br>
+                            - Slimes were made by witches <br>
+                            - Elytras come from a bug of some sort <br>
+                        </p>
+                    </span>
+                </div>
+                
+                
+                
+                <!-- Pet Peeves -->
+                <div class="button-margined">
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('peevesText')"> 
+                        Pet Peeves
+                    </button> 
+                </div>
+                <div>
+                    <span id="peevesText" style="display: none;">
+                        <p class="align-left paragraph">
+                            I have many pet peeves, things that really grind my gears for both petty and moral reasons. <br>
+                            The following is an unorganised list of things that aggravate me. <br>
+                            <br>
+                            - When people act as though I should share my meal because it is a food that is usually shared, even though I'm eating it as my main meal <br>
+                            - When people then say we can get another meal if I'm not full after sharing my meal <br>
+                            - 'Culinary vegetables', tomatoes are fruits not vegetables I don't care how they are used in cooking <br>
+                            - The opinion of quantity over quality being better <br>
+                            - Streaming services being the main way to access any media <br>
+                            - People sucking crumbs off their fingers <br>
+                            - When people ask when a mod will be updated to [x version] <br>
+                            - People being early when I was prepared to be ready on time <br>
+                            - People being late and I got ready for nothing <br>
+                            - Asking if something extremely specific is planned for a project instead of just suggesting a feature <br>
+                            - Tone indicators, especially /hj which is the stupidest thing to ever be invented <br>
+                            - 'Straight invalidation' <br>
+                            - Some specific words and phrases such as 'apple pie' evoke great discomfort <br>
+                            - Christmas celebration in November <br>
+                            - Subtle forshadowing memes <br>
+                            - When my hands are slightly sticky or grimy from using a keyboard or mouse <br>
+                            - When the only existing figurine of a character is a funko pop, so then I have to get a funko pop if I want a figure of that character <br>
+                            - The frequency of the Dunning-Kruger effect within every environment and community <br>
+                            - Discord, Unity, Spotify, Twitter, IOS, Android, and Google being the way they are <br>
+                            - People disliking they/them for themselves or others <br>
+                            - The worst game, Mario Party <br>
+                            - People being anti-self diagnosis as if they know someone better than they know themselves <br>
+                            - Every third influencer turning out to be a peice of shit <br>
+                            - AI being incorporated into everything, not everything needs ChatGPT integration <br>
+                        </p>
+                    </span>
+                </div>
+
+
+            <!-- End Side Bar Left -->    
+            </div>
+
+            
+        </div>
+    </body>
+</html>
