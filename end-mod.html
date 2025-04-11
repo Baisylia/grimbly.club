@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/styles16.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        <script src="code/common_scripts.js"></script>
+        
+        <!-- Page-Specific Imports and Settings -->
+        
+    </head>
+
+    <body>
+        <div class="background">          
+            <!-- Title -->
+            <div class="title-container">
+                <img src="images/title.png" class="title-pic" onmousedown="soundPress()" onclick="navigate('home.html')">
+            </div>
+            <h2 class="align-center title">
+                Untitled End Overhaul Mod
+            </h2>
+            <br>
+            
+
+
+
+            <!-- Side Bar Left -->
+            <div class="side-bar-main">
+
+
+                <!-- About -->
+                <h2 class="align-left title">
+                    About the Mod <br>
+                </h2>
+                <p class="align-left paragraph">
+                    Minecraft's end dimension leaves a lot to be desired, and somehow there are no good mods to fix it. (No, Better End is not a better end) <br>
+                    The end has a very specific feel with very particular lore, and so only certain things can fit into the end in a cohesive way. <br>
+                    Even Mojang themselves don't seem to know what fits in the end, the dimension sucks in the vanilla game, and the MC Dungeons end is full of plants. <br>
+                    As seen with
+                    <a href='alternate-timeline.html' target="_blank">
+                        my modpack
+                    </a>
+                    , I have my own vision for how the game should be, and the end is no exception. From this I have created a sort of 'style guide' for end feature implementation in this mod. <br>
+                    <br>
+                    1. The end is alien (not as in space) to the other dimensions, and everything that originates from the end should be unique from anything from anywhere else. <br>
+                    The end should not have indigenous plants, fungi, animals, or water. You shouldn't even be able to tell what you are looking at from a first glance. <br>
+                    Anything that fits into those categories can only work in the end if they are meant to be things that were brought into the end in the past, and this reasoning should be used infrequently. <br>
+                    2. The end has biblical ties, almost acting like a corrupt heaven in MC Dungeons. Ender beings exist to serve the Ender, as though they are part of a hivemind. <br>
+                    Everything in the end should feel connected, such as structures alluding to worship, mobs being intelligent but without free will, etc. <br>
+                    3. The end is a fairly barren environment, and shouldn't feel as lush as the overworld or even the nether. The dimension should feel dead, but also like something is always watching you. <br>
+                    Dense forests or lively ecosystems should not be found in the end, existing in small regions at the most, but it should also not feel empty to the point where you don't want to go there. <br>
+                </p>
+                <br>
+
+
+                <!-- Design Document -->
+                <div class="button-margined">
+                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('blogText')"> 
+                        Design Document
+                    </button> 
+                </div>
+                <div>
+                    <p>
+                        <div id="blogText" style="display: none;">
+                            <p class="align-left paragraph">
+                                This mod has been designed following the above end style guide. <br>
+                                As the end is a very difficult topic to design for, everything documented here is subject to change. <br>
+                                <br>
+                            </p>
+
+
+                            <!-- Biomes -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('biomeText')"> 
+                                    Biomes
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="biomeText" style="display: none;">
+                                        <p class="align-left paragraph">
+                                            The end only has two major 'biomes', the central island where you fight the dragon and the outer islands covered in chorus. <br>
+                                            Neither of these biomes exist in this mod, as entering the end into a boss battle is a relic of Minecraft's past and chorus is being reworked. <br>
+                                            Instead, entering the end puts you on a random island, somewhat similarly to entering the nether, in one of many biomes. <br>
+                                            The goal is for there to be a reason to explore the end, for both sight-seeing and utility. <br>
+                                            The following are the new biomes for the end.
+                                        </p>
+
+                                        
+                                        <!-- Verditen Reach -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('verditenReachBiomeText')"> 
+                                                Verditen Reach
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="verditenReachBiomeText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The verditen reach is a biome consisting mostly of verditen, a green stone-like material based on a block from MC Dungeons' End and named after a game concept of mine. <br>
+                                                        While mostly used as a decorative block, verditen is also requried to create end portal frames, putting a name to the green in the block's texture. You aren't able to <br>
+                                                        create your own end portals without first going to the end and obtaining verditen, balancing the progression of getting to the end for the first time while removing the <br>
+                                                        necessity for strongholds after the fact. Most end mobs do not spawn in the verditen reach, making it one of the most isolating areas in the game. <br>
+                                                        <br>
+                                                        The biome's surface is covered in verditen crust, a less durable form of the stone eroded by ender winds or other natural forces. The crust is an almost ceramic material, <br>
+                                                        with veins of dimly lit verditen running throughout it like fossilized circuits. Below this layer lies the stronger verditen stone, which runs deep into the islands and <br>
+                                                        protrudes beyond the surface in tall pillars and thin walls. The terrain looks as though it was constructed by hand, though the purpose of doing so remains unclear. <br>
+                                                        <br>
+                                                        Structures that definitely are built by hand in this biome however are the endless halls, castles consisting exclusively of labyrinth-like hallways that seemingly go <br>
+                                                        nowhere. They consist mostly of endstone and verditen, and are home to the lost, enderman-like mobs that look to be wearing robes (that are actually part of their bodies). <br>
+                                                        The lost are much weaker than regular endermen and have green eyes, they have long been disconnected from the ender 'hivemind' and spend their days aimlessly wandering <br>
+                                                        the halls. They do not attack you unless provoked, and don't even care if you look into their eyes. If you give the lost a prismarine eye (a new item similar to the eye <br>
+                                                        of ender but made with prismarine and levitation charges), it will free them from their cursed existence. They will disappear in a burst of black particles and reward you <br>
+                                                        with some decent loot.
+                                                    </p>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                            
+
+                                        <!-- Nullcrag Dregs -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('nullcragDregsBiomeText')"> 
+                                                Nullcrag Dregs
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="nullcragDregsBiomeText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The nullcrag dregs is a biome consisting of nullcrag, a grey mud-like material based on another block from MC Dungeons' End, and its less-solid form nullmuck. This material <br>
+                                                        forms in tar pit-like pools throughout the biome, bubbling and emitting infrequent particles. It is similar to powder snow in that you cannot swim up through it, but like <br>
+                                                        a liquid you cannot just break it to escape. Standing in nullmuck will give you the mucked effect, slowing you down and desaturating your vision, and sinking in nullmuck <br>
+                                                        will slowly suffocate you. Nullcrag can be made into a brick blockset and nullmuck buckets can be used to brew potions of mucking. <br>
+                                                        <br>
+                                                        The biome also contains spite ichor, a yellow goop that upon coming into contact with endermen turns them into snarelings, which are also based on MC Dungeons. Spite ichor <br>
+                                                        acts as a parastic substance, infecting the host and taking control of them; snarelings are no longer connected to the ender hivemind, and when you walk into it yourself it <br>
+                                                        takes control of you as well. Touching spite ichor gives you the spiten effect, making you walk about in random directions with the chance to fall off the island you are on. <br>
+                                                        The effect also makes you drop spite ichor piles on the floor, similar to the piles that snarelings shoot. Snarelings throw projectiles that form these piles, trapping their <br>
+                                                        targets like a cobweb and making them easier to attack and infect. Spite ichor piles can be used to brew potions of spiting. <br>
+                                                        <br>
+                                                        Spite ichor is foreign to the end, originating from the lifeblood of the ender combinining with exterior substances brought by past humans, namely blaze powder. This brought <br>
+                                                        with it spite mites, a rework of endermites that can also be found in the nullcrag dregs. Beings of the end will target spite mites on sight, as they are an invasive species <br>
+                                                        that live to corrupt the end by spreading spite ichor. Spite mites can still spawn uncommonly from used ender pearls, as they infest them in order to use their energy to grow. <br>
+                                                        <br>
+                                                        Spite mite nests are structures that can generate in this biome, and are made of solidified spite ichor and a variety of end related blocks. These nests are home to spite mites, <br>
+                                                        but also fight mites and flight mites, stronger variants that grow from regular spite mites when fed potent ichor. Fight mites have large pincers and are much stronger, whereas <br>
+                                                        flight mites have the ability to fly with their elytra. These pincers and elytra can drop from each mite type respectively, and this is now the main way to obtain elytras. The <br>
+                                                        potent ichor is created by the bright mite, a larger queen-like mite that each nest has one of. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                            
+
+                                        <!-- Melodic Plexus -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('melodicPlexusBiomeText')"> 
+                                                Melodic Plexus
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="melodicPlexusBiomeText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The melodic plexus is a biome consisting of endstone and chorus veins, the non-plant rework of chorus plants. Chorus veins are tentacle-like block-built forms growing out <br>
+                                                        of the floor, curled up with smaller veins coming off in different directions. These smaller veins are where the 'fruits' can be harvested, chorus clots grow on their ends <br>
+                                                        and pulse when they are ready to be harvested. Fully grown chorus clots also emit quiet sounds that almost feel melodic in nature. As chorus clots are essentially just chorus <br>
+                                                        fruits, eating them will teleport you to a random location in the near vicinity. The stem blocks of the chorus veins can be made into purpur, the blockset of which acts <br>
+                                                        more like packed mud in recipe and in texture. Smaller living structures called verses can also be found in this biome, littered about like flowers. <br>
+                                                        <br>
+                                                        Similarly to verditen, purpur is not a purely decorative block, it can also be used to create gateways. Gateways are no longer the small bedrock structures that are <br>
+                                                        generated upon beating the dragon, but end portal-like rings constructed of frame blocks made with purpur and nullcrag. Whereas the verditen in the end portal frame recipe <br>
+                                                        represents how end portals lead you out of the end (the verditen reach being the furthest place from one's connection to the ender), the purpur in the gateway frame <br>
+                                                        recipe represents how they lead you somewhere else nearby in the dimension. <br>
+                                                        <br>
+                                                        Ancient gateway structures can be found in many of the new biomes, constructed of purpur and endstone as well as the main material of the biome it generates in. These are <br>
+                                                        usually inactive but can be re-opened with resonance eyes (a new item similar to the eye of ender but made with chorus clots). Entering these portals will teleport you to <br>
+                                                        another gateway somewhere else in the end. <br>
+                                                        <br>
+                                                        A structure that is exclusive to the melodic plexus is the shulker spire, a semi-replacement for end cities that consists only of the vertical towers containing shulkers <br>
+                                                        and end rods. These structures act as shulker farms, where those who built the spires would grow and harvest shulkers for their levitation charges. (This is because these <br>
+                                                        structures resemble real life oyster farms). By feeding a shulker potent ichor, it will become temporarily weakened, making its bullets just pop out of its shell as <br>
+                                                        collectible levitation charges rather than the usual targeting projectiles. These levitation charges can be used for various purposes such as creating prismarine eyes. These <br>
+                                                        structures were made when the spite ichor plague first began, with shulkers acting as the white blood cells of the end, defending it from outside influences such as humans. <br>
+                                                        End rods are required for this process as they are created with blaze powder, a sort of anti-virus for the shulkers to be formed with. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                            
+
+                                        <!-- Terminal Expanse -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('terminalExpanseBiomeText')"> 
+                                                Terminal Expanse
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="terminalExpanseBiomeText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The terminal expanse is a biome consisting of ender essentia, a black and purple substance based once again on a liquid in MC Dungeons. Ender essentia is the lifeblood of <br>
+                                                        the end, the most potent source of void energy and the strongest connection to the ender hivemind. End mobs that come into contact with ender essentia are granted the <br>
+                                                        vitalis effect, greatly increasing their strength and giving them natural regeneration. Non-end mobs that come into contact with ender essentia are granted the the noctis <br>
+                                                        effect, greatly decreasing their strength and giving them consistent damage. Ender essentia can be found as pools, waterfalls, and lakes throughout this biome, and the <br>
+                                                        surrounding area consists of terminal essentia, void-touched blocks that may have once been endstone or some other basic material. Terminal essentia can be made into building <br>
+                                                        blocks, but standing on it for too long can cause you to be afflicted with vitalis or noctis. <br>
+                                                        <br>
+                                                        The end citadel is a structure found in this biome that acts as a replacement for the non-shulker spire parts of end cities, as well as being based on the broken citadel from <br>
+                                                        MC Dungeons. These large structures contain a room with a large well of ender essentia, gates that can be only be activated by shulker projectiles, and blastlings. Blastlings <br>
+                                                        are extra-powerful endermen variants that shoot ender fire projectiles, based on MC Dungeons. With powerful enemies and substances that make them difficult to beat, the end <br>
+                                                        citadels are extremely difficult to explore, but doing so will reward you with some of the best loot chests in the game, with items such as obscurum to be found. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                            
+
+                                        <!-- Chordium Cleft -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('chordiumCleftBiomeText')"> 
+                                                Chordium Cleft
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="chordiumCleftBiomeText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The chordium cleft is a biome consisting of endstone and chordium, a dark purple stone that is also an ingredient in purpur. The stone generates in canyon-like forms that go <br>
+                                                        fairly deep into the end islands. The surface of the bottom of these crevaces is made of loose chordium, a softer clay-like version of chordium that has gravity. Verses can be <br>
+                                                        found growing on loose chordium, though infrequently. <br>
+                                                        <br>
+                                                        Lurkers can be found crawling along the chordium walls, ender beings that stalk you from afar and launch themselves onto you when they have you in their line of sight for too <br>
+                                                        long. Upon impact they will attempt to run back up the nearest wall, to repeat the process until you die. This attack can be avoided by cutting their line of sight with blocks. <br>
+                                                        Lurkers can also pick up chordium blocks from the walls to make holes, which they do upon a successful kill. They will then sit inside of these holes when there are no targets <br>
+                                                        in the near vicinity. These holes can be found in the canyons upon generation as well, implying that many have fallen to the lurkers in these biomes. <br>
+                                                        <br>
+                                                        Much larger holes can be found in the walls as well, which lead to cave structures called wall sites that are dug into the canyon walls. These ancient sites were once used for <br>
+                                                        worshipping the ender, with statues and other such imagery being prevalent. They are made almost entirely out of chordium, as they were not built but dug, and mobs such as lurkers <br>
+                                                        and endersent can be found there. The endersent act as guardians of the wall sites, tall and powerful enderman variants based on MC Dungeons. They have an attack that they use <br>
+                                                        infrequently which effects the target with noctis. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+
+
+                                                                         
+                            <!-- End of Biomes -->                
+                                    </div>
+                                </p>
+                            </div>
+
+
+
+                            <!-- Features -->
+                            <div>
+                                <button class="button-large button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('featuresText')"> 
+                                    Features
+                                </button> 
+                            </div>
+                            <div>
+                                <p>
+                                    <div id="featuresText" style="display: none;">
+                                        <p class="align-left paragraph">
+                                            With a dimension overhaul comes new features, including features that aren't necessarily specific to a certain biome. <br>
+                                            The end has limited reasons to explore it for, those mainly being chorus fruit, elytras, shulker shells, and dragon's breath. <br>
+                                            This isn't much for one dimension, so a lot more is needed in order to flesh the end out. <br>
+                                            The following are the features relating to the end, some of which have been briefly explained in the biomes tab. <br>
+                                        </p>
+
+                                        
+                                        <!-- Materials -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('materialsText')"> 
+                                                Materials
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="materialsText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The following items are materials that can be found in or are related to the end: <br>
+                                                        <br>
+                                                        - Chorus clots are the replacement for chorus fruit, and teleport you randomly upon being eaten. <br>
+                                                        - Levitation charges are dropped from living shulkers after being fed verses, they can be used to create various utilty items and can be shot out of dispensers as projectiles. <br>
+                                                        You can also throw them like ender pearls, inflicting the target with levitation. <br>
+                                                        - Obscurum can be looted from end citadels, it resembles a prism but rather than refracting light it refracts darkness. It is made of crystalized ender essentia. <br>
+                                                        - Prismarine eyes are crafted from levitation charges and prismarine crystals, and can be used to 'barter' with the lost to free them. Using them can also cure you from noctis. <br>
+                                                        - Resonance eyes are crafted from chorus clots and ender pearls, and can be used to open gateways as well as thrown to locate gateways like eyes of ender. <br>
+                                                        - Potent ichor is excreted from bright mites when they are fed ender pearls, and can be used to convert spite mites into both fight mites and flight mites. <br>
+                                                        - Bright larvae are dropped from bright mites upon death, and can be thrown into spite ichor to create a baby bright mite. <br>
+                                                        - Voicant irises are dropped from the voicant and can be used as a crafting material or to link two gateways together. <br>
+                                                        - Red dragon eggs are ancient, long dead eggs that can be found in strongholds. Throwing them into resurrection wells with 4 active end crystals will revive the ancient creature, <br>
+                                                        in a dark corrupted form, the ender dragon. <br>
+                                                        - Ender dragon eggs can also be used to summon ender dragons, and mostly serve as a higher value trophy version of red dragon eggs. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+
+                                        
+                                        <!-- Tools -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('toolsText')"> 
+                                                Tools
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="toolsText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The following items are tools that can be found in or are related to the end: <br>
+                                                        <br>
+                                                        - Voidendum is a netherite alternative (not upgrade) that is focused on the ender environment and inspired by my own modpack. The alloy is crafted with gold and obscurum, <br>
+                                                        and is a purplish pink in hue. When applied to diamond tools you can obtain voidendum gear, the item forms of which teleport to the nearest block surface upon falling <br> 
+                                                        into the void. While wearing the full armourset of voidendum you too will teleport to the nearest block surface upon falling into the void. <br>
+                                                        - Fight mite pincers can be used as weapons, dealing extra damage to enderlings and occasionally inflicting spiting. Enderlings with vitalis will have the effect removed upon <br>
+                                                        being damage with the pincers as well. <br>
+                                                        - Flight mite elytras can be used similarly to the vanilla game, allowing you to fly, however they will be much slower outside of the end. <br>
+                                                        - Gateways are portals similar in structure to end portals, that require resonance eyes to open and allow you to teleport to other locations in the end. Using a voicant iris <br>
+                                                        on a gateway will set it as its target similarly to a lodestone, and using that same voicant iris on another gateway will then connect them, breaking the item in the process. <br>
+                                                        - Ender dragon hearts can be eaten to gain the dragon hearted effect. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+
+                                        
+                                        <!-- Effects -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('effectsText')"> 
+                                                Effects
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="effectsText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The following are effects that can be gained in or are related to the end: <br>
+                                                        <br>
+                                                        - Mucked is afflicted from nullmuck and slows you down while desaturating your vision. It is brewed with nullmuck as well. <br>
+                                                        - Spiten is afflicted from spite ichor and takes away your movement controls, moving you in random directions with the chance to fall off the island you are on. It is brewed <br>
+                                                        with spite ichor piles. <br>
+                                                        - Vitalis is gained by beind an end mob and touching ender essentia, increasing your strength and increasing regeneration. It can be brewed by corrupting vitalis. <br>
+                                                        - Noctis is afflicted by not being an end mob and touching ender essentia, weakening you and giving you constant damage. It can be brewed with obscurum. <br>
+                                                        - Grounded is an instant effect that cures you from both spiten and levitation. It can be brewed with a levitation charge and a spiten potion. <br>
+                                                        - Dragon hearted is gained from eating an ender dragon heart, and grants several buffs. Enderlings will not attack players with dragon hearted, and spite mites will run away <br>
+                                                        in fear. A cloud of dragon's breath will also form around you, damaging other mobs but not yourself, and you also gain the ability to recieve vitalis from ender essentia. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+
+                                        
+                                        <!-- Structures -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('structuresText')"> 
+                                                Structures
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="structuresText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The following are structures that can be found in or are related to the end: <br>
+                                                        - End camps are small ruined structures made of blocks relating to the biome they are found in. They are evidence of previous non-ender travellers who tried and perhaps failed <br>
+                                                        to survive in the harsh ender environment. These ruins contain loot from the overworld, resources that are hard to come by in the end and don't have an ender equivalent. <br>
+                                                        <br>
+                                                        - Endless halls are verditen reach castles consisting exclusively of labyrinth-like hallways that seemingly go nowhere. They consist mostly of endstone and verditen, and are <br>
+                                                        home to the lost. Loot can be found in these halls, as well as evidence of previous explorers, but the main reason to explore them is the loot that can be obtained from the lost. <br>
+                                                        <br>
+                                                        - Spite mite nests are nullcrag dreg structures created by spite mites. They are made of solidified spite ichor and a variety of end related blocks. These nests are home to spite <br>
+                                                        mites, fight mites, flight mites, and one bright mite. These structures are the main way to obtain pincers, elytra, and potent ichor. <br>
+                                                        <br>
+                                                        - Shulker spires are melodic plexus spires where shulkers were once farmed, a semi-replacement for end cities. Those who built the spires would grow and harvest shulkers for their <br>
+                                                        levitation charges, as well as to defend the end from infections such as the spite ichor. <br>
+                                                        <br>
+                                                        - End citadels are terminal expanse structures that are a replacement for the non-shulker spire parts of end cities. These citadels contain a room with a large well of ender <br>
+                                                        essentia, gates that can be only be activated by shulker projectiles, and blastlings. With powerful enemies and substances that make them difficult to beat, the end <br>
+                                                        citadels are extremely difficult to explore, but doing so will reward you with some of the best loot chests in the game, with items such as obscurum to be found. <br>
+                                                        <br>
+                                                        - Wall sites are chordium cleft cave structures that are dug into the canyon walls. These ancient sites were once used for worshipping the ender, with statues and other such <br>
+                                                        imagery being prevalent. They are made almost entirely out of chordium, as they were not built but dug, and mobs such as lurkers and endersent, guardians of the wall sites. <br>
+                                                        <br>
+                                                        - Strongholds are reworked overworld structures found underground, containing rooms such as the end portal room, silverfish sanctuary, storage vault, and ancient shrine. These <br>
+                                                        structures are required to get to the end for the first time, and share some lore about those who were preparing to travel there long ago. Red dragon eggs can be exclusively <br>
+                                                        found in the ancient shrine rooms. <br>
+                                                        <br>
+                                                        - Resurrection wells are rare structures once used by humans long ago, to resurrect the long dead red dragon. Placing 4 end crystals around the well and throwing a red dragon egg <br>
+                                                        into the ender essentia inside will summon the ender dragon, which is not exactly what the ancient humans had in mind while creating this structure. The dragon fight is similar <br>
+                                                        to that in vanilla, though there are no end crystals placed upon obsidian pillars, instead the dragon will heal by perching upon the ender essentia in the resurrection well. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+
+
+                                        
+                                        <!-- Mobs -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('mobsText')"> 
+                                                Mobs
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="mobsText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The following are mobs that can be found in the end: <br>
+                                                        (For future reference, mobs made out of void energy such as endermen are classified as enderlings) <br>
+                                                        <br>
+                                                        - The lost are weak enderlings that have green eyes and a cloak-shaped body. They have long been disconnected from the ender hivemind and spend their days aimlessly <br>
+                                                        wandering the endless halls structure. They do not attack you unless provoked, and don't even care if you look into their eyes. If you give the lost a prismarine eye it will <br>
+                                                        free them from their cursed existence. They will disappear in a burst of black particles and reward you with some decent loot. They can become regular endermen once again by <br>
+                                                        being brought to a well of ender essentia. <br>
+                                                        <br>
+                                                        - Snarelings are enderlings that have been infected with spite ichor and are no longer connected to the ender hivemind. They are found in the nullcrag dregs, and throw projectiles <br>
+                                                        that form spite ichor piles, at players and other enderlings, trapping their targets like a cobweb and making them easier to attack and infect. They can be cured with potions of <br>
+                                                        grounded, but this will convert them into the lost. <br>
+                                                        <br>
+                                                        - Spite mites are a rework of endermites that can also be found in the nullcrag dregs. Beings of the end will target spite mites on sight, as they are an invasive species <br>
+                                                        that are foreign to the end, and live to corrupt the end by spreading spite ichor. Spite mites can still spawn uncommonly from used ender pearls, as they infest them in order to <br>
+                                                        use their energy to grow. Feeding a spite mite potent ichor will turn it into either a fight mite or a flight mite. <br>
+                                                        <br>
+                                                        - Fight mites are larger spite mites with large pincers that grant them enhanced strength. They are found in spite mite nests and will drop their pincers upon death. <br>
+                                                        <br>
+                                                        - Flight mites are larger spite mites with elytra that grant them the ability to fly. They are found in spite mite nests and will drop their elytra upon death. <br>
+                                                        <br>
+                                                        - Bright mites are very large spite mites with a large rear full of spite ichor. They are found in spite mite nests and will drop bright larva upon death. When thrown into spite <br>
+                                                        ichor, the bright larva will become a baby bright mite, which soon grows into a regular bright mite. When fed ender pearls, bright mites excrete potent ichor. <br>
+                                                        <br>
+                                                        - Shulkers are slightly reworked in order to function as the white blood cells of the end, defending it from outside influences such as humans, and especially spite ichor. They <br>
+                                                        spawn in shulker spires, where they were once farmed for their levitation charges and created to stop the spite plague. When fed potent ichor, shulkers become temporarily <br>
+                                                        weakened, making its bullets just pop out of its shells as collectible levitation charges rather than targeting projectiles. They will also attack all spite mites on sight, much <br>
+                                                        like the majority of the end mobs, though spite mites will also seek out shulkers. <br> 
+                                                        <br>
+                                                        - Blastlings are extra-powerful flaming endermen variants that shoot ender fire projectiles. They are the guardians of the end citadels, and will attack intruders on sight. They <br>
+                                                        are embedded with ender essentia, dropping terminal essentia upon death as well as a rare chance to drop obscurum. <br>
+                                                        <br>
+                                                        - Lurkers are quadruped enderlings that can be found crawling along the walls of the chordium cleft. They stalk you from afar and launch themselves onto you when they have you <br>
+                                                        in their line of sight for too long. Upon impact they will attempt to run back up the nearest wall, to repeat the process until you die. This attack can be avoided by cutting <br>
+                                                        their line of sight with blocks, and can be stopped half-way by hitting them before they land. Lurkers can also pick up chordium blocks from the walls to make holes, which they<br>
+                                                        do upon a successful kill. They will then sit inside of these holes when there are no targets in the near vicinity. <br>
+                                                        <br>
+                                                        - Endersent are tall and powerful enderlings that guard the wall sites in the chordium cleft, and can rarely be found in end citadels. As worshippers of the ender they attack <br>
+                                                        anyone who enters their domain. They have an attack that they use infrequently which effects the target with noctis, and upon death drop eyes of ender which is useful for creating <br>
+                                                        a new portal out of the end. <br>
+                                                        <br>
+                                                        - The voicant are large floating rectangles with a singular eye, that float around the end and watch you. If you look back at them for too long, they will alert all nearby enderlings, <br>
+                                                        causing them to attack you. They drop voicant irises upon death. <br>
+                                                        <br>
+                                                        - Watchlings are the low-level enemies of the end, about as powerful as zombies but with the ability to teleport. They teleport less frequently than endermen, and don't drop ender <br>
+                                                        pearls nearly as often. As they are covered in eyes, simply being in your field of vision will cause them to become hostile. <br>
+                                                        <br>
+                                                        - While not technically mobs, monoliths are very tall block-built structures that resemble thinner versions of the now removed obsidian pillars in the center island. They are <br>
+                                                        comprised of monolith segments, black blocks that occasionally blink their eyes open. If part of a monolith is destroyed, it will rebuild itself over time. At the top of a monolith <br>
+                                                        is a dormant voicant block, which will convert itself into a monolith segment and spawn a voicant if the monolith hasn't had to rebuild itself in a while. This dormant voicant <br>
+                                                        block will grow back after some time. <br>
+                                                        <br>
+                                                        - While also not technically mobs, Chorus veins are tentacle-like block-built forms growing out of the floor in the melodic plexus. They are curled up with smaller veins coming off <br>
+                                                        in different directions, and these smaller veins are where chorus clots grow and can be harvested. Chorus clots pulse and emit quiet sounds that almost feel melodic in nature when <br>
+                                                        they are ready to be harvested. The stem blocks of the chorus veins can be made into purpur. <br>
+                                                        <br>
+                                                        - The ender dragon has been reworked to be a corrupted red dragon, brought back from extinction through a resurrection well. Placing 4 end crystals around the well and throwing a <br>
+                                                        red dragon egg into the ender essentia inside will summon the ender dragon, who's fight is simialr to that in vanilla, though there are no end crystals placed upon obsidian pillars. <br>
+                                                        Instead the dragon will heal by perching upon the ender essentia in the resurrection well. Upon being defeated the ender dragon will drop its head, an ender dragon egg, and an ender <br>
+                                                        dragon heart. Ender dragons still create dragon's breath as usual. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+
+                                        
+                                        <!-- Other Mechanics -->
+                                        <div>
+                                            <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('otherMechanicsText')"> 
+                                                Other Mechanics
+                                            </button> 
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <div id="otherMechanicsText" style="display: none;">
+                                                    <p class="align-left paragraph">
+                                                        The following are miscellaneous mechanics and changes related to the end: <br>
+                                                        - Falling into the ender void will cause a new damage type that results in the death message 'Player was consumed by the Ender'. <br>
+                                                        - End portal frames are now mineable and craftable with verditen. <br>
+                                                        - End portals take you to a random place in the end, creating portals to lead you home. <br>
+                                                        - There is no center end island. <br>
+                                                        - Elytras now work much slower outside of the end. <br>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+
+
+                        <!-- Development Blog End -->    
+                        <br>
+                        </div>
+                    </p>
+                </div>
+
+
+
+
+            <!-- End Side Bar Left -->    
+            </div>
+
+            
+        </div>
+    </body>
+</html>
