@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles16.css">
+        <link rel="stylesheet" href="code/styles17.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -41,8 +41,42 @@
                     <img src="images/grimblies/grimblies1.png" class="carousel-img-base carousel-img10">
                 </div>
             </div>
-            <br>
 
+
+
+            <!-- Button Row -->
+            <div class="button-row">
+            <button class="button-icon" onmousedown="soundPress()" onclick="navigate('pinned-pages.html')">
+                <img src="images/buttons/pins.png" alt="Pins"> <span class="mini"> Pinned </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="navigate('webmaster.html')">
+                <img src="images/buttons/webmasters.png" alt="Webmaster"> <span class="mini"> Webmaster </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="navigate('mods.html')">
+                <img src="images/buttons/mods.png" alt="Mods"> <span class="mini"> Mods </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="navigate('games.html')">
+                <img src="images/buttons/games.png" alt="Games"> <span class="mini"> Games </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="navigate('videos.html')">
+                <img src="images/buttons/videos.png" alt="Videos"> <span class="mini"> Videos </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('changelogText')">
+                <img src="images/buttons/changelogs.png" alt="Changelogs"> <span class="mini"> Changelogs </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('linksText')">
+                <img src="images/buttons/links.png" alt="Links"> <span class="mini"> Links </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('creditsText')">
+                <img src="images/buttons/credits.png" alt="Credits"> <span class="mini"> Credits </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="navigate('raspmary.html')">
+                <img src="images/buttons/love.png" alt="Love"> <span class="mini"> Raspmary </span>
+            </button>
+            <button class="button-icon" onmousedown="soundPress()" onclick="navigate('index.html')">
+                <img src="images/buttons/quit.png" alt="Quit"> <span class="mini"> Quit </span>
+            </button>
+            </div>
 
 
 
@@ -58,23 +92,61 @@
                     Welcome to grimbly.club! <br>
                     I'm the webmaster Baisylia (or Bailey), and this is where I reside on the web. <br>
                     <br>
-                    grimbly.club has now reached over 400 visitors! Yay! <br>
-                    I can no longer tell how many unique visitors there are because the counter I was using shut down! Yay! <br>
+                    grimbly.club has now reached over 700 visitors! Yay! <br>
                     <br>
                     This website is under construction, stay tuned! <br>
                 </p>
                 <br>
 
 
-                <!-- Credits -->
+                
+                <!-- Changelog -->
                 <div>
-                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('creditsText')"> 
-                        Credits
-                    </button> 
+                    <span id="changelogText" style="display: none;">
+                        <h2 class="align-left title">
+                        Changelog <br>
+                        </h2>
+                        <p class="align-left paragraph">
+                            Website Version: 0.21 <br> <br>
+                            - Updated home page <br>
+                            - Added button row to home page <br>
+                            - Added 10 button icons <br>
+                            - Removed buttons from sidebars <br>
+                            - Moved links to right sidebar <br>
+                            - Moved credits to right sidebar <br>
+                            - Removed directory from right sidebar <br>
+                            - Updated visitor count <br>
+                            - Added page icons to pages from the buttons row <br>
+                            - Changed Raspmary page subtitle <br>
+                            <br>
+                        </p>
+                        <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
+                            View All Changelogs
+                        </button> 
+                    </span>
                 </div>
+                <br>
+                <br>
+
+
+                <br> <br> <br> <br>
+            <!-- End Side Bar Left -->    
+            </div>
+            
+
+
+            <!-- Side Bar Right -->
+            <div class="side-bar-right">
+
+
+                
+                <!-- Credits -->
                 <div>
                     <p>
                         <div id="creditsText" style="display: none;">
+                            <h2 class="align-left title">
+                            Credits <br>
+                            </h2>
                             <p class="align-left paragraph">
                                 This website was made by me using html, css, and javascript, and is hosted on Hostinger. <br>
                                 The art was made by me using Blender, Unreal Engine, and Photoshop. <br>
@@ -91,13 +163,11 @@
 
                 <!-- Links -->
                 <div>
-                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('linksText')"> 
-                        Links
-                    </button> 
-                </div>
-                <div>
                     <p>
                         <div id="linksText" style="display: none;">
+                            <h2 class="align-left title">
+                            Links <br>
+                            </h2>
                             <p class="align-left paragraph">
                                 This website does not have any user interactivity elements, but you can contact me elsewhere! <br>
                                 I have a 
@@ -118,105 +188,6 @@
                     </p>
                 </div>
                 <br>
-
-
-                <!-- Changelog -->
-                <div>
-                    <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="textButtonPress('changelogText')"> 
-                        Changelog
-                    </button> 
-                </div>
-                <div>
-                    <span id="changelogText" style="display: none;">
-                        <p class="align-left paragraph">
-                            Website Version: 0.20 <br> <br>
-                            - Added Cooks Collection page <br>
-                            - Added End Mod page
-                            <br>
-                            <br>
-                            - Also added Raspmary page and links <br>
-                        </p>
-                        <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
-                            View All Changelogs
-                        </button> 
-                    </span>
-                </div>
-                <br>
-                <br>
-
-                
-
-                <!-- Quit -->
-                <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('index.html')"> 
-                    Quit
-                </button> 
-                <br>
-                <br>
-                <br>
-
-
-                <!-- Raspmary -->
-                <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('raspmary.html')"> 
-                    For Raspmary
-                </button> 
-
-
-                <br> <br> <br> <br>
-            <!-- End Side Bar Left -->    
-            </div>
-            
-
-
-
-            <!-- Side Bar Right -->
-            <div class="side-bar-right">
-
-
-                <!-- Directory -->
-                <h2 class="align-right title">
-                    Directory <br>
-                </h2>
-                <p class="align-right paragraph">
-                    This is an index for all the pages grimbly.club has to offer. <br>
-                    Take a look at what's being worked on and explore topics of interest.
-                </p>
-                <br>
-
-
-                <!-- Pinned Pages -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('pinned-pages.html')"> 
-                    Pinned Pages
-                </button> 
-                <br>
-
-
-                <!-- Webmaster's Page -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('webmaster.html')"> 
-                    Webmaster's Page
-                </button> 
-                <br>
-
-
-                <!-- Minecraft Mods -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('mods.html')"> 
-                    Minecraft Mods
-                </button> 
-                <br>
-
-
-                <!-- Games -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('games.html')"> 
-                    Games
-                </button> 
-                <br>
-
-
-                <!-- Videos -->
-                <button class="button-regular button-right button-style button-margined" onmousedown="soundPress()" onclick="navigate('videos.html')"> 
-                    Videos
-                </button> 
-                <br>
-
 
             <!-- End Side Bar Right -->    
             </div>
