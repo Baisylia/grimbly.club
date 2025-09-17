@@ -47,6 +47,7 @@ function textButtonPress(textId, draggable) {
     if(draggable){
       const box = document.getElementById(textId);
       box.style.display = 'block';
+      moreText.dataset.moved = "false";
       positionDraggables();
     }
   } else {
