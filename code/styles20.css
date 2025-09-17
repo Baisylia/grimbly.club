@@ -115,6 +115,17 @@ html, body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  text-shadow:
+    0 0 5px #ebb8ee,
+    0 0 10px #ebb8ee,
+    0 0 15px #ebb8ee,
+    0 0 20px #ebb8ee,
+    0 0 25px #ebb8ee,
+    0 0 30px #ebb8ee,
+    0 0 35px #ebb8ee,
+    0 0 25px #ebb8ee,
+    0 0 30px #ebb8ee,
+    0 0 35px #ebb8ee;
 }
 .title {
   color: white;
