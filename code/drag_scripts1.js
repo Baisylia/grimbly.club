@@ -1,5 +1,15 @@
 // Draggables
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
 document.querySelectorAll(".draggable").forEach((element) => {
+  const aboutDraggable = document.getElementById('aboutDraggable');
+
+  if (aboutDraggable) {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    aboutDraggable.dataset.moved = isTouchDevice ? "false" : "true";
+  }
+  
   let isDragging = false;
   let lastX = 0;
   let lastY = 0;
