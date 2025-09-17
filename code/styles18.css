@@ -111,10 +111,32 @@ html, body {
   text-align: right;
   padding-right: 40px;
 }
+.titleBlack {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
 .title {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+.paragraphBlack {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  font-weight: bold;
+  text-shadow:
+    0 0 5px #ebb8ee,
+    0 0 10px #ebb8ee,
+    0 0 15px #ebb8ee,
+    0 0 20px #ebb8ee,
+    0 0 25px #ebb8ee,
+    0 0 30px #ebb8ee,
+    0 0 35px #ebb8ee,
+    0 0 25px #ebb8ee,
+    0 0 30px #ebb8ee,
+    0 0 35px #ebb8ee;
 }
 .paragraph {
   color: white;
@@ -242,6 +264,21 @@ html, body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Draggable Styles */
+.draggable {
+  position: absolute;
+  top: 58% + 10px;
+  left: 2%;
+  cursor: grab;
+  background-image: url("../images/draggable.png");
+
+  padding: 20px 20px;
+  border: 20px solid transparent;
+  border-image: url("../images/draggable_border.png") 30 fill stretch;
+}
+
 
 
 /* Grimbly Carousel Styles */

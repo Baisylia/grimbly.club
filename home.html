@@ -84,13 +84,13 @@
                 <button class="button-icon" onmousedown="soundPress()" onclick="navigate('videos.html')">
                     <img src="images/buttons/videos.png" alt="Videos"> <span class="mini"> Videos </span>
                 </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('changelogText')">
+                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('changelogText', true)">
                     <img src="images/buttons/changelogs.png" alt="Changelogs"> <span class="mini"> Changelogs </span>
                 </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('linksText')">
+                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('linksText', true)">
                     <img src="images/buttons/links.png" alt="Links"> <span class="mini"> Links </span>
                 </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('creditsText')">
+                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('creditsText', true)">
                     <img src="images/buttons/credits.png" alt="Credits"> <span class="mini"> Credits </span>
                 </button>
                 <button class="button-icon" onmousedown="soundPress()" onclick="navigate('support.html')">
@@ -103,15 +103,13 @@
 
 
 
-            <!-- Side Bar Left -->
-            <div class="side-bar-left">
 
-
-                <!-- About -->
-                <h2 class="align-left title">
+            <!-- About -->
+            <div class="draggable" data-moved="true">
+                <h2 class="titleBlack">
                     About grimbly.club <br>
                 </h2>
-                <p class="align-left paragraph">
+                <p class="paragraphBlack">
                     Welcome to grimbly.club! <br>
                     I'm the webmaster Baisylia (or Bailey), and this is where I reside on the web. <br>
                     I am an Australian t-girl game designer / mod developer, and I am the caretaker of the grimblies here. <br>
@@ -120,14 +118,90 @@
                     This website is under construction, stay tuned! <br>
                     <img src="images/grimbly.png">
                 </p>
-                <br>
+            </div>
 
 
-                
-               
 
 
-                <br> <br> <br> <br>
+            <!-- Changelog -->
+            <div class="draggable" data-moved="false" id="changelogText" style="display: none;">
+                <h2 class="titleBlack">
+                    Changelog <br>
+                </h2>
+                <p class="paragraphBlack">
+                    Website Version: 0.24 <br> <br>
+                    - Added draggable boxes to the home page <br>
+                    - Made draggable boxes for the about section, changelog, link, and credits <br>
+                    - Made draggable boxes open and close as the old text boxes used to <br>
+                    - Made draggable boxes reset positions if not moved and if other boxes are opened <br>
+                    - Updated text colours for different use cases <br>
+                    - Added new images for draggable boxes <br>
+                    - Fixed some issues relating to draggable boxes <br>
+                    <br>
+                </p>
+                <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
+                    View All Changelogs
+                </button> 
+            </div>
+
+
+            <!-- Links -->
+            <div class="draggable" data-moved="false" id="linksText" style="display: none;">
+                <h2 class="titleBlack">
+                    Links <br>
+                </h2>
+                <p class="paragraphBlack">
+                    This website does not yet have any user interactivity elements, but you can find me elsewhere! <br>
+                    <a href="https://ko-fi.com/baisylia" target="_blank">
+                        Ko-fi
+                    </a>
+                    <br>
+                    <a href="https://www.youtube.com/channel/UCCdeoKmYPRCq-4WQcYAGAEg" target="_blank">
+                        Youtube Channel
+                    </a>
+                    <br>
+                    <a href="https://www.curseforge.com/members/baisylia/projects" target="_blank">
+                        Curseforge Page
+                    </a>
+                    <br>
+                    <a href="https://modrinth.com/user/Baisylia" target="_blank">
+                        Modrinth Page
+                    </a>
+                    <br>
+                    <a href="https://x.com/Baisylia" target="_blank">
+                        Twitter
+                    </a>
+                    <br>
+                </p>
+            </div>
+
+
+            <!-- Credits -->
+            <div class="draggable" data-moved="false" id="creditsText" style="display: none;">
+                <h2 class="titleBlack">
+                    Credits <br>
+                </h2>
+                <p class="paragraphBlack">
+                    - This website was made by me using html, css, and javascript, and is hosted on Hostinger. <br>
+                    - The art was made by me using Blender, Unreal Engine, and Photoshop. <br>
+                    - The button sounds are from
+                    <a href="https://www.zapsplat.com/sound-effect-category/button-clicks/" target="_blank">
+                        Zapsplat
+                    </a> <br>
+                    - The draggable code was assisted by
+                    <a href="https://www.youtube.com/watch?v=cNw0ySz79FI" target="_blank">
+                        this tutorial
+                    </a>
+                </p>
+            </div>
+
+
+
+            <!-- Side Bar Left -->
+            <div class="side-bar-left">
+
+
+            <br> <br> <br> <br>
             <!-- End Side Bar Left -->    
             </div>
             
@@ -135,91 +209,17 @@
 
             <!-- Side Bar Right -->
             <div class="side-bar-right">
-
-
-                
-                 <!-- Changelog -->
-                <div>
-                    <span id="changelogText" style="display: none;">
-                        <h2 class="align-left title">
-                        Changelog <br>
-                        </h2>
-                        <p class="align-left paragraph">
-                            Website Version: 0.23 <br> <br>
-                            - Modified grimbly carousel to allow grimblies to have names <br>
-                            - Added supporter grimblies <br>
-                            - Moved changelogs to the right on the home screen <br>
-                        - Updated links <br>
-                            <br>
-                        </p>
-                        <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
-                            View All Changelogs
-                        </button> 
-                    </span>
-                </div>
-                <br>
-
-                
-                <!-- Credits -->
-                <div>
-                    <p>
-                        <div id="creditsText" style="display: none;">
-                            <h2 class="align-left title">
-                            Credits <br>
-                            </h2>
-                            <p class="align-left paragraph">
-                                This website was made by me using html, css, and javascript, and is hosted on Hostinger. <br>
-                                The art was made by me using Blender, Unreal Engine, and Photoshop. <br>
-                                The button sounds are from
-                                <a href="https://www.zapsplat.com/sound-effect-category/button-clicks/" target="_blank">
-                                    Zapsplat
-                                </a>
-                            </p>
-                        </div>
-                    </p>
-                </div>
-                <br>
-
-
-                <!-- Links -->
-                <div>
-                    <p>
-                        <div id="linksText" style="display: none;">
-                            <h2 class="align-left title">
-                            Links <br>
-                            </h2>
-                            <p class="align-left paragraph">
-                                This website does not yet have any user interactivity elements, but you can find me elsewhere! <br>
-                                <a href="https://ko-fi.com/baisylia" target="_blank">
-                                    Ko-fi
-                                </a>
-                                <br>
-                                <a href="https://www.youtube.com/channel/UCCdeoKmYPRCq-4WQcYAGAEg" target="_blank">
-                                    Youtube Channel
-                                </a>
-                                <br>
-                                <a href="https://www.curseforge.com/members/baisylia/projects" target="_blank">
-                                    Curseforge Page
-                                </a>
-                                <br>
-                                <a href="https://modrinth.com/user/Baisylia" target="_blank">
-                                    Modrinth Page
-                                </a>
-                                <br>
-                                <a href="https://x.com/Baisylia" target="_blank">
-                                    Twitter
-                                </a>
-                                <br>
-                            </p>
-                        </div>
-                    </p>
-                </div>
-                <br>
+            
 
             <!-- End Side Bar Right -->    
             </div>
 
 
         </div>
+
+
+
+        <!-- Page-Specific Imports and Settings -->
+        <script src="code/drag_scripts.js"></script>
     </body>
 </html>
