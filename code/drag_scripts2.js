@@ -1,8 +1,6 @@
 // Draggables
 const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-document.querySelectorAll(".draggable").forEach((element) => {
-  const aboutDraggable = document.getElementById('aboutDraggable');
+const aboutDraggable = document.getElementById('aboutDraggable');
 
   if (aboutDraggable) {
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -10,6 +8,7 @@ document.querySelectorAll(".draggable").forEach((element) => {
     aboutDraggable.dataset.moved = isTouchDevice ? "false" : "true";
   }
   
+document.querySelectorAll(".draggable").forEach((element) => { 
   let isDragging = false;
   let lastX = 0;
   let lastY = 0;
