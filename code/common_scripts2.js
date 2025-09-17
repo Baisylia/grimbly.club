@@ -18,7 +18,7 @@ function openInNewTab(url) {
 
 
 // Position Draggables
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+const isMobile = window.innerWidth <= 750;
 function positionDraggables() {
   const draggables = document.querySelectorAll('.draggable');
   const startTop = window.innerHeight * 0.58;
@@ -29,7 +29,7 @@ function positionDraggables() {
 
   draggables.forEach(box => {
     if (box.style.display !== 'none') {
-      if (!isTouchDevice || box.dataset.moved !== "true") {
+      if (isMobile || box.dataset.moved !== "true") {
         box.style.top = `${topOffset}px`;
         box.style.right = `${rightOffset}%`;
         box.style.left = 'auto';
