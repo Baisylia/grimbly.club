@@ -18,6 +18,7 @@ function openInNewTab(url) {
 
 
 // Position Draggables
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 function positionDraggables() {
   const draggables = document.querySelectorAll('.draggable');
   const startTop = window.innerHeight * 0.58;
@@ -27,12 +28,14 @@ function positionDraggables() {
   let topOffset = startTop;
 
   draggables.forEach(box => {
-    if (box.style.display !== 'none' && box.dataset.moved !== "true") {
-      box.style.top = `${topOffset}px`;
-      box.style.right = `${rightOffset}%`;
-      box.style.left = 'auto';
+    if (box.style.display !== 'none') {
+      if (!isTouchDevice || box.dataset.moved !== "true") {
+        box.style.top = `${topOffset}px`;
+        box.style.right = `${rightOffset}%`;
+        box.style.left = 'auto';
 
-      topOffset += box.offsetHeight + spacing;
+        topOffset += box.offsetHeight + spacing;
+      }
     }
   });
 }
