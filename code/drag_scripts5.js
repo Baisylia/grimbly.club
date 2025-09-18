@@ -12,7 +12,15 @@ document.querySelectorAll(".draggable").forEach((element) => {
   element.style.cursor = "grabbing";
   document.body.style.userSelect = "none";
 
-  element.dataset.dragFrom = element.style.right ? "right" : "left";
+  const computed = window.getComputedStyle(element);
+  const left = parseInt(computed.left, 10);
+  const right = parseInt(computed.right, 10);
+
+  if (!isNaN(left) && left < window.innerWidth / 2) {
+    element.dataset.dragFrom = "left";
+  } else {
+    element.dataset.dragFrom = "right";
+  }
 
   element.dataset.moved = "true";
   positionDraggables();

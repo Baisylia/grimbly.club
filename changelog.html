@@ -4,12 +4,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles21.css">
+        <link rel="stylesheet" href="code/styles22.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
-        <script src="code/common_scripts4.js"></script>
+        <script src="code/common_scripts5.js"></script>
         
         <!-- Page-Specific Imports and Settings -->
         
@@ -35,6 +35,35 @@
             
 
             <!-- Version Info -->
+            <div class="button-center">
+                <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-26-changelogText', false)"> 
+                    Website Version: 0.26
+                </button> 
+            </div>
+            <div class="button-center">
+                <p>
+                    <span id="0-26-changelogText" style="display: none;" class="header paragraph">
+                        - Added pride flags to about section <br>
+                        - Made draggable width a percentage of the screen <br>
+                        - Made draggables show over the title button <br>
+                        - Added ability for draggables to be on the left or right <br>
+                        - Fixed left draggables not moving horizontally <br>
+                        - Added supporter grimblies <br>
+                        - Removed Supporter Page <br>
+                        - Added Supporter draggable <br>
+                        - Removed Pins Page <br>
+                        - Added Pins Row <br>
+                        - Removed Webmaster Page <br>
+                        - Added Webmaster draggable <br>
+                        - Removed grimbly.club Page <br>
+                        - Added grimbly.club draggable <br>
+                        <br>
+                    </span>
+                </p>
+            </div>
+            <br>
+
+
             <div class="button-center">
                 <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-25-changelogText', false)"> 
                     Website Version: 0.25

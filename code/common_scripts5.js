@@ -21,20 +21,35 @@ function openInNewTab(url) {
 const isMobile = window.innerWidth <= 750;
 function positionDraggables() {
   const draggables = document.querySelectorAll('.draggable');
-  const startTop = window.innerHeight * 0.45;
-  const spacing = 10;
-  const rightOffset = 2;
+  const pinRow = document.getElementById("pinRow");
+  const pinOpen = pinRow && pinRow.style.display !== "none";
 
-  let topOffset = startTop;
+  const startTop = window.innerHeight * (pinOpen ? 0.58 : 0.48);
+  const spacing = 10;
+  const sideOffset = 2;
+
+  let topRightOffset = startTop;
+  let topLeftOffset = startTop;
 
   draggables.forEach(box => {
     if (box.style.display !== 'none') {
       if (isMobile || box.dataset.moved !== "true") {
-        box.style.top = `${topOffset}px`;
-        box.style.right = `${rightOffset}%`;
-        box.style.left = 'auto';
+        if(box.dataset.side == "right") {
+          box.style.top = `${topRightOffset}px`;
+          box.style.left = 'auto';
+          box.style.right = `${sideOffset}%`;
 
-        topOffset += box.offsetHeight + spacing;
+
+          topRightOffset += box.offsetHeight + spacing;
+        }
+        if(box.dataset.side == "left") {
+          box.style.top = `${topLeftOffset}px`;
+          box.style.left = `${sideOffset}%`;
+          box.style.right = 'auto';
+
+
+          topLeftOffset += box.offsetHeight + spacing;
+        }
       }
     }
   });
