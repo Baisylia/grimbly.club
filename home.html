@@ -4,15 +4,15 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles20.css">
+        <link rel="stylesheet" href="code/styles21.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
-        <script src="code/common_scripts3.js"></script>
+        <script src="code/common_scripts4.js"></script>
         
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/home_scripts.js"></script>
+        <script src="code/home_scripts1.js"></script>
     </head>
 
     <body>
@@ -25,42 +25,49 @@
             
 
             <!-- Grimbly Carousel -->
-            <div class="carousel-wrapper">
+            <div class="grimbly-carousel">
                 <img src="images/border.png" class="carousel-border">
                 <img src="images/border_back.png" class="carousel-back">
-
-                <div class="carousel-holder">
-                    <div class="carousel-item carousel-img1">
-                        <img src="images/grimblies/grimblies10.png" class="carousel-img-base">
-                    </div>
-                    <div class="carousel-item carousel-img2">
-                        <img src="images/grimblies/grimblies9.png" class="carousel-img-base">
-                    </div>
-                    <div class="carousel-item carousel-img3">
-                        <img src="images/grimblies/grimbly_frazzelbones.png" class="carousel-img-base">
-                        <span class="carousel-caption">frazzelbones</span>
-                    </div>
-                    <div class="carousel-item carousel-img4">
-                        <img src="images/grimblies/grimblies7.png" class="carousel-img-base">
-                    </div>
-                    <div class="carousel-item carousel-img5">
-                        <img src="images/grimblies/grimbly_revinnn.png" class="carousel-img-base">
-                        <span class="carousel-caption">revinnn</span>
-                    </div>
-                    <div class="carousel-item carousel-img6">
-                        <img src="images/grimblies/grimblies5.png" class="carousel-img-base">
-                    </div>
-                    <div class="carousel-item carousel-img7">
-                        <img src="images/grimblies/grimblies4.png" class="carousel-img-base">
-                    </div>
-                    <div class="carousel-item carousel-img8">
-                        <img src="images/grimblies/grimblies3.png" class="carousel-img-base">
-                    </div>
-                    <div class="carousel-item carousel-img9">
-                        <img src="images/grimblies/grimblies6.png" class="carousel-img-base">
-                    </div>
-                    <div class="carousel-item carousel-img10">
-                        <img src="images/grimblies/grimblies1.png" class="carousel-img-base">
+                <div class="carousel-mask">
+                    <div class="carousel-track" id="grimblyTrack">
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies10.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies9.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimbly_revinnn.png">
+                            <span class="carousel-caption">revinnn</span>
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies8.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies7.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies6.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies5.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies4.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimbly_frazzelbones.png">
+                            <span class="carousel-caption">frazzelbones</span>
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies3.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies2.png">
+                        </div>
+                        <div class="carousel-grimbly-item">
+                            <img src="images/grimblies/grimblies1.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,15 +136,12 @@
                     Changelog <br>
                 </h2>
                 <p class="paragraphBlack">
-                    Website Version: 0.24 <br> <br>
-                    - Added draggable boxes to the home page <br>
-                    - Made draggable boxes for the about section, changelog, link, and credits <br>
-                    - Made draggable boxes open and close as the old text boxes used to <br>
-                    - Made draggable boxes reset positions if not moved and if other boxes are opened <br>
-                    - Updated text colours for different use cases <br>
-                    - Added new images for draggable boxes <br>
-                    - Fixed some issues relating to draggable boxes <br>
-                    - Added site properties <br>
+                    Website Version: 0.25 <br> <br>
+                    - Reworked grimbly carousel to be dynamic <br>
+                    - Put all grimblies back into the carousel <br>
+                    - Made carousel start full <br>
+                    - Shrunk carousel and button row <br>
+                    - Made aligned draggables reset when one is moved <br>
                     <br>
                 </p>
                 <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
@@ -221,6 +225,6 @@
 
 
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/drag_scripts3.js"></script>
+        <script src="code/drag_scripts4.js"></script>
     </body>
 </html>

@@ -246,9 +246,10 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1vw;
-  margin: 2vw auto;
+  margin: -2vw auto 0 auto;
   max-width: 90vw;
   padding: 0 1vw;
+  transform: scale(0.8);
 }
 .button-icon {
   display: flex;
@@ -280,7 +281,7 @@ html, body {
 /* Draggable Styles */
 .draggable {
   position: absolute;
-  top: 58% + 10px;
+  top: calc(45% + 10px);
   left: 2%;
   cursor: grab;
   background-image: url("../images/draggable.png");
@@ -291,122 +292,76 @@ html, body {
 }
 
 
-
-/* Grimbly Carousel Styles */
-.carousel-wrapper {
-  /* width: 1650px; */
-  /* height: 220px; */
+/* Carousel Styles */
+.grimbly-carousel {
+  position: relative;
+  top: -1.5vw;
   width: 90vw;
   height: 12vw;
   margin: 0 auto;
-  overflow: visible;
-  transform: scale(0.95);
-  transform-origin: center;
-  justify-content: center;
-  align-self: center;
-}
-.carousel-holder {
-  /* background-image: url("../images/border_back.png"); */
-  /* width: 1500px; */
-  /* height: 200px; */
-  width: 81.82vw;
-  height: 10.91vw;
-  top: 0.6546vw;;
-  left: 0.436vw;
   overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-  justify-content: center;
+  transform: scale(0.8);
 }
 .carousel-back {
   position: absolute;
-  /* width: 1650px; */
-  /* height: 220px; */
-  width: 90vw;
-  height: 12vw;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
   pointer-events: none;
 }
-.carousel-border {
+.carousel-mask {
   position: absolute;
-  /* width: 1650px; */
-  /* height: 220px; */
-  width: 90vw;
-  height: 12vw;
-  z-index: 1;
-  pointer-events: none;
+  top: 0;
+  left: 40px;
+  width: calc(100% - 80px);
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
 }
-.carousel-item {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  animation: carouselAnimation var(--duration) linear infinite;
-  width: 6vw;
-  text-align: center;
+.carousel-track {
+  display: flex;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  align-items: center;
 }
-.carousel-img-base {
-  display: block;
+.carousel-grimbly-item {
+  flex: 0 0 auto;
+  margin: 0 40px;
+  position: relative;
+  display: inline-block;
   width: 6vw;
   height: 6vw;
 }
+.carousel-grimbly-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 .carousel-caption {
   position: absolute;
-  bottom: -3%; 
+  bottom: 0; 
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(20%);
   font-size: 0.7vw;
   color: white;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(0,0,0,0.6);
   padding: 0.2em 0.6em;
-  border-radius: 0.3em; 
-  pointer-events: none; 
+  border-radius: 0.3em;
+  pointer-events: none;
+  white-space: nowrap;
 }
-.carousel-img1 {
-  right: var(--right1);
-  animation-delay: var(--delay1);
-}
-.carousel-img2 {
-  right: var(--right2);
-  animation-delay: var(--delay2);
-}
-.carousel-img3 {
-  right: var(--right3);
-  animation-delay: var(--delay3);
-}
-.carousel-img4 {
-  right: var(--right4);
-  animation-delay: var(--delay4);
-}
-.carousel-img5 {
-  right: var(--right5);
-  animation-delay: var(--delay5);
-}
-.carousel-img6 {
-  right: var(--right6);
-  animation-delay: var(--delay6);
-}
-.carousel-img7 {
-  right: var(--right7);
-  animation-delay: var(--delay7);
-}
-.carousel-img8 {
-  right: var(--right8);
-  animation-delay: var(--delay8);
-}
-.carousel-img9 {
-  right: var(--right9);
-  animation-delay: var(--delay9);
-}
-.carousel-img10 {
-  right: var(--right10);
-  animation-delay: var(--delay10);
-}
-@keyframes carouselAnimation {
-    0% {
-      right: calc(100% + 100px);
-    }
-    100% {
-      right: 0;
-    }
+.carousel-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
 }

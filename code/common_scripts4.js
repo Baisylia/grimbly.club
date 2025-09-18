@@ -21,7 +21,7 @@ function openInNewTab(url) {
 const isMobile = window.innerWidth <= 750;
 function positionDraggables() {
   const draggables = document.querySelectorAll('.draggable');
-  const startTop = window.innerHeight * 0.58;
+  const startTop = window.innerHeight * 0.45;
   const spacing = 10;
   const rightOffset = 2;
 

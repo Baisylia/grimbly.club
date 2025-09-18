@@ -6,14 +6,18 @@ document.querySelectorAll(".draggable").forEach((element) => {
 
   // Click Draggable
   element.addEventListener('mousedown', (event) => {
-    isDragging = true;
-    lastX = event.clientX;
-    lastY = event.clientY;
-    element.style.cursor = "grabbing";
-    document.body.style.userSelect = "none";
+  isDragging = true;
+  lastX = event.clientX;
+  lastY = event.clientY;
+  element.style.cursor = "grabbing";
+  document.body.style.userSelect = "none";
 
-    element.dataset.dragFrom = element.style.right ? "right" : "left";
-  });
+  element.dataset.dragFrom = element.style.right ? "right" : "left";
+
+  element.dataset.moved = "true";
+  positionDraggables();
+});
+
 
   // Drag Draggable
   document.addEventListener('mousemove', (event) => {
