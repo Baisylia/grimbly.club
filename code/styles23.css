@@ -284,8 +284,8 @@ html, body {
 /* Flags */
 .flag {
   flex: 0 0 auto;
-  width: 4vw;
-  height: 4vw;
+  width: 60px;
+  height: 60px;
 }
 
 
@@ -301,6 +301,17 @@ html, body {
   border: 20px solid transparent;
   border-image: url("../images/draggable_border.png") 30 fill stretch;
 }
+.non-draggable {
+  position: absolute;
+  top: calc(48% + 6px);
+  left: 2%;
+  background-image: url("../images/draggable.png");
+
+  padding: 20px 20px;
+  border: 20px solid transparent;
+  border-image: url("../images/draggable_border.png") 30 fill stretch;
+}
+
 
 
 /* Carousel Styles */
@@ -341,7 +352,7 @@ html, body {
 }
 .carousel-grimbly-item {
   flex: 0 0 auto;
-  margin: 0 40px;
+  margin: 0 4vw;
   position: relative;
   display: inline-block;
   width: 6vw;

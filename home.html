@@ -4,15 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles22.css">
+        <link rel="stylesheet" href="code/styles23.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
-        <script src="code/common_scripts5.js"></script>
         
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/home_scripts1.js"></script>
+        <script src="code/home_scripts2.js"></script>
     </head>
 
     <body>
@@ -93,6 +92,9 @@
                 <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('supportText', true)">
                     <img src="images/buttons/love.png" alt="Love"> <span class="mini"> Support </span>
                 </button>
+                <button class="button-icon" onmousedown="soundPress()" onclick="navigate('blog.html')">
+                    <img src="images/buttons/blog.png" alt="Pins"> <span class="mini"> Blogs </span>
+                </button>
                 <button class="button-icon" onmousedown="soundPress()" onclick="navigate('mods.html')">
                     <img src="images/buttons/mods.png" alt="Mods"> <span class="mini"> Mods </span>
                 </button>
@@ -165,7 +167,7 @@
 
 
             <!-- Webmaster -->
-            <div class="draggable side-bar-left" data-side="left" data-moved="false"  id="webmasterText" style="display: none;">
+            <div class="draggable side-bar-left" data-side="left" data-moved="false" id="webmasterText" style="display: none;">
                 <h2 class="titleBlack">
                     Webmaster's Pages <br>
                 </h2>
@@ -275,6 +277,12 @@
                     - Added Webmaster draggable <br>
                     - Removed grimbly.club Page <br>
                     - Added grimbly.club draggable <br>
+                    - Made gaps between grimblies in the carousel scale with the screen <br>
+                    - Made carousel speed not scale with the screen <br> 
+                    - Made flags not scale with the screen <br>
+                    - Added new row to blog menu <br>
+                    - Added non-draggables to blog menu <br>
+                    - Separated blogs into sections <br>
                     <br>
                 </p>
                 <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
@@ -337,6 +345,6 @@
 
         </div>
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/drag_scripts5.js"></script>
+        <script src="code/common_scripts6.js"></script>
     </body>
 </html>
