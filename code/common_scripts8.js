@@ -113,9 +113,9 @@ function updateSettingsRowMargin() {
     if (!settingsRow) return;
 
     if (pinRow && pinRow.style.display !== "none") {
-        settingsRow.style.marginTop = "-2.5vw";
+        settingsRow.style.marginTop = "-2vw";
     } else {
-        settingsRow.style.marginTop = "0vw";
+        settingsRow.style.marginTop = "0px";
     }
 }
 
