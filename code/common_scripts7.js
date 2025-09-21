@@ -22,10 +22,19 @@ const isMobile = window.innerWidth <= 750;
 function positionDraggables() {
   const draggables = document.querySelectorAll('.draggable, .non-draggable');
 
-  const pinRow = document.getElementById("pinRow", "blogMCRow");
+  const pinRow = document.getElementById("pinRow");
+  const blogMCRow = document.getElementById("blogMCRow");
+  const settingsRow = document.getElementById("settingsRow");
   const pinOpen = pinRow && pinRow.style.display !== "none";
+  const blogMCOpen = blogMCRow && blogMCRow.style.display !== "none";
+  const settingsOpen = settingsRow && settingsRow.style.display !== "none";
 
-  const baseTop = window.innerHeight * (pinOpen ? 0.58 : 0.48);
+  let baseTop = window.innerHeight * 0.48;
+  if (pinOpen || blogMCOpen) baseTop = window.innerHeight * 0.58;
+  if (settingsOpen && (pinOpen || blogMCOpen)) baseTop = window.innerHeight * 0.68;
+  else if (settingsOpen) baseTop = window.innerHeight * 0.58;
+
+
   const spacing = 10;
   const sideOffset = 2;
 
@@ -69,7 +78,7 @@ function textButtonPress(textId, draggable) {
   var moreText = document.getElementById(textId);
   if (moreText.style.display === "none" || moreText.style.display === "") {
   
-    if(textId === "pinRow" || textId === "blogMCRow") {
+    if(textId === "pinRow" || textId === "blogMCRow" || textId === "settingsRow") {
       moreText.style.display = "flex";
     }
     else {
@@ -92,6 +101,22 @@ function textButtonPress(textId, draggable) {
       positionDraggables();
     }
   }
+  updateSettingsRowMargin();
+}
+
+
+// Settings Row
+function updateSettingsRowMargin() {
+    const pinRow = document.getElementById("pinRow");
+    const settingsRow = document.getElementById("settingsRow");
+
+    if (!settingsRow) return;
+
+    if (pinRow && pinRow.style.display !== "none") {
+        settingsRow.style.marginTop = "-2.5vw";
+    } else {
+        settingsRow.style.marginTop = "0vw";
+    }
 }
 
 

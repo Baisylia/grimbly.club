@@ -2,8 +2,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".carousel-track");
   const items = Array.from(track.children);
+  const speedSlider = document.getElementById("speedSlider");
 
   let trackLeft = 0;
+  let speedFactor = parseInt(speedSlider.value, 10);
+
+  // Listen for Slider Changes
+  speedSlider.addEventListener("input", () => {
+    speedFactor = parseInt(speedSlider.value, 10);
+  });
 
   function getItemWidth(item) {
     const styles = window.getComputedStyle(item);
@@ -16,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const firstItem = track.firstElementChild;
     const firstItemWidth = getItemWidth(firstItem);
 
-    const speed = firstItemWidth / 75; 
+    const speed = (firstItemWidth / 75) * (speedFactor / 100);
     trackLeft -= speed;
 
     if (Math.abs(trackLeft) >= firstItemWidth) {

@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles23.css">
+        <link rel="stylesheet" href="code/styles24.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
         
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/home_scripts2.js"></script>
+        <script src="code/home_scripts3.js"></script>
     </head>
 
     <body>
@@ -113,12 +113,16 @@
                 <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('creditsText', true)">
                     <img src="images/buttons/credits.png" alt="Credits"> <span class="mini"> Credits </span>
                 </button>
+                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('settingsRow', true)">
+                    <img src="images/buttons/settings.png" alt="Settings"> <span class="mini"> Settings </span>
+                </button>
                 <button class="button-icon" onmousedown="soundPress()" onclick="navigate('index.html')">
                     <img src="images/buttons/quit.png" alt="Quit"> <span class="mini"> Quit </span>
                 </button>
             </div>
 
 
+        <div class="pin-settings-container">
             <!-- Pins Row -->
             <div class="pin-row" id="pinRow" style="display: none;">
                 <button class="button-large button-style button-margined" onmousedown="soundPress()" onclick="navigate('alternate-timeline.html')"> 
@@ -131,7 +135,16 @@
                     Upcoming Projects
                 </button> 
             </div>
-            
+
+            <!-- Settings Row -->
+            <div class="pin-row" id="settingsRow" style="display: none;">
+                <div class="slider-button">
+                    <span class="slider-label">Carousel Speed:</span>
+                    <input type="range" id="speedSlider" min="1" max="600" value="75">
+                </div>
+            </div>
+        </div>
+
 
 
             <!-- About -->
@@ -262,27 +275,10 @@
                     Changelog <br>
                 </h2>
                 <p class="paragraphBlack">
-                    Website Version: 0.26 <br> <br>
-                    - Added pride flags to about section <br>
-                    - Made draggable width a percentage of the screen <br>
-                    - Made draggables show over the title button <br>
-                    - Added ability for draggables to be on the left or right <br>
-                    - Fixed left draggables not moving horizontally <br>
-                    - Added supporter grimblies <br>
-                    - Removed Supporter Page <br>
-                    - Added Supporter draggable <br>
-                    - Removed Pins Page <br>
-                    - Added Pins Row <br>
-                    - Removed Webmaster Page <br>
-                    - Added Webmaster draggable <br>
-                    - Removed grimbly.club Page <br>
-                    - Added grimbly.club draggable <br>
-                    - Made gaps between grimblies in the carousel scale with the screen <br>
-                    - Made carousel speed not scale with the screen <br> 
-                    - Made flags not scale with the screen <br>
-                    - Added new row to blog menu <br>
-                    - Added non-draggables to blog menu <br>
-                    - Separated blogs into sections <br>
+                    Website Version: 0.27 <br> <br>
+                    - Added settings row under pin row <br>
+                    - Added slider to control grimbly carousel speed <br>
+                    - Made slider control speed linearly <br>
                     <br>
                 </p>
                 <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
@@ -345,6 +341,6 @@
 
         </div>
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/common_scripts6.js"></script>
+        <script src="code/common_scripts7.js"></script>
     </body>
 </html>
