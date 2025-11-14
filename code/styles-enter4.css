@@ -1,15 +1,11 @@
 /* Main Styles */
 html, body {
-  background-color: black;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  background-attachment: fixed;
-  background-image: url("../images/enter/colourful.gif");
-  background-size: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +13,17 @@ html, body {
 .background {
   width: 100%;
   padding: 1px;
+}
+.bg {
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/enter/colourful.gif");
+  background-repeat: repeat;
+  background-size: 30%;
+  background-attachment: fixed;
+  filter: brightness(0.2);
+  z-index: 0;
+  pointer-events: none;
 }
 
 
@@ -32,10 +39,12 @@ html, body {
 }
 .button-style:hover {
   filter: brightness(0.9);
+  transform: translateX(-50%);
 }
 .button-style:active {
-  filter: brightness(0.8);
+  filter: brightness(0.5);
   transform: scale(0.95);
+  transform: translateX(-50%);
 }
 
 .title {
@@ -102,42 +111,42 @@ html, body {
 }
 .entry-back {
   background-image: url("../images/space.png");
+  background-size: 120px;
   position: absolute;
-  /* width: 1650px; */
-  /* height: 220px; */
-  width: 70vw;
-  height: 20vw;
+  width: 26vw;
+  height: 26vw;
+  top: -5%;
+  left: 50%;
   z-index: -1;
   pointer-events: none;
-  left: 14vw;
-  top: 4vw;
+  transform: translateX(-50%);
 }
 .entry-border {
   position: absolute;
-  /* width: 1650px; */
-  /* height: 220px; */
-  width: 90vw;
-  height: 28vw;
+  width: 41.8vw;
+  height: 47.08vw;
+  top: -10%;
+  left: 50%;
   z-index: 1;
   pointer-events: none;
+  transform: translateX(-50%);
 }
 .button-enter {
-  width: 60vw;
-  height: 12vw;
-  left: 4vw;
-  top: 2vw;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-  justify-content: center;
+  position: absolute;
+  width: 20vw;
+  height: 4vw;
+  top: 30%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
 }
 .title-pic {
+  position: absolute;
   width: 14vw;
   height: 3vw;
   left: 26vw;
-  top: 2vw;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-  justify-content: center;
+  top: 10%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
 }
