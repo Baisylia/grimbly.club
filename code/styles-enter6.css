@@ -99,7 +99,7 @@ html, body {
   height: 20vw;
   left: -2vw;
   top: 4vw;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   margin: 0 auto;
   justify-content: center;
@@ -120,7 +120,7 @@ html, body {
   position: absolute;
   width: 41.8vw;
   height: 47.08vw;
-  top: -10%;
+  top: -20%;
   left: 50%;
   z-index: 1;
   pointer-events: none;
@@ -129,8 +129,8 @@ html, body {
 .button-enter {
   position: absolute;
   width: 20vw;
-  height: 4vw;
-  top: 30%;
+  height: auto;
+  top: 10%;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
@@ -138,9 +138,9 @@ html, body {
 .title-pic {
   position: absolute;
   width: 14vw;
-  height: 3vw;
+  height: auto;
   left: 26vw;
-  top: 10%;
+  top: -10%;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
@@ -148,7 +148,7 @@ html, body {
 .counter-nums {
   position: absolute;
   left: 26vw;
-  top: 57%;
+  top: 37%;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
