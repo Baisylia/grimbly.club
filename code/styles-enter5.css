@@ -80,11 +80,6 @@ html, body {
   font-weight: bold;
   font-size: 16px;
 }
-.counter-nums {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 /* Entry Styles */
@@ -146,6 +141,14 @@ html, body {
   height: 3vw;
   left: 26vw;
   top: 10%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.counter-nums {
+  position: absolute;
+  left: 26vw;
+  top: 57%;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
