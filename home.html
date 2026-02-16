@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles25.css">
+        <link rel="stylesheet" href="code/styles26.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
         
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/home_scripts3.js"></script>
+        <script src="code/home_scripts4.js"></script>
     </head>
 
     <body>
@@ -179,14 +179,14 @@
                 <button class="button-icon" onmousedown="soundPress()" onclick="navigate('blog.html')">
                     <img src="images/buttons/blog.png" alt="Pins"> <span class="mini"> Blogs </span>
                 </button>
+                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('mediaRow', true)">
+                    <img src="images/buttons/videos.png" alt="Videos"> <span class="mini"> Media I Like </span>
+                </button>
                 <button class="button-icon" onmousedown="soundPress()" onclick="navigate('mods.html')">
-                    <img src="images/buttons/mods.png" alt="Mods"> <span class="mini"> Mods </span>
+                    <img src="images/buttons/mods.png" alt="Mods"> <span class="mini"> My Mods </span>
                 </button>
                 <button class="button-icon" onmousedown="soundPress()" onclick="navigate('games.html')">
-                    <img src="images/buttons/games.png" alt="Games"> <span class="mini"> Games </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="navigate('videos.html')">
-                    <img src="images/buttons/videos.png" alt="Videos"> <span class="mini"> Videos </span>
+                    <img src="images/buttons/games.png" alt="Games"> <span class="mini"> My Games </span>
                 </button>
                 <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('changelogText', true)">
                     <img src="images/buttons/changelogs.png" alt="Changelogs"> <span class="mini"> Changelogs </span>
@@ -233,6 +233,248 @@
         </div>
 
 
+
+        <!-- Media Carousel -->
+        <div class="pin-row" id="mediaRow" style="display: none;">
+            <div class="media-carousel">
+                <img src="images/media_border.png" class="carousel-border">
+                <img src="images/scrolly.png" class="carousel-back">
+                <div class="carousel-mask">
+                    <div class="media-carousel-track" id="mediaTrack">
+                        <div class="carousel-media-item">
+                            <img src="images/medias/bloons.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Bloons TD6 <br><br>
+                                Replayability: 5 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 1 <br>
+                                My Bias: 3 <br>
+                                Total: 19/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/deltarune.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                DELTARUNE <br><br>
+                                Replayability: 3 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 4 <br>
+                                Writing & Lore: 5 <br>
+                                My Bias: 5 <br>
+                                Total: 22/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/inscryption.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Inscryption <br><br>
+                                Replayability: 3 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 5 <br>
+                                My Bias: 5 <br>
+                                Total: 23/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/lethalcompany.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Lethal Company <br><br>
+                                Replayability: 5 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 4 <br>
+                                My Bias: 5 <br>
+                                Total: 24/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/minecraft.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Minecraft <br><br>
+                                Replayability: 5 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 3 <br>
+                                My Bias: 5 <br>
+                                Total: 23/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/portal2.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Portal 2 <br><br>
+                                Replayability: 4 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 4 <br>
+                                Writing & Lore: 5 <br>
+                                My Bias: 4 <br>
+                                Total: 22/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/slimerancher2.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Slime Rancher 2 <br><br>
+                                Replayability: 5 <br>
+                                Gameplay Loop: 4 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 3 <br>
+                                My Bias: 4 <br>
+                                Total: 21/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/frontiers.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Sonic Frontiers <br><br>
+                                Replayability: 4 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 3 <br>
+                                Writing & Lore: 5 <br>
+                                My Bias: 5 <br>
+                                Total: 22/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/crossworlds.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Sonic Racing: Crossworlds <br><br>
+                                Replayability: 5 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 4 <br>
+                                Writing & Lore: 1 <br>
+                                My Bias: 5 <br>
+                                Total: 20/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/stanleyparable.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                The Stanley Parable: Ultra Deluxe <br><br>
+                                Replayability: 3 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 4 <br>
+                                Writing & Lore: 4 <br>
+                                My Bias: 4 <br>
+                                Total: 21/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/undertale.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                UNDERTALE <br><br>
+                                Replayability: 3 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 3 <br>
+                                Writing & Lore: 5 <br>
+                                My Bias: 5 <br>
+                                Total: 21/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/webfishing.png" class="carousel-media-image">
+                            <img src="images/buttons/games.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Webfishing <br><br>
+                                Replayability: 5 <br>
+                                Gameplay Loop: 5 <br>
+                                Art Style: 5 <br>
+                                Writing & Lore: 1 <br>
+                                My Bias: 4 <br>
+                                Total: 20/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/adventuretime.png" class="carousel-media-image">
+                            <img src="images/buttons/videos.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Adventure Time <br><br>
+                                Rewatchability: 5 <br>
+                                Character Writing: 4 <br>
+                                Art Style: 5 <br>
+                                Narrative & Lore: 4 <br>
+                                My Bias: 5 <br>
+                                Total: 23/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/avatar.png" class="carousel-media-image">
+                            <img src="images/buttons/videos.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Avatar: the Last Airbender <br><br>
+                                Rewatchability: 5 <br>
+                                Character Writing: 5 <br>
+                                Art Style: 5 <br>
+                                Narrative & Lore: 5 <br>
+                                My Bias: 3 <br>
+                                Total: 23/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/bfdi.png" class="carousel-media-image">
+                            <img src="images/buttons/videos.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Battle for Dream Island <br><br>
+                                Rewatchability: 5 <br>
+                                Character Writing: 4 <br>
+                                Art Style: 3 <br>
+                                Narrative & Lore: 4 <br>
+                                My Bias: 5 <br>
+                                Total: 21/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/gravityfalls.png" class="carousel-media-image">
+                            <img src="images/buttons/videos.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Grravity Falls <br><br>
+                                Rewatchability: 4 <br>
+                                Character Writing: 5 <br>
+                                Art Style: 5 <br>
+                                Narrative & Lore: 5 <br>
+                                My Bias: 5 <br>
+                                Total: 24/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/ONE.png" class="carousel-media-image">
+                            <img src="images/buttons/videos.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                ONE (HFJ) <br><br>
+                                Rewatchability: 4 <br>
+                                Character Writing: 5 <br>
+                                Art Style: 3 <br>
+                                Narrative & Lore: 5 <br>
+                                My Bias: 4 <br>
+                                Total: 21/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/owl house.png" class="carousel-media-image">
+                            <img src="images/buttons/videos.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                The Owl House <br><br>
+                                Rewatchability: 5 <br>
+                                Character Writing: 5 <br>
+                                Art Style: 5 <br>
+                                Narrative & Lore: 5 <br>
+                                My Bias: 999999 <br>
+                                Total: 25/25 </span>
+                        </div>
+                        <div class="carousel-media-item">
+                            <img src="images/medias/stevenuniverse.png" class="carousel-media-image">
+                            <img src="images/buttons/videos.png" class="carousel-media-icon">
+                            <span class="media-carousel-caption">
+                                Steven Universe <br><br>
+                                Rewatchability: 4 <br>
+                                Character Writing: 5 <br>
+                                Art Style: 5 <br>
+                                Narrative & Lore: 5 <br>
+                                My Bias: 5 <br>
+                                Total: 24/25 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        
 
             <!-- About -->
             <div class="draggable side-bar-left" data-side="left" data-moved="false" id="aboutText">
@@ -358,9 +600,13 @@
                     Changelog <br>
                 </h2>
                 <p class="paragraphBlack">
-                    Website Version: 0.30 <br> <br>
-                    - Added Grimbly Garden Page <br>
-                    - Altered listings in Games Page, Upcoming Page, and Pins Row <br>
+                    Website Version: 0.31 <br> <br>
+                    - Added Liked Media Carousel <br>
+                    - Replaced YouTube Button with Media Button <br>
+                    - Added Medias to Media Carousel <br>
+                    - Removed Videos Page <br>
+                    - Removed Interests Page <br>
+                    - Removed Interests from Blog Page <br>
                     <br>
                 </p>
                 <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
@@ -415,6 +661,10 @@
                     - The draggable code was assisted by
                     <a href="https://www.youtube.com/watch?v=cNw0ySz79FI" target="_blank">
                         this tutorial
+                    </a> <br>
+                    - The media box images were made using
+                    <a href="https://www.insofta.com/3d-cover-generator/dvd-box-cover-mockup/" target="_blank">
+                        Insofta
                     </a>
                 </p>
             </div>

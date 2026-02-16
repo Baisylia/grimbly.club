@@ -25,14 +25,17 @@ function positionDraggables() {
   const pinRow = document.getElementById("pinRow");
   const blogMCRow = document.getElementById("blogMCRow");
   const settingsRow = document.getElementById("settingsRow");
+  const mediaRow = document.getElementById("mediaRow");
   const pinOpen = pinRow && pinRow.style.display !== "none";
   const blogMCOpen = blogMCRow && blogMCRow.style.display !== "none";
   const settingsOpen = settingsRow && settingsRow.style.display !== "none";
+  const mediaOpen = mediaRow && mediaRow.style.display !== "none";
 
   let baseTop = window.innerHeight * 0.48;
   if (pinOpen || blogMCOpen) baseTop = window.innerHeight * 0.58;
   if (settingsOpen && (pinOpen || blogMCOpen)) baseTop = window.innerHeight * 0.68;
   else if (settingsOpen) baseTop = window.innerHeight * 0.58;
+  if (mediaOpen) baseTop += window.innerHeight * 0.8;
 
 
   const spacing = 10;
@@ -78,7 +81,7 @@ function textButtonPress(textId, draggable) {
   var moreText = document.getElementById(textId);
   if (moreText.style.display === "none" || moreText.style.display === "") {
   
-    if(textId === "pinRow" || textId === "blogMCRow" || textId === "settingsRow") {
+    if(textId === "pinRow" || textId === "blogMCRow" || textId === "settingsRow" || textId === "mediaRow") {
       moreText.style.display = "flex";
     }
     else {

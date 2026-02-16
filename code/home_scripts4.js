@@ -1,7 +1,7 @@
-// Carousel Animation
+// Carousel Animations
 document.addEventListener("DOMContentLoaded", () => {
+  // Grimblies
   const track = document.querySelector(".carousel-track");
-  const items = Array.from(track.children);
   const speedSlider = document.getElementById("speedSlider");
 
   let trackLeft = 0;
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return item.offsetWidth + marginLeft + marginRight;
   }
 
+  // Animate Track
   function animate() {
     const firstItem = track.firstElementChild;
     const firstItemWidth = getItemWidth(firstItem);
@@ -36,4 +37,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   animate();
+
+
+
+  // Media
+  const trackM = document.querySelector(".media-carousel-track");
+
+  let trackLeftM = 0;
+
+  // Animate Track
+  function animateM() {
+    const firstItemM = trackM.firstElementChild;
+    const firstItemWidthM = getItemWidth(firstItemM);
+
+    const speedM = ((firstItemWidthM / 75) * (speedFactor / 100)) * 0.4;
+    trackLeftM -= speedM;
+
+    if (Math.abs(trackLeftM) >= firstItemWidthM) {
+      trackM.appendChild(firstItemM);
+      trackLeftM += firstItemWidthM;
+    }
+
+    trackM.style.transform = `translateX(${trackLeftM}px)`;
+    requestAnimationFrame(animateM);
+  }
+
+  animateM();
 });
