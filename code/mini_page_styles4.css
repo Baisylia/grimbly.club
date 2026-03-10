@@ -51,7 +51,11 @@ html, body {
   font-size: 1.7vw; 
   color: #333355;
 }
-.title, .text , .note{
+.icon-text {
+  font-size: 1.7vw; 
+  color: black;
+}
+.title, .text , .note, .icon-text{
   position: relative;
   font-weight: bold;
   margin: 0;
