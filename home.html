@@ -4,695 +4,116 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/styles26.css">
+        <link rel="stylesheet" href="code/big_styles.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
-        
-        <!-- Page-Specific Imports and Settings -->
-        <script src="code/home_scripts4.js"></script>
     </head>
 
     <body>
         <div class="background">
+            
+            <!-- Grimbly Carousel -->
+            <div class="carousel-container">
+                <iframe
+                    id="carouselFrame"
+                    src="iframes/grimbly-carousel.html"
+                    style="width: 90vw; height:10vw; border: none;">
+                </iframe>
+            </div>
+
             <!-- Title -->
             <div class="title-container">
                 <img src="images/title.png" class="title-pic" onmousedown="soundPress()" onclick="navigate('home.html')">
             </div>
 
-            
+            <div class="middle-panel">
+                <!-- Frame -->
+                <div class="frame-container">
+                    <img src="images/iframe_border.png" class="panel-border">
+                    <iframe class="content-frame" src="iframes/webmaster.html"></iframe>
+                </div>
 
-            <!-- Grimbly Carousel -->
-            <div class="grimbly-carousel">
-                <img src="images/border.png" class="carousel-border">
-                <img src="images/border_back.png" class="carousel-back">
-                <div class="carousel-mask">
-                    <div class="carousel-track" id="grimblyTrack">
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly double pi.png">
-                            <span class="carousel-caption">Double Pi</span>
+                <!-- Sidebar -->
+                <div class="sidebar-container">
+                    <img src="images/scrolly.png" class="bg-image">
+                    <img src="images/sidebar_border.png" class="panel-border"> 
+
+                    <div class="sidebar">
+
+                        <!-- Speed Slider -->
+                        <div class="button-icon">
+                            <input type="range" id="speedSlider" min="1" max="600" value="75">
+                            <span class="mini">
+                                Carousel Speed
+                            </span>
                         </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly Shabbi.png">
-                            <span class="carousel-caption">Shabbi</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies10.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly crispytwig.png">
-                            <span class="carousel-caption">crispytwig</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly goose.png">
-                            <span class="carousel-caption">goose</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies9.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly meganyan.png">
-                            <span class="carousel-caption">meganyan</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly julie cool.png">
-                            <span class="carousel-caption">julie cool</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly_revinnn.png">
-                            <span class="carousel-caption">revinnn</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies8.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly ProbablyEkho.png">
-                            <span class="carousel-caption">ProbablyEkho</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly Fayranchia.png">
-                            <span class="carousel-caption">Fayranchia</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly kirati.png">
-                            <span class="carousel-caption">kirati</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies7.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly asof.png">
-                            <span class="carousel-caption">asof</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly sunny37.png">
-                            <span class="carousel-caption">sunny37</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly Crabbarition.png">
-                            <span class="carousel-caption">Crabbarition</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies6.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly skia108.png">
-                            <span class="carousel-caption">skia108</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly d rock lee.png">
-                            <span class="carousel-caption">d rock lee</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly Pitako.png">
-                            <span class="carousel-caption">Pitako</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies5.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly Gojifan.png">
-                            <span class="carousel-caption">Gojifan</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly Kelpiesaurus.png">
-                            <span class="carousel-caption">Kelpiesaurus</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly wtfC4ra.png">
-                            <span class="carousel-caption">wtfC4ra</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies4.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly_frazzelbones.png">
-                            <span class="carousel-caption">frazzelbones</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly DwellerOfDis.png">
-                            <span class="carousel-caption">DwellerOfDis</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies3.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly Bergie.png">
-                            <span class="carousel-caption">Bergie</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly maributt.png">
-                            <span class="carousel-caption">maributt</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly pyuun.png">
-                            <span class="carousel-caption">pyuun</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies2.png">
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly mintynoura.png">
-                            <span class="carousel-caption">mintynoura</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly maplesyra.png">
-                            <span class="carousel-caption">maplesyra</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimbly SCyanlight.png">
-                            <span class="carousel-caption">SCyanlight</span>
-                        </div>
-                        <div class="carousel-grimbly-item">
-                            <img src="images/grimblies/grimblies1.png">
-                        </div>
+
+                        <!-- Buttons -->
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/webmaster.html')">
+                        <img src="images/buttons/webmasters.png" alt="Webmaster">
+                        <span class="mini">Webmaster</span>
+                        </button>
+
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/support.html')">
+                        <img src="images/buttons/love.png" alt="Support">
+                        <span class="mini">Support</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/liked-media.html')">
+                        <img src="images/buttons/videos.png" alt="Media">
+                        <span class="mini">Liked Media</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/blogs/main.html')">
+                        <img src="images/buttons/blog.png" alt="Blog">
+                        <span class="mini">Blog</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/games.html')">
+                        <img src="images/buttons/games.png" alt="Games">
+                        <span class="mini">My Games</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/mods.html')">
+                        <img src="images/buttons/mods.png" alt="Mods">
+                        <span class="mini">My Mods</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/changelogs.html')">
+                        <img src="images/buttons/changelogs.png" alt="Changelogs">
+                        <span class="mini">Changelogs</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/info.html')">
+                        <img src="images/buttons/info.png" alt="Info">
+                        <span class="mini">Info</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/credits.html')">
+                        <img src="images/buttons/credits.png" alt="Credits">
+                        <span class="mini">Credits</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('iframes/links.html')">
+                        <img src="images/buttons/links.png" alt="Links">
+                        <span class="mini">My Links</span>
+                        </button>
+                        
+                        <button class="button-icon" onmousedown="soundPress()" onclick="navigate('index.html')">
+                        <img src="images/buttons/quit.png" alt="Quit">
+                        <span class="mini">Quit</span>
+                        </button>
+
                     </div>
                 </div>
             </div>
-
-
-
-            <!-- Button Row -->
-            <div class="button-row">
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('pinRow', true)">
-                    <img src="images/buttons/pins.png" alt="Pins"> <span class="mini"> Pinned </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('webmasterText', true)">
-                    <img src="images/buttons/webmasters.png" alt="Webmaster"> <span class="mini"> Webmaster </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('supportText', true)">
-                    <img src="images/buttons/love.png" alt="Love"> <span class="mini"> Support </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="navigate('blog.html')">
-                    <img src="images/buttons/blog.png" alt="Pins"> <span class="mini"> Blogs </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('mediaRow', true)">
-                    <img src="images/buttons/videos.png" alt="Videos"> <span class="mini"> Media I Like </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="navigate('mods.html')">
-                    <img src="images/buttons/mods.png" alt="Mods"> <span class="mini"> My Mods </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="navigate('games.html')">
-                    <img src="images/buttons/games.png" alt="Games"> <span class="mini"> My Games </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('changelogText', true)">
-                    <img src="images/buttons/changelogs.png" alt="Changelogs"> <span class="mini"> Changelogs </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('linksText', true)">
-                    <img src="images/buttons/links.png" alt="Links"> <span class="mini"> Links </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('creditsText', true)">
-                    <img src="images/buttons/credits.png" alt="Credits"> <span class="mini"> Credits </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="textButtonPress('settingsRow', true)">
-                    <img src="images/buttons/settings.png" alt="Settings"> <span class="mini"> Settings </span>
-                </button>
-                <button class="button-icon" onmousedown="soundPress()" onclick="navigate('index.html')">
-                    <img src="images/buttons/quit.png" alt="Quit"> <span class="mini"> Quit </span>
-                </button>
-            </div>
-
-
-        <div class="pin-settings-container">
-            <!-- Pins Row -->
-            <div class="pin-row" id="pinRow" style="display: none;">
-                <button class="button-regular button-style button-margined" onmousedown="soundPress()" onclick="navigate('grimbly-garden.html')"> 
-                    Grimbly Garden
-                </button> 
-                <button class="button-large button-style button-margined" onmousedown="soundPress()" onclick="navigate('alternate-timeline.html')"> 
-                    Minecraft 2: The Alternate Timeline
-                </button> 
-                <button class="button-regular button-style button-margined" onmousedown="soundPress()" onclick="navigate('last-card.html')"> 
-                    Last Card
-                </button> 
-                <button class="button-regular button-style button-margined" onmousedown="soundPress()" onclick="navigate('upcoming.html')"> 
-                    Upcoming Projects
-                </button> 
-            </div>
-
-            <!-- Settings Row -->
-            <div class="pin-row" id="settingsRow" style="display: none;">
-                <div class="slider-button">
-                    <span class="slider-label">Carousel Speed:</span>
-                    <input type="range" id="speedSlider" min="1" max="600" value="75">
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- Media Carousel -->
-        <div class="pin-row" id="mediaRow" style="display: none;">
-            <div class="media-carousel">
-                <img src="images/media_border.png" class="carousel-border">
-                <img src="images/scrolly.png" class="carousel-back">
-                <div class="carousel-mask">
-                    <div class="media-carousel-track" id="mediaTrack">
-                        <div class="carousel-media-item">
-                            <img src="images/medias/bloons.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Bloons TD6 <br><br>
-                                Replayability: 5 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 5 <br>
-                                Writing & Lore: 1 <br>
-                                My Bias: 3 <br>
-                                Total: 19/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/deltarune.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                DELTARUNE <br><br>
-                                Replayability: 3 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 4 <br>
-                                Writing & Lore: 5 <br>
-                                My Bias: 5 <br>
-                                Total: 22/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/inscryption.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Inscryption <br><br>
-                                Replayability: 3 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 5 <br>
-                                Writing & Lore: 5 <br>
-                                My Bias: 5 <br>
-                                Total: 23/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/lethalcompany.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Lethal Company <br><br>
-                                Replayability: 5 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 5 <br>
-                                Writing & Lore: 4 <br>
-                                My Bias: 5 <br>
-                                Total: 24/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/minecraft.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Minecraft <br><br>
-                                Replayability: 5 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 5 <br>
-                                Writing & Lore: 3 <br>
-                                My Bias: 5 <br>
-                                Total: 23/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/portal2.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Portal 2 <br><br>
-                                Replayability: 4 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 4 <br>
-                                Writing & Lore: 5 <br>
-                                My Bias: 4 <br>
-                                Total: 22/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/slimerancher2.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Slime Rancher 2 <br><br>
-                                Replayability: 5 <br>
-                                Gameplay Loop: 4 <br>
-                                Art Style: 5 <br>
-                                Writing & Lore: 3 <br>
-                                My Bias: 4 <br>
-                                Total: 21/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/frontiers.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Sonic Frontiers <br><br>
-                                Replayability: 4 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 3 <br>
-                                Writing & Lore: 5 <br>
-                                My Bias: 5 <br>
-                                Total: 22/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/crossworlds.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Sonic Racing: Crossworlds <br><br>
-                                Replayability: 5 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 4 <br>
-                                Writing & Lore: 1 <br>
-                                My Bias: 5 <br>
-                                Total: 20/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/stanleyparable.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                The Stanley Parable: Ultra Deluxe <br><br>
-                                Replayability: 3 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 4 <br>
-                                Writing & Lore: 4 <br>
-                                My Bias: 4 <br>
-                                Total: 21/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/undertale.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                UNDERTALE <br><br>
-                                Replayability: 3 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 3 <br>
-                                Writing & Lore: 5 <br>
-                                My Bias: 5 <br>
-                                Total: 21/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/webfishing.png" class="carousel-media-image">
-                            <img src="images/buttons/games.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Webfishing <br><br>
-                                Replayability: 5 <br>
-                                Gameplay Loop: 5 <br>
-                                Art Style: 5 <br>
-                                Writing & Lore: 1 <br>
-                                My Bias: 4 <br>
-                                Total: 20/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/adventuretime.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Adventure Time <br><br>
-                                Rewatchability: 5 <br>
-                                Character Writing: 4 <br>
-                                Art Style: 5 <br>
-                                Narrative & Lore: 4 <br>
-                                My Bias: 5 <br>
-                                Total: 23/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/avatar.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Avatar: the Last Airbender <br><br>
-                                Rewatchability: 5 <br>
-                                Character Writing: 5 <br>
-                                Art Style: 5 <br>
-                                Narrative & Lore: 5 <br>
-                                My Bias: 3 <br>
-                                Total: 23/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/bfdi.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Battle for Dream Island <br><br>
-                                Rewatchability: 5 <br>
-                                Character Writing: 4 <br>
-                                Art Style: 3 <br>
-                                Narrative & Lore: 4 <br>
-                                My Bias: 5 <br>
-                                Total: 21/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/ben10.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Ben 10: Omniverse <br><br>
-                                Rewatchability: 5 <br>
-                                Character Writing: 4 <br>
-                                Art Style: 5 <br>
-                                Narrative & Lore: 4 <br>
-                                My Bias: 4 <br>
-                                Total: 22/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/gravityfalls.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Gravity Falls <br><br>
-                                Rewatchability: 4 <br>
-                                Character Writing: 5 <br>
-                                Art Style: 5 <br>
-                                Narrative & Lore: 5 <br>
-                                My Bias: 4 <br>
-                                Total: 23/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/ONE.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                ONE (HFJ) <br><br>
-                                Rewatchability: 4 <br>
-                                Character Writing: 5 <br>
-                                Art Style: 3 <br>
-                                Narrative & Lore: 5 <br>
-                                My Bias: 4 <br>
-                                Total: 21/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/owl house.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                The Owl House <br><br>
-                                Rewatchability: 5 <br>
-                                Character Writing: 5 <br>
-                                Art Style: 5 <br>
-                                Narrative & Lore: 5 <br>
-                                My Bias: 999999 <br>
-                                Total: 25/25 </span>
-                        </div>
-                        <div class="carousel-media-item">
-                            <img src="images/medias/stevenuniverse.png" class="carousel-media-image">
-                            <img src="images/buttons/videos.png" class="carousel-media-icon">
-                            <span class="media-carousel-caption">
-                                Steven Universe <br><br>
-                                Rewatchability: 4 <br>
-                                Character Writing: 5 <br>
-                                Art Style: 5 <br>
-                                Narrative & Lore: 5 <br>
-                                My Bias: 5 <br>
-                                Total: 24/25 </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    
-
-        
-
-            <!-- About -->
-            <div class="draggable side-bar-left" data-side="left" data-moved="false" id="aboutText">
-                <div class="about-content">
-                    <img src="images/delilah.gif" class="little-pic">
-                    <h2 class="titleBlack">
-                        Welcome to grimbly.club! <br>
-                    </h2>
-                    <img src="images/grimbly.png" class="little-pic">
-                </div>
-                <p class="paragraphBlack">
-                    I'm the webmaster Baisylia (or Bailey), and this is where I reside on the web.
-                    Thank you for stopping by! <br>
-                    I am an Australian game designer / mod developer, and I am the caretaker of the grimblies here. <br>
-                    This site acts as a portfolio, a way to express myself online without icky social media sites, 
-                    and a portal for all of my projects and concepts. <br>
-                    <br>
-                    <img src="images/flags/pride.gif" class="flag">
-                    <img src="images/flags/transgender.gif" class="flag">
-                    <img src="images/flags/lesbian.gif" class="flag">
-                    <!-- <img src="images/flags/biseual.gif" class="flag"> -->
-                    <img src="images/flags/transfem.gif" class="flag">
-                    <!-- <img src="images/flags/transfem sapphic bdsm.gif" class="flag"> -->
-                    <img src="images/flags/demisexual.gif" class="flag">
-                    <!-- <img src="images/flags/demiromantic.gif" class="flag"> -->
-                    <img src="images/flags/catgender.gif" class="flag">
-                    <img src="images/flags/autism.gif" class="flag">
-                    <img src="images/flags/amy rose.gif" class="flag">
-                    <br>
-                    <br>
-                    grimbly.club has now reached over 1000 visitors! Yay! <br>
-                    This website is under construction, stay tuned! <br>
-                </p>
-            </div>
-
-
-            <!-- Webmaster -->
-            <div class="draggable side-bar-left" data-side="left" data-moved="false" id="webmasterText" style="display: none;">
-                <h2 class="titleBlack">
-                    Webmaster's Pages <br>
-                </h2>
-                <p class="paragraphBlack">
-                    For more information about me and grimbly.club, you can check out the following pages. <br>
-                    In theses you can see what I'm interested in, the projects I'm working on, and my personal blog. <br>
-                    Other pages I find interesting can be found in the pinned tabs. <br>
-                    <br>
-                    <button class="button-regular button-left button-style button-margined" onmousedown="soundPress()" onclick="textButtonPress('grimblyClubText', true)">
-                        grimbly.club
-                    </button> 
-                    <br>
-                    <button class="button-regular button-left button-style button-margined" onmousedown="soundPress()" onclick="navigate('upcoming.html')"> 
-                        Upcoming Projects
-                    </button> 
-                    <br>
-                    <button class="button-regular button-left button-style button-margined" onmousedown="soundPress()" onclick="navigate('blog.html')"> 
-                        Blog
-                    </button> 
-                    <br>
-                    <br>
-                </p>
-            </div>
-
-
-
-
-            <!-- Support -->
-            <div class="draggable side-bar-right" data-side="right" data-moved="false" id="supportText" style="display: none;">
-                <h2 class="titleBlack">
-                    Support the Grimblies <br>
-                </h2>
-                <p class="paragraphBlack">
-                    My fiancée 
-                    <a onclick="navigate('raspmary.html')"> 
-                        Raspmary,
-                    </a> 
-                    known from the hit modpack 
-                    <a href="https://www.curseforge.com/minecraft/modpacks/raspberry-flavoured" target="_blank">
-                        Raspberry Flavoured
-                    </a>
-                     and her
-                     <a href="https://www.youtube.com/watch?v=7qLZFNoMrcE" target="_blank">
-                         great music,
-                     </a>
-                     is currently living in Turkey. <br>
-                     Moving her to Australia to live safely and freely with me is proving to be quite the task, with many threats and a lot of expenses. <br>
-                    All donations to me and grimbly.club go directly to this effort, so any support no matter the size is greatly appreciated! <br>
-                </p>
-                <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="openInNewTab('https://ko-fi.com/baisylia')""> 
-                    Ko-fi
-                </button> 
-            </div>
-
-
-            <!-- Grimbly Club -->
-            <div class="draggable side-bar-right" data-side="right" data-moved="false" id="grimblyClubText" style="display: none;">
-                <h2 class="titleBlack">
-                    grimbly.club Info <br>
-                </h2>
-                <p class="paragraphBlack">
-                    The modern internet is cold, unfeeling, boring, uninspiring, predatory, based around corporate
-                    monetization, and full of ads and AI slop. Most people use the popular social media sites as 
-                    their homes on the web, but I find the customisation to be lacking, and frankly they feel 
-                    pretty dystopian. <br>
-                    <br>
-                    I created grimbly.club to be more like the web of old, where people would make their own custom 
-                    websites and decorate them however they wanted. I believe that everyone should have their own 
-                    website, as they are a great way to express yourself online without the confines of social media. <br>
-                    <br>
-                    The idea of grimblies originated in a card game concept I made in 2021. I re-used them in 
-                    <a href='grimbly-schmeggle.html' target="_blank">
-                        Grimbly Schmeggle,
-                    </a>
-                    a game I worked on for a group project in 2022. I wasn't satisfied with their usage in this game, 
-                    as I felt as though they had much more potential. This is why I made grimblies the mascots for 
-                    my website. The grimblies are going to return once more in my new game Grimbly Garden.
-                </p>
-            </div>
-
-
-            <!-- Changelog -->
-            <div class="draggable side-bar-right" data-side="right" data-moved="false" id="changelogText" style="display: none;">
-                <h2 class="titleBlack">
-                    Changelog <br>
-                </h2>
-                <p class="paragraphBlack">
-                    Website Version: 0.31 <br> <br>
-                    - Added Liked Media Carousel <br>
-                    - Replaced YouTube Button with Media Button <br>
-                    - Added Medias to Media Carousel <br>
-                    - Removed Videos Page <br>
-                    - Removed Interests Page <br>
-                    - Removed Interests from Blog Page <br>
-                    <br>
-                </p>
-                <button class="button-regular button-left button-style" onmousedown="soundPress()" onclick="navigate('changelog.html')"> 
-                    View All Changelogs
-                </button> 
-            </div>
-
-
-            <!-- Links -->
-            <div class="draggable side-bar-right" data-side="right" data-moved="false" id="linksText" style="display: none;">
-                <h2 class="titleBlack">
-                    Links <br>
-                </h2>
-                <p class="paragraphBlack">
-                    This website does not yet have any user interactivity elements, but you can find me elsewhere! <br>
-                    <a href="https://ko-fi.com/baisylia" target="_blank">
-                        Ko-fi
-                    </a>
-                    <br>
-                    <a href="https://www.youtube.com/channel/UCCdeoKmYPRCq-4WQcYAGAEg" target="_blank">
-                        Youtube Channel
-                    </a>
-                    <br>
-                    <a href="https://www.curseforge.com/members/baisylia/projects" target="_blank">
-                        Curseforge Page
-                    </a>
-                    <br>
-                    <a href="https://modrinth.com/user/Baisylia" target="_blank">
-                        Modrinth Page
-                    </a>
-                    <br>
-                    <a href="https://x.com/Baisylia" target="_blank">
-                        Twitter
-                    </a>
-                    <br>
-                </p>
-            </div>
-
-
-            <!-- Credits -->
-            <div class="draggable side-bar-right" data-side="right" data-moved="false" id="creditsText" style="display: none;">
-                <h2 class="titleBlack">
-                    Credits <br>
-                </h2>
-                <p class="paragraphBlack">
-                    - This website was made by me using html, css, and javascript, and is hosted on Hostinger. <br>
-                    - The art was made by me using Blender, Unreal Engine, and Photoshop. <br>
-                    - The button sounds are from
-                    <a href="https://www.zapsplat.com/sound-effect-category/button-clicks/" target="_blank">
-                        Zapsplat
-                    </a> <br>
-                    - The draggable code was assisted by
-                    <a href="https://www.youtube.com/watch?v=cNw0ySz79FI" target="_blank">
-                        this tutorial
-                    </a> <br>
-                    - The media box images were made using
-                    <a href="https://www.insofta.com/3d-cover-generator/dvd-box-cover-mockup/" target="_blank">
-                        Insofta
-                    </a>
-                </p>
-            </div>
-
-
+            <br>
+            <br>
 
         </div>
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/common_scripts9.js"></script>
+        <script src="code/big_script.js"></script>
     </body>
 </html>

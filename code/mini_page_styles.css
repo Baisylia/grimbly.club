@@ -1,0 +1,207 @@
+html, body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  background-image: url("../images/draggable.png");
+  background-size: 50vw;
+}
+@-moz-document url-prefix() { /* Firefox */
+  html, body {
+    scrollbar-width: thin;
+    scrollbar-color: #778899 #333355; 
+  }
+}
+.background {
+  width: 100%;
+  padding: 1px;
+  box-sizing: border-box;
+}
+.hidden {
+  visibility: hidden;
+}
+
+/* Border */
+.border {
+  padding: 5vh 5vw;
+}
+.flexy {
+  display: flex;
+  gap: 1vw;  
+  justify-content: center; 
+  flex-wrap: wrap; 
+  align-items: center;
+  text-align: center;
+}
+
+/* Text */
+.text {
+  font-size: 16px; 
+  color: black;
+}
+.title {
+  font-size: 25px; 
+  color: black;
+}
+.note {
+  font-size: 13px; 
+  color: #333355;
+}
+.title, .text , .note{
+  position: relative;
+  font-weight: bold;
+  margin: 0;
+  text-shadow:
+    0 0 5px #ebb8ee,
+    0 0 10px #ebb8ee,
+    0 0 15px #ebb8ee,
+    0 0 20px #ebb8ee,
+    0 0 25px #ebb8ee,
+    0 0 30px #ebb8ee,
+    0 0 35px #ebb8ee;
+}
+
+/* Little Images */
+.little-pic {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+/* Button Icons */
+.button-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: 10vw;
+}
+.button-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.button-row {
+    display: flex;
+    gap: 3vw;  
+    justify-content: center; 
+    align-items: left;
+    flex-wrap: wrap; 
+}
+
+/* Flags */
+.flag-row {
+    display: flex;
+    gap: 1.5vw; 
+    margin-top: 1vw;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+.flag-row img { 
+    height:48px; 
+}
+
+/* Button Styles */
+.button-regular{
+  height: 80px;
+  width: 211px;
+  background-image: url("../images/button.png");
+}
+.button-large{
+  height: 80px;
+  width: 333px;
+  background-image: url("../images/button_large.png");
+}
+.button-small{
+  height: 80px;
+  width: 89px;
+  background-image: url("../images/button_small.png");
+}
+.button-left{
+  position: relative;
+  left: 40px;
+}
+.button-right{
+  position: relative;
+  right: 40px;
+  float: right;
+  margin-left: 200px; 
+}
+.button-center {
+  display: flex;
+  justify-content: center;
+}
+.button-margined {
+  margin-bottom: 35px; 
+}
+.button-style {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 20px;
+  transition: 0s;
+  overflow: visible;
+  line-height: 85px;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.button-style:hover {
+  filter: brightness(0.9);
+}
+.button-style:active {
+  filter: brightness(0.8);
+  transform: scale(0.95);
+}
+.quit-button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 999;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-track {
+  background-size: cover;
+}
+body::-webkit-scrollbar-thumb {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  min-height: 40px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.1);
+}
+body::-webkit-scrollbar-track:vertical {
+  background-image: url("../images/scroll_back_up.png");
+  background-size: 100% 100%;
+}
+body::-webkit-scrollbar-track:horizontal {
+  background-image: url("../images/scroll_back.png");
+  background-size: 100% 100%;
+}
+body::-webkit-scrollbar-thumb:vertical {
+  background-image: url("../images/thumb_up.png");
+  background-size: 100% 100%;
+}
+body::-webkit-scrollbar-thumb:horizontal {
+  background-image: url("../images/thumb.png");
+  background-size: 100% 100%;
+}
+body::-webkit-scrollbar-corner {
+  background: #333355;
+}
