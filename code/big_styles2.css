@@ -7,7 +7,7 @@ html, body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   background-attachment: fixed;
-  background-image: url("images/space.png");
+  background-image: url("../images/space.png");
 }
 .background {
   width: 100%;
@@ -200,19 +200,19 @@ html, body {
   filter: brightness(1.1);
 }
 .sidebar::-webkit-scrollbar-track:vertical {
-  background-image: url("images/scroll_back_up.png");
+  background-image: url("../images/scroll_back_up.png");
   background-size: 100% 100%;
 }
 .sidebar::-webkit-scrollbar-track:horizontal {
-  background-image: url("images/scroll_back.png");
+  background-image: url("../images/scroll_back.png");
   background-size: 100% 100%;
 }
 .sidebar::-webkit-scrollbar-thumb:vertical {
-  background-image: url("images/thumb_up.png");
+  background-image: url("../images/thumb_up.png");
   background-size: 100% 100%;
 }
 .sidebar::-webkit-scrollbar-thumb:horizontal {
-  background-image: url("images/thumb.png");
+  background-image: url("../images/thumb.png");
   background-size: 100% 100%;
 }
 .sidebar::-webkit-scrollbar-corner {
@@ -228,7 +228,7 @@ html, body {
 }
 #speedSlider::-webkit-slider-runnable-track {
   height: 16px;
-  background-image: url("images/scroll_back.png");
+  background-image: url("../images/scroll_back.png");
   background-size: 100% 100%;
   border-radius: 4px;
 }
@@ -237,7 +237,7 @@ html, body {
   appearance: none;
   width: 15px;
   height: 15px;
-  background-image: url("images/thumb_small.png");
+  background-image: url("../images/thumb_small.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -245,13 +245,13 @@ html, body {
 }
 #speedSlider::-moz-range-track { /* Firefox */
   height: 16px;
-  background-image: url("images/scroll_back.png");
+  background-image: url("../images/scroll_back.png");
   background-size: 100% 100%;
 }
 #speedSlider::-moz-range-thumb { /* Firefox */
   width: 15px;
   height: 15px;
-  background-image: url("images/thumb_small.png");
+  background-image: url("../images/thumb_small.png");
   background-size: contain;
   background-repeat: no-repeat;
   border: none;

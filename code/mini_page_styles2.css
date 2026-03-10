@@ -7,7 +7,7 @@ html, body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   background-attachment: fixed;
-  background-image: url("images/draggable.png");
+  background-image: url("../images/draggable.png");
   background-size: 50vw;
 }
 @-moz-document url-prefix() { /* Firefox */
@@ -114,17 +114,17 @@ html, body {
 .button-regular{
   height: 80px;
   width: 211px;
-  background-image: url("images/button.png");
+  background-image: url("../images/button.png");
 }
 .button-large{
   height: 80px;
   width: 333px;
-  background-image: url("images/button_large.png");
+  background-image: url("../images/button_large.png");
 }
 .button-small{
   height: 80px;
   width: 89px;
-  background-image: url("images/button_small.png");
+  background-image: url("../images/button_small.png");
 }
 .button-left{
   position: relative;
@@ -187,19 +187,19 @@ body::-webkit-scrollbar-thumb:hover {
   filter: brightness(1.1);
 }
 body::-webkit-scrollbar-track:vertical {
-  background-image: url("images/scroll_back_up.png");
+  background-image: url("../images/scroll_back_up.png");
   background-size: 100% 100%;
 }
 body::-webkit-scrollbar-track:horizontal {
-  background-image: url("images/scroll_back.png");
+  background-image: url("../images/scroll_back.png");
   background-size: 100% 100%;
 }
 body::-webkit-scrollbar-thumb:vertical {
-  background-image: url("images/thumb_up.png");
+  background-image: url("../images/thumb_up.png");
   background-size: 100% 100%;
 }
 body::-webkit-scrollbar-thumb:horizontal {
-  background-image: url("images/thumb.png");
+  background-image: url("../images/thumb.png");
   background-size: 100% 100%;
 }
 body::-webkit-scrollbar-corner {
