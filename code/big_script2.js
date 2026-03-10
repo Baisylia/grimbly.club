@@ -10,6 +10,18 @@ function soundPress() {
   sound.play();
 }
 
+// Navigate
+function navigate(page) {
+  setTimeout(() => {
+    window.location.href = page;
+  }, 100);
+}
+
+// Open New Tab
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+}
+
 // Speed Slider
 document.addEventListener("DOMContentLoaded", () => {
 
