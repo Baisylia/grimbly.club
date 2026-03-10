@@ -87,6 +87,7 @@ html, body {
     cursor: pointer;
     flex: 0 0 auto;
     width: 10vw;
+    gap: 1vw;
 }
 .button-icon img {
     width: 100%;
