@@ -17,7 +17,7 @@ html, body {
 .bg {
   position: fixed;
   inset: 0;
-  background-image: url("images/enter/colourful.gif");
+  background-image: url("../images/enter/colourful.gif");
   background-repeat: repeat;
   background-size: 30%;
   background-attachment: fixed;
@@ -59,7 +59,7 @@ html, body {
 .counter-regular{
   height: 80px;
   width: 211px;
-  background-image: url("images/button.png");
+  background-image: url("../images/button.png");
 }
 .counter-center {
   display: flex;
@@ -105,7 +105,7 @@ html, body {
   justify-content: center;
 }
 .entry-back {
-  background-image: url("images/space.png");
+  background-image: url("../images/space.png");
   background-size: 120px;
   position: absolute;
   width: 26vw;
