@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/big_styles3.css">
+        <link rel="stylesheet" href="code/big_styles4.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
@@ -13,107 +13,121 @@
 
     <body>
         <div class="background">
-            
-            <!-- Grimbly Carousel -->
-            <div class="carousel-container">
-                <iframe
-                    id="carouselFrame"
-                    src="grimbly-carousel.html"
-                    style="width: 90vw; height:10vw; border: none;">
-                </iframe>
-            </div>
 
-            <!-- Title -->
-            <div class="title-container">
-                <img src="images/title.png" class="title-pic" onmousedown="soundPress()" onclick="navigate('home.html')">
-            </div>
+            <div class="page-layout">
+                <!-- Left Ads -->
+                <div id="leftAds" class="ad-column-left">
 
-            <div class="middle-panel">
-                <!-- Frame -->
-                <div class="frame-container">
-                    <img src="images/iframe_border.png" class="panel-border">
-                    <iframe class="content-frame" src="webmaster.html"></iframe>
                 </div>
 
-                <!-- Sidebar -->
-                <div class="sidebar-container">
-                    <img src="images/scrolly.png" class="bg-image">
-                    <img src="images/sidebar_border.png" class="panel-border"> 
+                <div class="main-panel">
+                    <!-- Grimbly Carousel -->
+                    <div class="carousel-container">
+                        <iframe
+                            id="carouselFrame"
+                            src="grimbly-carousel.html"
+                            style="width: 90vw; height:10vw; border: none;">
+                        </iframe>
+                    </div>
 
-                    <div class="sidebar">
+                    <!-- Title -->
+                    <div class="title-container">
+                        <img src="images/title.png" class="title-pic" onmousedown="soundPress()" onclick="navigate('home.html')">
+                    </div>
 
-                        <!-- Speed Slider -->
-                        <div class="button-icon">
-                            <input type="range" id="speedSlider" min="1" max="600" value="75">
-                            <span class="mini">
-                                Carousel Speed
-                            </span>
+                    <div class="middle-panel">
+                        <!-- Frame -->
+                        <div class="frame-container">
+                            <img src="images/iframe_border.png" class="panel-border">
+                            <iframe class="content-frame" src="webmaster.html"></iframe>
                         </div>
 
-                        <!-- Buttons -->
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('webmaster.html')">
-                        <img src="images/buttons/webmasters.png" alt="Webmaster">
-                        <span class="mini">Webmaster</span>
-                        </button>
+                        <!-- Sidebar -->
+                        <div class="sidebar-container">
+                            <img src="images/scrolly.png" class="bg-image">
+                            <img src="images/sidebar_border.png" class="panel-border"> 
 
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('support.html')">
-                        <img src="images/buttons/love.png" alt="Support">
-                        <span class="mini">Support</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('liked-media.html')">
-                        <img src="images/buttons/videos.png" alt="Media">
-                        <span class="mini">Liked Media</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('blog-main.html')">
-                        <img src="images/buttons/blog.png" alt="Blog">
-                        <span class="mini">Blog</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('games.html')">
-                        <img src="images/buttons/games.png" alt="Games">
-                        <span class="mini">My Games</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('mods.html')">
-                        <img src="images/buttons/mods.png" alt="Mods">
-                        <span class="mini">My Mods</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('changelogs.html')">
-                        <img src="images/buttons/changelogs.png" alt="Changelogs">
-                        <span class="mini">Changelogs</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('info.html')">
-                        <img src="images/buttons/info.png" alt="Info">
-                        <span class="mini">Info</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('credits.html')">
-                        <img src="images/buttons/credits.png" alt="Credits">
-                        <span class="mini">Credits</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('links.html')">
-                        <img src="images/buttons/links.png" alt="Links">
-                        <span class="mini">My Links</span>
-                        </button>
-                        
-                        <button class="button-icon" onmousedown="soundPress()" onclick="navigate('index.html')">
-                        <img src="images/buttons/quit.png" alt="Quit">
-                        <span class="mini">Quit</span>
-                        </button>
+                            <div class="sidebar">
 
+                                <!-- Speed Slider -->
+                                <div class="button-icon">
+                                    <input type="range" id="speedSlider" min="1" max="600" value="75">
+                                    <span class="mini">
+                                        Carousel Speed
+                                    </span>
+                                </div>
+
+                                <!-- Buttons -->
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('webmaster.html')">
+                                <img src="images/buttons/webmasters.png" alt="Webmaster">
+                                <span class="mini">Webmaster</span>
+                                </button>
+
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('support.html')">
+                                <img src="images/buttons/love.png" alt="Support">
+                                <span class="mini">Support</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('liked-media.html')">
+                                <img src="images/buttons/videos.png" alt="Media">
+                                <span class="mini">Liked Media</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('blog-main.html')">
+                                <img src="images/buttons/blog.png" alt="Blog">
+                                <span class="mini">Blog</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('games.html')">
+                                <img src="images/buttons/games.png" alt="Games">
+                                <span class="mini">My Games</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('mods.html')">
+                                <img src="images/buttons/mods.png" alt="Mods">
+                                <span class="mini">My Mods</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('changelogs.html')">
+                                <img src="images/buttons/changelogs.png" alt="Changelogs">
+                                <span class="mini">Changelogs</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('info.html')">
+                                <img src="images/buttons/info.png" alt="Info">
+                                <span class="mini">Info</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('credits.html')">
+                                <img src="images/buttons/credits.png" alt="Credits">
+                                <span class="mini">Credits</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="loadPage('links.html')">
+                                <img src="images/buttons/links.png" alt="Links">
+                                <span class="mini">My Links</span>
+                                </button>
+                                
+                                <button class="button-icon" onmousedown="soundPress()" onclick="navigate('index.html')">
+                                <img src="images/buttons/quit.png" alt="Quit">
+                                <span class="mini">Quit</span>
+                                </button>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Right Ads -->
+                <div id="rightAds" class="ad-column-right">
+
+                </div>
+
             </div>
             <br>
             <br>
-
         </div>
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/big_script2.js"></script>
+        <script src="code/big_script3.js"></script>
     </body>
 </html>
