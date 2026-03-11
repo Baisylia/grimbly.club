@@ -257,7 +257,7 @@ html, body {
   border: none;
 }
 
-/* Ads */
+/* Cool Images */
 .page-layout {
   display: flex;
   justify-content: center;
@@ -269,7 +269,7 @@ html, body {
   padding: 1vw;
   box-sizing: border-box;
 }
-#ad-left, .ad-column-left, #ad-right, .ad-column-right {
+#coolimage-left, .coolimage-column-left, #coolimage-right, .coolimage-column-right {
   top: 1.5vw;
   width: 9vw; 
   height: 100vh;
@@ -281,36 +281,36 @@ html, body {
   box-sizing: border-box;
   z-index: 10;
 }
-#ad-left, .ad-column-left {
+#coolimage-left, .coolimage-column-left {
   left: 0;
 }
-#ad-right, .ad-column-right {
+#coolimage-right, .coolimage-column-right {
   right: 0;
 }
-.fake-ad {
+.fake-coolimage {
   cursor: pointer;
   width: 100%;
   transition: opacity 0.4s, transform 0.2s;
 }
-.fake-ad:hover {
+.fake-coolimage:hover {
   filter: brightness(0.9);
 }
-.fake-ad:active {
+.fake-coolimage:active {
   transform: scale(0.98);
 }
-.ad-column-left .ad-normal {
+.coolimage-column-left .coolimage-normal {
   transform: scaleX(2) scaleY(2); 
   transform-origin: left top;
 }
-.ad-column-left .ad-tall {
+.coolimage-column-left .coolimage-tall {
   transform: scaleX(1) scaleY(1);
   transform-origin: left top;
 }
-.ad-column-right .ad-normal {
+.coolimage-column-right .coolimage-normal {
   transform: scaleX(2) scaleY(2); 
   transform-origin: top right;
 }
-.ad-column-right .ad-tall {
+.coolimage-column-right .coolimage-tall {
   transform: scaleX(1) scaleY(1);  
   transform-origin: top right;     
 }

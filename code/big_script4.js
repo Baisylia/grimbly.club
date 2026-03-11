@@ -45,122 +45,122 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// Fake Ads
-const adNull = 
+// Cool Images
+const coolimageNull = 
 {
-    image: "images/ads/null.png",
+    image: "images/coolimages/null.png",
     type: "external",
     target: ""
 }
 
-const adTallNull = 
+const coolimageTallNull = 
 {
-    image: "images/ads/nulltall.png",
+    image: "images/coolimages/nulltall.png",
     type: "external",
     target: ""
 }
 
-const ads = [
+const coolimages = [
   {
-    image: "images/ads/moss.png",
+    image: "images/coolimages/moss.png",
     type: "external",
     target: "https://youtu.be/7qLZFNoMrcE?si=PTY89XVwvluScrNh"
   },
   {
-    image: "images/ads/bubbletransformer.png",
+    image: "images/coolimages/bubbletransformer.png",
     type: "iframe",
     target: "bfdi-cards.html"
   },
   {
-    image: "images/ads/nonslipshoessoha.png",
+    image: "images/coolimages/nonslipshoessoha.png",
     type: "iframe",
     target: "bfdi-cards.html"
   },
   {
-    image: "images/ads/grimblygardenfree.png",
+    image: "images/coolimages/grimblygardenfree.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/makeyoucrumb.png",
+    image: "images/coolimages/makeyoucrumb.png",
     type: "external",
     target: "https://minecraft.wiki/w/Cookie"
   },
   {
-    image: "images/ads/revolutionaryearmuffs.png",
+    image: "images/coolimages/revolutionaryearmuffs.png",
     type: "iframe",
     target: "bfdi-cards.html"
   },
   {
-    image: "images/ads/clickthisad.png",
+    image: "images/coolimages/clickthiscoolimage.png",
     type: "external",
     target: "https://ko-fi.com/baisylia"
   },
   {
-    image: "images/ads/thiswillkillyou.png",
+    image: "images/coolimages/thiswillkillyou.png",
     type: "external",
     target: "https://ko-fi.com/baisylia"
   },
   {
-    image: "images/ads/haveyouseenher.png",
+    image: "images/coolimages/haveyouseenher.png",
     type: "external",
     target: "https://ko-fi.com/baisylia"
   },
   {
-    image: "images/ads/9of10doctors.png",
+    image: "images/coolimages/9of10doctors.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/1of10doctors.png",
+    image: "images/coolimages/1of10doctors.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/revolutionaryheadphones.png",
+    image: "images/coolimages/revolutionaryheadphones.png",
     type: "iframe",
     target: "bfdi-cards.html"
   }
 ];
 
-const adsTall = [
+const coolimagesTall = [
   {
-    image: "images/ads/singlegrimblies1.png",
+    image: "images/coolimages/singlegrimblies1.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/singlegrimblies2.png",
+    image: "images/coolimages/singlegrimblies2.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/singlegrimblies3.png",
+    image: "images/coolimages/singlegrimblies3.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/singlegrimblies4.png",
+    image: "images/coolimages/singlegrimblies4.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/singlegrimblies5.png",
+    image: "images/coolimages/singlegrimblies5.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/singlegrimblies6.png",
+    image: "images/coolimages/singlegrimblies6.png",
     type: "iframe",
     target: "grimbly-garden.html"
   },
   {
-    image: "images/ads/spamtoninvest.png",
+    image: "images/coolimages/spamtoninvest.png",
     type: "external",
     target: "https://ko-fi.com/baisylia"
   },
   {
-    image: "images/ads/tennatvtime.png",
+    image: "images/coolimages/tennatvtime.png",
     type: "iframe",
     target: "liked-media.html"
   }
@@ -173,19 +173,19 @@ function randomOrNull(pool, nullAd) {
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
-function createAd(ad, type) {
+function createCoolImage(coolimage, type) {
   const img = document.createElement("img");
-  img.src = ad.image;
-  img.className = "fake-ad " + type;
+  img.src = coolimage.image;
+  img.className = "fake-coolimage " + type;
 
-  if (ad.target) {
+  if (coolimage.target) {
     img.onclick = () => {
       soundPress();
 
-      if (ad.type === "iframe") {
-        loadPage(ad.target);
-      } else if (ad.type === "external") {
-        openInNewTab(ad.target);
+      if (coolimage.type === "iframe") {
+        loadPage(coolimage.target);
+      } else if (coolimage.type === "external") {
+        openInNewTab(coolimage.target);
       }
     };
   } else {
@@ -196,21 +196,21 @@ function createAd(ad, type) {
   return img;
 }
 
-function populateAds() {
-  const left = document.getElementById("leftAds");
-  const right = document.getElementById("rightAds");
+function populateCoolImages() {
+  const left = document.getElementById("leftCoolImages");
+  const right = document.getElementById("rightCoolImages");
 
   left.innerHTML = "";
   right.innerHTML = "";
 
-  left.appendChild(createAd(randomOrNull(ads, adNull), "ad-normal"));
-  right.appendChild(createAd(randomOrNull(ads, adNull), "ad-normal"));
+  left.appendChild(createCoolImage(randomOrNull(coolimages, coolimageNull), "coolimage-normal"));
+  right.appendChild(createCoolImage(randomOrNull(coolimages, coolimageNull), "coolimage-normal"));
 
-  left.appendChild(createAd(randomOrNull(adsTall, adTallNull), "ad-tall"));
-  right.appendChild(createAd(randomOrNull(adsTall, adTallNull), "ad-tall"));
+  left.appendChild(createCoolImage(randomOrNull(coolimagesTall, coolimageTallNull), "coolimage-tall"));
+  right.appendChild(createCoolImage(randomOrNull(coolimagesTall, coolimageTallNull), "coolimage-tall"));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  populateAds();
-  setInterval(populateAds, 20000);
+  populateCoolImages();
+  setInterval(populateCoolImages, 20000);
 });
