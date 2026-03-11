@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/mini_page_styles5.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        
+        <!-- Page-Specific Imports and Settings -->
+        <script src="code/mini_page_script.js"></script>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="border">
+
+                <!-- Blogs Row -->
+                <div class="button-row">
+                    <button class="button-icon">
+                        <img src="images/buttons/blog.png" alt="Blogs">
+                        <span class="icon-text">Blogs</span>
+                    </button>
+                    
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('blog-main.html', false)">
+                        <img src="images/buttons/webmasters.png" alt="Main">
+                        <span class="icon-text">Main</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('blog-minecraft-updates.html', false)">
+                        <img src="images/buttons/mods.png" alt="Update Reviews">
+                        <span class="icon-text">Update Reviews</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('blog-minecraft-mods.html', false)">
+                        <img src="images/buttons/mods.png" alt="ModRatings">
+                        <span class="icon-text">Mod Ratings</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('blog-ethics.html', false)">
+                        <img src="images/buttons/ethics.png" alt="Ethics">
+                        <span class="icon-text">My Ethics</span>
+                    </button>
+                </div>
+
+                <!-- Title -->
+                <h2 class="title">
+                    Minecraft Mod Ratings
+                </h2>
+
+                <!-- Description -->
+                <p class="text">
+                    <br>
+                    raspmary and I decided to rate Minecraft's most popular mods, and post them here to go with my personal update reviews. <br>
+                    We don't want to sound like we think we know everything, but with our combined time spent modding the game and working 
+                    on our modpacks, if we can't tell a quality mod from one that is less than such, then I don't know who can. <br>
+                    <br>
+                    While we try to rate mods from a somewhat objective standpoint, these ratings are not facts and are just our opinions. <br>
+                    None of our ratings are meant to belittle or attack the developers of these mods in any way. <br>
+                    The mod ratings are in order of mod popularity on CurseForge, excluding library/performance mods. <br>
+                    <br>
+                </p>
+                <h2 class="title">
+                    Ranking Criteria: <br>
+                </h2>
+                <p class="text">
+                    <br>
+                    (Each from 0-5)
+                    - Aesthetic (Visuals & Sounds) <br>
+                    - Code (Programming & Polish) <br>
+                    - Integration (Compatibility & Cohesion) <br>
+                    - Design (Principles & Philosophy) <br>
+                    - Fun (Flow & Novelty) <br>
+                    <br>
+                </p>
+
+                <!-- Just Enough Items -->
+                <h2 class="title">
+                    <br>
+                    1. Just Enough Items
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 3 <br>
+                    - Code: 5 <br>
+                    - Integration: 4 <br>
+                    - Design: 4 <br>
+                    - Fun: 3 <br>
+                    Total: 19/25 <br> <br>
+                    Final Verdict: JEI is a highly functional and accessible recipe viewer, available on almost every version of Minecraft and essential for any modded Minecraft playthrough. 
+                    <br>
+                </p>
+
+                <!-- Mouse Tweaks -->
+                <h2 class="title">
+                    <br>
+                    2. Mouse Tweaks
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 0 <br>
+                    - Code: 5 <br>
+                    - Integration: 5 <br>
+                    - Design: 5 <br>
+                    - Fun: 3 <br>
+                    Total: 18/25 <br> <br>
+                    Final Verdict: Mouse Tweaks is a very useful QoL mod that’s available on almost every version and makes sorting through chests, workstations and other UIs flow so much better. It also does nothing. We made it up. :3
+                    <br> 
+                </p>
+
+                <!-- AppleSkin -->
+                <h2 class="title">
+                    <br>
+                    3. AppleSkin
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 3 <br>
+                    - Code: 5 <br>
+                    - Integration: 5 <br>
+                    - Design: 5 <br>
+                    - Fun: 2 <br>
+                    Total: 20/25 <br> <br>
+                    Final Verdict: AppleSkin is a reliable utility mod for modpacks utilising the hunger system and food.
+                    <br> 
+                </p>
+
+                <!-- Controlling -->
+                <h2 class="title">
+                    <br>
+                    4. Controlling
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 3 <br>
+                    - Code: 5 <br>
+                    - Integration: 4 <br>
+                    - Design: 5 <br>
+                    - Fun: 1 <br>
+                    Total: 18/25 <br> <br>
+                    Final Verdict: Controlling is a mod that’s necessary for making much needed improvements to Minecraft’s keybinds screen.
+                    <br> 
+                </p>
+
+                <!-- JourneyMap -->
+                <h2 class="title">
+                    <br>
+                    5. JourneyMap
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 1 <br>
+                    - Code: 4 <br>
+                    - Integration: 2 <br>
+                    - Design: 1 <br>
+                    - Fun: 0 <br>
+                    Total: 8/25 <br> <br>
+                    Final Verdict: JourneyMap is a map mod that is functional yet overly bloated and cumbersome to use, and doesn’t integrate very well into Minecraft, neither in functionality nor aesthetics.
+                    <br> 
+                </p>
+
+                <!-- Waystones -->
+                <h2 class="title">
+                    <br>
+                    6. Waystones
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 0 <br>
+                    - Code: 4 <br>
+                    - Integration: 4 <br>
+                    - Design: 0 <br>
+                    - Fun: 0 <br>
+                    Total: 8/25 <br> <br>
+                    Final Verdict: Waystones is a fundamentally flawed mod that disincentivises the construction of infrastructure, use of transportation, and other existing gameplay mechanics. It is also visually unappealing and doesn’t fit the game’s aesthetic in any way.
+                    <br> 
+                </p>
+
+                <!-- Nature’s Compass -->
+                <h2 class="title">
+                    <br>
+                    7. Nature’s Compass
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 0 <br>
+                    - Code: 3 <br>
+                    - Integration: 3 <br>
+                    - Design: 0 <br>
+                    - Fun: 1 <br>
+                    Total: 7/25 <br> <br>
+                    Final Verdict: Nature’s Compass is a mod that attempts to solve the issue of biomes being difficult to find, in the least creative and diegetic way possible. It is unappealing, oftentimes non-functional, and boring.
+                    <br> 
+                </p>
+
+                <!-- Patchouli -->
+                <h2 class="title">
+                    <br>
+                    8. Patchouli
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 2 <br>
+                    - Code: 4 <br>
+                    - Integration: 4 <br>
+                    - Design: 0 <br>
+                    - Fun: 0 <br>
+                    Total: 10/25 <br> <br>
+                    Final Verdict: Patchouli is a mod made to assist new players that aren’t familiar with certain mechanics. It does this by completely ignoring the principle of 'show don’t tell’, which is extremely lazy and poor design.
+                    <br> 
+                </p>
+
+                <!-- Enchantment Descriptions -->
+                <h2 class="title">
+                    <br>
+                    9. Enchantment Descriptions
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 3 <br>
+                    - Code: 4 <br>
+                    - Integration: 5 <br>
+                    - Design: 3 <br>
+                    - Fun: 2 <br>
+                    Total: 17/25 <br> <br>
+                    Final Verdict: Enchantment Descriptions does exactly what it says on the tin, and is a perfectly serviceable mod for learning about the functionality of both vanilla and modded enchantments.
+                    <br> 
+                </p>
+
+                <!-- Quark -->
+                <h2 class="title">
+                    <br>
+                    10. Quark
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 4 <br>
+                    - Code: 5 <br>
+                    - Integration: 4 <br>
+                    - Design: 4 <br>
+                    - Fun: 5 <br>
+                    Total: 22/25 <br> <br>
+                    Final Verdict: Quark is the original Vanilla+ mod, and still holds up exceptionally well despite being in a field with lots of competition. It’s highly and easily configurable, accessible, and integrates very well into vanilla Minecraft and most modpacks both aesthetically and mechanically, with its many QoL features, fun gameplay mechanics, and various advanced technical utilities.
+                    <br> 
+                </p>
+
+                <!-- Storage Drawers -->
+                <h2 class="title">
+                    <br>
+                    11. Storage Drawers
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 1 <br>
+                    - Code: 4 <br>
+                    - Integration: 2 <br>
+                    - Design: 1 <br>
+                    - Fun: 1 <br>
+                    Total: 9/25 <br> <br>
+                    Final Verdict: Storage Drawers is a mod that takes a good storage solution idea, and executes it in a very flawed way. The basic drawer and a couple other features are decent if not unappealing, but everything else in the mod is poorly designed bloat that overshadows any merit it would otherwise have.
+                    <br> 
+                </p>
+
+                <!-- Jade -->
+                <h2 class="title">
+                    <br>
+                    12. Jade
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 4 <br>
+                    - Code: 5 <br>
+                    - Integration: 5 <br>
+                    - Design: 3 <br>
+                    - Fun: 1 <br>
+                    Total: 18/25 <br> <br>
+                    Final Verdict: Jade is the best mod in a long line of mods like WAILA, WTHIT and HWYLA that add extra information to the HUD. While it has the potential to grant unnecessary advantages in certain scenarios, for the most part, it does exactly what it should.
+                    <br> 
+                </p>
+
+                <!-- Comforts -->
+                <h2 class="title">
+                    <br>
+                    13. Comforts
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 1 <br>
+                    - Code: 4 <br>
+                    - Integration: 3 <br>
+                    - Design: 2 <br>
+                    - Fun: 1 <br>
+                    Total: 11/25 <br> <br>
+                    Final Verdict: Comforts is a below-average mod in terms of its design, functionality and aesthetics. Its texturework hasn’t been updated in years and it looks as though it’s come straight out of 1.12, and its additions are outdone by multiple newer mods. Simply put, it’s a mod that’s mostly stuck in the past.
+                    <br> 
+                </p>
+
+                <!-- Biomes O’ Plenty -->
+                <h2 class="title">
+                    <br>
+                    14. Biomes O’ Plenty
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 2 <br>
+                    - Code: 3 <br>
+                    - Integration: 2 <br>
+                    - Design: 2 <br>
+                    - Fun: 3 <br>
+                    Total: 12/25 <br> <br>
+                    Final Verdict: Biomes O’ Plenty is a product of its time. It is full of bloat and low quality content that should have been removed or reworked long ago. It has some cool features and to its credit, a decent chunk of its aesthetics were redone to fit within recent versions better, but that isn’t enough to save it from being beaten out by many newer biome mods.
+                    <br> 
+                </p>
+
+                <!-- Iron Chests -->
+                <h2 class="title">
+                    <br>
+                    15.Iron Chests
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 2 <br>
+                    - Code: 4 <br>
+                    - Integration: 1 <br>
+                    - Design: 1 <br>
+                    - Fun: 1 <br>
+                    Total: 9/25 <br> <br>
+                    Final Verdict: Iron Chests is once again a mod stuck in the past. It is the most basic implementation of enhanced storage possible, and not in a good way. Its textures have been updated over time, but still aren’t great. With the addition of copper chests to vanilla, this mod feels especially strange in the modern day.
+                    <br> 
+                </p>
+
+                <!-- Applied Energistics 2 -->
+                <h2 class="title">
+                    <br>
+                    16. Applied Energistics 2
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 3 <br>
+                    - Code: 4 <br>
+                    - Integration: 2 <br>
+                    - Design: 1 <br>
+                    - Fun: 2 <br>
+                    Total: 12/25 <br> <br>
+                    Final Verdict: Applied Energistics 2 is one of the many veteran tech mods that’s existed for over a decade, and while it doesn’t hold up terribly and its texturework has been updated significantly, in a lot of aspects, it’s still a mod that feels rather tedious at times and definitely does not feel like it belongs in Minecraft.
+                    <br> 
+                </p>
+
+                <!-- Xaero’s Minimap -->
+                <h2 class="title">
+                    <br>
+                    17. Xaero’s Minimap
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 4 <br>
+                    - Code: 5 <br>
+                    - Integration: 2 <br>
+                    - Design: 2 <br>
+                    - Fun: 1 <br>
+                    Total: 14/25 <br> <br>
+                    Final Verdict: Xaero’s Minimap is by far the least egregious non-diegetic minimap mod. It’s perfectly usable and functional, if quite overpowered with the amount of features it provides. It’s more than passable in terms of aesthetics, but as it obsoletes certain vanilla features, it still can feel rather out of place.
+                    <br> 
+                </p>
+
+                <!-- Sophisticated Backpacks -->
+                <h2 class="title">
+                    <br>
+                    18. Sophisticated Backpacks
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 0 <br>
+                    - Code: 4 <br>
+                    - Integration: 1 <br>
+                    - Design: 0 <br>
+                    - Fun: 0 <br>
+                    Total: 5/25 <br> <br>
+                    Final Verdict: Sophisticated Backpacks is by far the worst backpack mod of all time. It has needlessly complicated design, its art is atrocious (especially with its model work and the sheer amount of unnecessary cubes within them), and it takes away from any vanilla storage solution, such as making shulker boxes obsolete.
+                    <br> 
+                </p>
+
+                <!-- Farmer’s Delight -->
+                <h2 class="title">
+                    <br>
+                    19. Farmer’s Delight
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 5 <br>
+                    - Code: 5 <br>
+                    - Integration: 5 <br>
+                    - Design: 4 <br>
+                    - Fun: 4 <br>
+                    Total: 23/25 <br> <br>
+                    Final Verdict: Farmer’s Delight is easily the best farming, food, and cooking-related mod that’s ever been made for Minecraft. Its mechanics, textures, models and general design philosophy fits pretty much perfectly within vanilla Minecraft, to the point where it could be added as-is into the base game with very little changes. It improves on a long-neglected aspect of the game, and overall lives up to its name by being a delight to play with. There are very few shortcomings, but they don’t significantly take away from the quality of the mod.
+                    <br> 
+                </p>
+
+                <!-- The Twilight Forest -->
+                <h2 class="title">
+                    <br>
+                    20. The Twilight Forest
+                </h2>
+                <p class="text">
+                    <br>
+                    - Aesthetic: 1 <br>
+                    - Code: 3 <br>
+                    - Integration: 0 <br>
+                    - Design: 1 <br>
+                    - Fun: 2 <br>
+                    Total: 7/25 <br> <br>
+                    Final Verdict: The Twilight Forest is one of the most popular dimension mods, for it is another very old mod. But don’t be fooled, its quality certainly does not match its notoriety. A dimension based around linear progression does not fit Minecraft - a sandbox game - and a majority of the dimension looks indistinguishable from the overworld. It has poorly implemented ideas and subpar aesthetics that have not been improved in over a decade.
+                    <br> 
+                </p>
+
+                <!--  -->
+                <h2 class="title">
+                    <br>
+                    More Coming Soon!
+                </h2>
+                <p class="text">
+                    <br>
+                    
+                    <br> 
+                </p>
+
+            </div>
+        </div>
+    </body>
+</html>
