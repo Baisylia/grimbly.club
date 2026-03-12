@@ -64,7 +64,7 @@ const coolimages = [
   {
     image: "images/coolimages/moss.png",
     type: "external",
-    target: "https://youtu.be/7qLZFNoMrcE?si=PTY89XVwvluScrNh"
+    target: "https://youtu.be/Z8jIhM-xYoU?si=9wKKVyaI4dHvcFHi"
   },
   {
     image: "images/coolimages/bubbletransformer.png",
@@ -120,6 +120,46 @@ const coolimages = [
     image: "images/coolimages/revolutionaryheadphones.png",
     type: "iframe",
     target: "bfdi-cards.html"
+  },
+  {
+    image: "images/coolimages/imold.png",
+    type: "external",
+    target: "https://youtu.be/7qLZFNoMrcE?si=PTY89XVwvluScrNh"
+  },
+  {
+    image: "images/coolimages/blocky.png",
+    type: "iframe",
+    target: "bfdi-cards.html"
+  },
+  {
+    image: "images/coolimages/woody.png",
+    type: "iframe",
+    target: "bfdi-cards.html"
+  },
+  {
+    image: "images/coolimages/rffree.png",
+    type: "iframe",
+    target: "raspberry-flavoured.html"
+  },
+  {
+    image: "images/coolimages/rffree2.png",
+    type: "iframe",
+    target: "raspberry-flavoured.html"
+  },
+  {
+    image: "images/coolimages/grimblymerch.png",
+    type: "iframe",
+    target: "grimbly-garden.html"
+  },
+  {
+    image: "images/coolimages/brothers.png",
+    type: "iframe",
+    target: "webmaster.html"
+  },
+  {
+    image: "images/coolimages/what.png",
+    type: "iframe",
+    target: "home.html"
   }
 ];
 
@@ -161,6 +201,56 @@ const coolimagesTall = [
   },
   {
     image: "images/coolimages/tennatvtime.png",
+    type: "iframe",
+    target: "liked-media.html"
+  },
+  {
+    image: "images/coolimages/starwalker.png",
+    type: "iframe",
+    target: "liked-media.html"
+  },
+  {
+    image: "images/coolimages/chairs.png",
+    type: "external",
+    target: "https://ko-fi.com/baisylia"
+  },
+  {
+    image: "images/coolimages/rfpack.png",
+    type: "iframe",
+    target: "raspberry-flavoured.html"
+  },
+  {
+    image: "images/coolimages/rfpack2.png",
+    type: "iframe",
+    target: "raspberry-flavoured.html"
+  },
+  {
+    image: "images/coolimages/rfpack3.png",
+    type: "iframe",
+    target: "raspberry-flavoured.html"
+  },
+  {
+    image: "images/coolimages/peachy.png",
+    type: "iframe",
+    target: "webmaster.html"
+  },
+  {
+    image: "images/coolimages/sparky.png",
+    type: "iframe",
+    target: "webmaster.html"
+  },
+  {
+    image: "images/coolimages/owlhousebook.png",
+    type: "external",
+    target: "https://www.penguinrandomhouse.com/books/804037/the-long-lived-king-an-original-the-owl-house-graphic-novel-by-dana-terrace-mikki-crisostomo/"
+  },
+  {
+    image: "images/coolimages/amitygay.png",
+    type: "iframe",
+    target: "liked-media.html"
+  },
+  {
+    image: "images/coolimages/edashorrorhouse.png",
     type: "iframe",
     target: "liked-media.html"
   }
