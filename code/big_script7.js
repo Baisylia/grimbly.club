@@ -164,17 +164,17 @@ const coolimages = [
   {
     image: "images/coolimages/thrashmachine.png",
     type: "iframe",
-    target: "liked-media.html"
+    target: "media-games.html"
   },
   {
     image: "images/coolimages/nowifegame.png",
     type: "iframe",
-    target: "liked-media.html"
+    target: "media-games.html"
   },
   {
     image: "images/coolimages/owlladyhumanwanted.png",
     type: "iframe",
-    target: "liked-media.html"
+    target: "media-shows-the-owl-house.html"
   },
   {
     image: "images/coolimages/deltoid.png",
@@ -222,12 +222,12 @@ const coolimagesTall = [
   {
     image: "images/coolimages/tennatvtime.png",
     type: "iframe",
-    target: "liked-media.html"
+    target: "media-games.html"
   },
   {
     image: "images/coolimages/starwalker.png",
     type: "iframe",
-    target: "liked-media.html"
+    target: "media-games.html"
   },
   {
     image: "images/coolimages/chairs.png",
@@ -267,12 +267,12 @@ const coolimagesTall = [
   {
     image: "images/coolimages/amitygay.png",
     type: "iframe",
-    target: "liked-media.html"
+    target: "media-shows-the-owl-house.html"
   },
   {
     image: "images/coolimages/edashorrorhouse.png",
     type: "iframe",
-    target: "liked-media.html"
+    target: "media-shows-the-owl-house.html"
   }
 ];
 
