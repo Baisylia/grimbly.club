@@ -160,6 +160,26 @@ const coolimages = [
     image: "images/coolimages/what.png",
     type: "iframe",
     target: "home.html"
+  },
+  {
+    image: "images/coolimages/thrashmachine.png",
+    type: "iframe",
+    target: "liked-media.html"
+  },
+  {
+    image: "images/coolimages/nowifegame.png",
+    type: "iframe",
+    target: "liked-media.html"
+  },
+  {
+    image: "images/coolimages/owlladyhumanwanted.png",
+    type: "iframe",
+    target: "liked-media.html"
+  },
+  {
+    image: "images/coolimages/deltoid.png",
+    type: "external",
+    target: "https://ko-fi.com/baisylia"
   }
 ];
 
