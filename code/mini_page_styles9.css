@@ -41,6 +41,10 @@ html, body {
   align-items: center;
   text-align: center;
 }
+.flexy > .note {
+  flex: 0 0 auto;
+  align-self: baseline; 
+}
 
 /* Text */
 .text {
