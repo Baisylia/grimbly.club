@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/mini_page_styles6.css">
+        <link rel="stylesheet" href="code/media_carousel_styles.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        
+        <!-- Page-Specific Imports and Settings -->
+        <script src="code/mini_page_script2.js"></script>
+        <script src="code/media_carousel_script.js"></script>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="border">
+
+                <!-- Blogs Row -->
+                <div class="button-row">
+                    <button class="button-icon">
+                        <img src="images/buttons/videos.png" alt="Blogs">
+                    </button>
+                    
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('media-games.html', false)">
+                        <img src="images/buttons/games.png" alt="Games">
+                        <span class="icon-text">Games</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('media-shows.html', false)">
+                        <img src="images/buttons/videos.png" alt="Shows">
+                        <span class="icon-text">Shows</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('media-music.html', false)">
+                        <img src="images/buttons/music.png" alt="Music">
+                        <span class="icon-text">Music</span>
+                    </button>
+                </div>
+
+                <!-- Title -->
+                <br>
+                <h2 class="title">
+                    My Favourite Shows 
+                </h2>
+
+                <!-- Text -->
+                <p class="note">
+                    (Click Ones with a Pencil Icon)
+                </p>
+
+                <!-- Media Carousel -->
+                <div class="media-carousel">
+                    <div class="carousel-mask">
+                        <div class="media-carousel-track" id="mediaTrack">
+                            <div class="carousel-media-item">
+                                <img src="images/medias/artificialintelligence.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Big Breakfast <br><br>
+                                    - Artificial Intelligence <br>
+                                    - Tom Cardy <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/artificialintelligence.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Business Man <br><br>
+                                    - Artificial Intelligence <br>
+                                    - Tom Cardy <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/bestof2018.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Welcome to My Planet <br><br>
+                                    - Best of 2018 <br>
+                                    - Pomplamoose <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/bigdumbidiot.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Get Louis Theroux It <br><br>
+                                    - Big Dumb Idiot <br>
+                                    - Tom Cardy <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/bigdumbidiot.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Hey I Don't Work Here <br><br>
+                                    - Big Dumb Idiot <br>
+                                    - Tom Cardy <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/bigdumbidiot.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    The Ballad of Smokin' Joe Rudeboy <br><br>
+                                    - Big Dumb Idiot <br>
+                                    - Tom Cardy <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/bloodbunny.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Strawberry Blonde <br><br>
+                                    - Blood Bunny <br>
+                                    - Chloe Moriondo <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/deltaruneost.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    (All of Deltarune's OST) <br><br>
+                                    - Deltarune <br>
+                                    - Toby Fox <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/heykids.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Hey Kids <br><br>
+                                    - (Single) <br>
+                                    - Molina <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/HiLo.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Coconut Ranger <br><br>
+                                    - HiLo <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/HiLo.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Dead Weight <br><br>
+                                    - HiLo <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/HiLo.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Databend <br><br>
+                                    - HiLo <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/HiLo.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    John and Nancy <br><br>
+                                    - HiLo <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/HiLo.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Leopard <br><br>
+                                    - HiLo <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/HiLo.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    O.U.R. <br><br>
+                                    - HiLo <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/ificouldmakeitgoquiet.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Rue <br><br>
+                                    - if i could make it go quiet <br>
+                                    - girl in red <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/loveisdead.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Get Out <br><br>
+                                    - Love Is Dead <br>
+                                    - CHVRCHES <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/loveisdead.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Graffiti <br><br>
+                                    - Love Is Dead <br>
+                                    - CHVRCHES <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/loveisdead.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Heaven/Hell <br><br>
+                                    - Love Is Dead <br>
+                                    - CHVRCHES <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/micropop2.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Cheeseburger Family <br><br>
+                                    - Micropop <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/micropop.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Two Time <br><br>
+                                    - Micropop <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/minecraftost.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Alpha <br><br>
+                                    - Minecraft - Volume Beta <br>
+                                    - C418 <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/popfood.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Koi Boy <br><br>
+                                    - Pop Food <br>
+                                    - Jack Stauber <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/screenviolence.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Good Girls <br><br>
+                                    - Screen Violence <br>
+                                    - CHVRCHES <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/screenviolence.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    How Not To Drown <br><br>
+                                    - Screen Violence <br>
+                                    - CHVRCHES <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/screenviolence.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Lullabies <br><br>
+                                    - Screen Violence <br>
+                                    - CHVRCHES <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/songsforthedead.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Go With The Flow <br><br>
+                                    - Songs For The Deaf <br>
+                                    - Queens of the Stone Age <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/songsforthedead.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    No One Knows <br><br>
+                                    - Songs For The Deaf <br>
+                                    - Queens of the Stone Age <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/sonicheroes.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Follow Me <br><br>
+                                    - Sonic Heroes OST<br>
+                                    - Sonic Heroes <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/frontiersost.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Break Through It All <br><br>
+                                    - Stillness and Motion <br>
+                                    - Sonic Frontiers <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/frontiersost.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Find Your Flame <br><br>
+                                    - Stillness and Motion <br>
+                                    - Sonic Frontiers <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/frontiersost.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    I'm Here <br><br>
+                                    - Stillness and Motion <br>
+                                    - Sonic Frontiers <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/frontiersost.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Undefeatable <br><br>
+                                    - Stillness and Motion <br>
+                                    - Sonic Frontiers <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/frontiersost2.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    I'm With You <br><br>
+                                    - Stillness and Motion (Revisited) <br>
+                                    - Sonic Frontiers <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/spiritphone.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Touch Tone Telephone <br><br>
+                                    - Spirit Phone <br>
+                                    - Lemon Demon <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/thissideofparadise.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    Girls Like Girls <br><br>
+                                    - This Side of Paradise <br>
+                                    - Hayley Kiyoko <br>
+                                    <br>
+                                    </span>
+                            </div>
+                            <div class="carousel-media-item">
+                                <img src="images/medias/towninsideme.png" class="carousel-media-image">
+                                <img src="images/buttons/icon-null.png" class="carousel-media-icon">
+                                <span class="media-carousel-caption">
+                                    The Town Inside Me <br><br>
+                                    - (Single) <br>
+                                    - AISHA <br>
+                                    <br>
+                                    </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

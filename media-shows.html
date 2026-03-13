@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/mini_page_styles5.css">
+        <link rel="stylesheet" href="code/mini_page_styles6.css">
         <link rel="stylesheet" href="code/media_carousel_styles.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
@@ -12,7 +12,7 @@
         </title>
         
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/mini_page_script.js"></script>
+        <script src="code/mini_page_script2.js"></script>
         <script src="code/media_carousel_script.js"></script>
     </head>
 
@@ -35,17 +35,22 @@
                         <img src="images/buttons/videos.png" alt="Shows">
                         <span class="icon-text">Shows</span>
                     </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('media-music.html', false)">
+                        <img src="images/buttons/music.png" alt="Music">
+                        <span class="icon-text">Music</span>
+                    </button>
                 </div>
 
                 <!-- Title -->
                 <br>
                 <h2 class="title">
-                    My Favourite Shows (Click Ones with an Icon)
+                    My Favourite Shows 
                 </h2>
 
                 <!-- Text -->
                 <p class="note">
-                    <br>
+                    (Click Ones with a Pencil Icon)
                 </p>
 
                 <!-- Media Carousel -->

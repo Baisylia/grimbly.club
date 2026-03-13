@@ -1,7 +1,70 @@
+// Music
+document.addEventListener("DOMContentLoaded", () => {
+
+  const music = document.getElementById("bgMusic");
+  const volumeSlider = document.getElementById("musicVolume");
+  const toggleButton = document.getElementById("musicToggle");
+
+  if (!music) return;
+
+  const savedVolume = localStorage.getItem("musicVolume");
+  if (savedVolume !== null) {
+    music.volume = parseFloat(savedVolume);
+    if (volumeSlider) volumeSlider.value = savedVolume;
+  } else {
+    music.volume = 0.4;
+  }
+
+  const savedTime = localStorage.getItem("musicTime");
+  if (savedTime) music.currentTime = parseFloat(savedTime);
+  const savedPaused = localStorage.getItem("musicPaused");
+  if (savedPaused === "true") {
+    music.pause();
+    localStorage.setItem("musicPaused", "true");
+    toggleButton.querySelector("span").textContent = "Play Music";
+    toggleButton.querySelector("img").src = "images/buttons/musicoff.png";
+  }
+
+  setInterval(() => {
+    localStorage.setItem("musicTime", music.currentTime);
+  }, 2000);
+
+  if (volumeSlider) {
+    volumeSlider.addEventListener("input", () => {
+      music.volume = volumeSlider.value;
+      localStorage.setItem("musicVolume", volumeSlider.value);
+    });
+  }
+
+  if (toggleButton) {
+    toggleButton.addEventListener("click", () => {
+      soundPress();
+
+      if (music.paused) {
+        music.play();
+        localStorage.setItem("musicPaused", "false");
+        toggleButton.querySelector("span").textContent = "Pause Music";
+        toggleButton.querySelector("img").src = "images/buttons/music.png";
+      } else {
+        music.pause();
+        localStorage.setItem("musicPaused", "true");
+        toggleButton.querySelector("span").textContent = "Play Music";
+        toggleButton.querySelector("img").src = "images/buttons/musicoff.png";
+      }
+    });
+  }
+
+  document.addEventListener("click", () => {
+    const paused = localStorage.getItem("musicPaused");
+    if (paused !== "true") music.play();
+  }, { once: true });
+});
+
 // Load a Page
 function loadPage(page){
     const frame = document.querySelector(".content-frame");
     frame.src = page;
+    localStorage.setItem("currentPage", page);
 }
 
 // Button Sound
@@ -22,10 +85,35 @@ function openInNewTab(url) {
   window.open(url, '_blank').focus();
 }
 
+// Paragraph Button
+function textButtonPress(textId) {
+  var moreText = document.getElementById(textId);
+  if (moreText.style.display === "none" || moreText.style.display === "") {
+    moreText.style.display = "inline";
+  } else {
+    moreText.style.display = "none";
+  }
+}
+
+// Main Iframe (Not Sure RN)
+/*document.addEventListener("DOMContentLoaded", () => {
+    const frame = document.querySelector(".content-frame");
+    const savedPage = localStorage.getItem("currentPage");
+
+    if (frame && savedPage) {
+        frame.src = savedPage;
+    }
+});*/
+
 // Speed Slider
 document.addEventListener("DOMContentLoaded", () => {
-
     const slider = document.getElementById("speedSlider");
+    if (!slider) return;
+
+    const savedSpeed = localStorage.getItem("carouselSpeed");
+    if (savedSpeed !== null) {
+        slider.value = savedSpeed;
+    }
 
     function sendSpeedToIframes() {
         const speed = parseInt(slider.value, 10);
@@ -37,13 +125,55 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    slider.addEventListener("input", sendSpeedToIframes);
+    slider.addEventListener("input", () => {
+        localStorage.setItem("carouselSpeed", slider.value);
+        sendSpeedToIframes();
+    });
 
     document.querySelectorAll("iframe").forEach(frame => {
         frame.addEventListener("load", sendSpeedToIframes);
     });
 
+    sendSpeedToIframes();
 });
+
+// Random Page
+function randomPage() {
+  const pages = [
+    "alternate-timeline.html",
+    "bfdi-cards.html",
+    "bfdi-mod.html",
+    "blog-ethics.html",
+    "blog-main.html",
+    "blog-minecraft-mods.html",
+    "blog-minecraft-updates.html",
+    "changelogs.html",
+    "cooks-collection.html",
+    "credits.html",
+    "cultural-delights.html",
+    "games.html",
+    "grimbly-garden.html",
+    "grimbly-schmeggle.html",
+    "info.html",
+    "last-card.html",
+    "links.html",
+    "media-games.html",
+    "media-music.html",
+    "media-shows-the-owl-house.html",
+    "media-shows.html",
+    "modest-mining.html",
+    "mods.html",
+    "null-end-void.html",
+    "raspberry-flavoured.html",
+    "support.html",
+    "terralink-mini.html",
+    "webmaster.html",  ];
+
+  const random = pages[Math.floor(Math.random() * pages.length)];
+
+  soundPress();
+  loadPage(random);
+}
 
 // Cool Images
 const coolimageNull = 

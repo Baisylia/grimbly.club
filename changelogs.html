@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
-        <link rel="stylesheet" href="code/mini_page_styles5.css">
+        <link rel="stylesheet" href="code/mini_page_styles6.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
         
         <!-- Page-Specific Imports and Settings -->
-        <script src="code/mini_page_script.js"></script>
+        <script src="code/mini_page_script2.js"></script>
     </head>
 
     <body>
@@ -31,6 +31,37 @@
                 </p>
 
                 <!-- Version Info -->             
+                <div class="button-center">
+                    <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-34-changelogText', false)"> 
+                        Website Version: 0.34
+                    </button> 
+                </div>
+                <div class="button-center text">
+                    <p>
+                        <span id="0-34-changelogText" style="display: none;" class="text">
+                            - Continuation of 0.32 and 0.33 <br>
+                            - Added new site-wide font <br>
+                            - Added Grimbly Garden title to its page <br>
+                            - Added music system <br>
+                            - Added music volume slider <br>
+                            - Added music pause button <br>
+                            - Made music pause button change visually on state <br>
+                            - Made site remember status of both sliders and pause button on reload <br>
+                            - Added settings button <br>
+                            - Moved both sliders and pause button under settings button <br>
+                            - Added random page button to sidebar <br>
+                            - Made almost every page accessible through random page button <br>
+                            - Added favourite music subpage to favourite media <br>
+                            - Fixes <br>
+                            - Minor text changes <br>
+                            <br>
+                        </span>
+                    </p>
+                </div>
+                <br>
+
+
+         
                 <div class="button-center">
                     <button class="button-regular button-style" onmousedown="soundPress()" onclick="textButtonPress('0-33-changelogText', false)"> 
                         Website Version: 0.33
