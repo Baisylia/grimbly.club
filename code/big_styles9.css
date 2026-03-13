@@ -126,7 +126,7 @@ html, body {
   
   display: flex;
   flex-direction: column;
-  gap: 0.2vw;
+  gap: 0.8vw;
   align-items: center;
   /*  
   display: grid;
