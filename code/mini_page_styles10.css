@@ -41,10 +41,6 @@ html, body {
   align-items: center;
   text-align: center;
 }
-.flexy > .note {
-  flex: 0 0 auto;
-  align-self: baseline; 
-}
 
 /* Text */
 .text {
@@ -58,6 +54,12 @@ html, body {
 .note {
   font-size: 2vw; 
   color: #333355;
+}
+.flex-note {
+  left: 50%;
+  font-size: 2vw;
+  color: #333355;
+  text-align: center;
 }
 .icon-text {
   font-size: 2vw; 
