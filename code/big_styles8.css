@@ -163,9 +163,8 @@ html, body {
   word-wrap: break-word; 
 }
 .button-icon img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
+  width: 3.8vw;
+  aspect-ratio: 89 / 80;
   object-fit: contain;
 }
 .button-icon span {
@@ -231,16 +230,16 @@ html, body {
   background: transparent;
 }
 .slidey::-webkit-slider-runnable-track {
-  height: 16px;
+  height: 1vw;
   background-image: url("../images/scroll_back.png");
   background-size: 100% 100%;
-  border-radius: 4px;
+  border-radius: 0.2vw;
 }
 .slidey::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 1vw;
+  height: 1vw;
   background-image: url("../images/thumb_small.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -248,13 +247,13 @@ html, body {
   cursor: pointer;
 }
 .slidey::-moz-range-track { /* Firefox */
-  height: 16px;
+  height: 1vw;
   background-image: url("../images/scroll_back.png");
   background-size: 100% 100%;
 }
 .slidey::-moz-range-thumb { /* Firefox */
-  width: 15px;
-  height: 15px;
+  width: 1vw;
+  height: 1vw;
   background-image: url("../images/thumb_small.png");
   background-size: contain;
   background-repeat: no-repeat;

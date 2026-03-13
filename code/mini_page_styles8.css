@@ -77,8 +77,8 @@ html, body {
 /* Little Images */
 .little-pic {
   flex: 0 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 15vw;
+  height: 15vw;
 }
 
 /* Button Icons */
@@ -95,7 +95,7 @@ html, body {
     gap: 1vw;
 }
 .button-icon img {
-    width: 100%;
+    width: 7vw;
     height: auto;
     object-fit: contain;
 }
@@ -117,32 +117,32 @@ html, body {
     align-items: center;
 }
 .flag-row img { 
-    height:48px; 
+    height:6vw; 
 }
 
 /* Button Styles */
 .button-regular{
-  height: 80px;
-  width: 211px;
-  background-image: url("../images/button.png");
+  height: 10vw;
+  aspect-ratio: 211 / 80;
+  background: url("../images/button.png") center/contain no-repeat;
 }
 .button-large{
-  height: 80px;
-  width: 333px;
-  background-image: url("../images/button_large.png");
+  height: 10vw;
+  aspect-ratio: 333 / 80;
+  background: url("../images/button_large.png") center/contain no-repeat;
 }
 .button-small{
-  height: 80px;
-  width: 89px;
-  background-image: url("../images/button_small.png");
+  height: 10vw;
+  aspect-ratio: 89 / 80;
+  background: url("../images/button_small.png") center/contain no-repeat;
 }
 .button-left{
   position: relative;
-  left: 40px;
+  left: 6vw;
 }
 .button-right{
   position: relative;
-  right: 40px;
+  right: 6vw;
   float: right;
   margin-left: 200px; 
 }
@@ -151,19 +151,24 @@ html, body {
   justify-content: center;
 }
 .button-margined {
-  margin-bottom: 35px; 
+  margin-bottom: 3vw; 
 }
 .button-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2vw;
+  white-space: nowrap;
+  
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  border-radius: 20px;
+  border-radius: 2vw;
   transition: 0s;
   overflow: visible;
-  line-height: 85px;
   font-weight: bold;
-  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: "Sekek", Arial, Helvetica, sans-serif;
+  padding-top: 1vw;
 }
 .button-style:hover {
   filter: brightness(0.9);
