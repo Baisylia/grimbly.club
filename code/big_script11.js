@@ -234,8 +234,8 @@ const coolimages = [
   },
   {
     image: "images/coolimages/haveyouseenher.png",
-    type: "external",
-    target: "https://ko-fi.com/baisylia"
+    type: "iframe",
+    target: "collections-amy.html"
   },
   {
     image: "images/coolimages/9of10doctors.png",
