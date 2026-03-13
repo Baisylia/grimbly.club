@@ -140,33 +140,33 @@ document.addEventListener("DOMContentLoaded", () => {
 // Random Page
 function randomPage() {
   const pages = [
-    "alternate-timeline.html",
-    "bfdi-cards.html",
-    "bfdi-mod.html",
+    "mods-alternate-timeline.html",
+    "games-bfdi-cards.html",
+    "mods-bfdi-mod.html",
     "blog-ethics.html",
     "blog-main.html",
     "blog-minecraft-mods.html",
     "blog-minecraft-updates.html",
     "changelogs.html",
-    "cooks-collection.html",
+    "mods-cooks-collection.html",
     "credits.html",
-    "cultural-delights.html",
+    "mods-cultural-delights.html",
     "games.html",
-    "grimbly-garden.html",
-    "grimbly-schmeggle.html",
+    "games-grimbly-garden.html",
+    "games-grimbly-schmeggle.html",
     "info.html",
-    "last-card.html",
+    "games-last-card.html",
     "links.html",
     "media-games.html",
     "media-music.html",
     "media-shows-the-owl-house.html",
     "media-shows.html",
-    "modest-mining.html",
+    "mods-modest-mining.html",
     "mods.html",
-    "null-end-void.html",
-    "raspberry-flavoured.html",
+    "mods-null-end-void.html",
+    "mods-raspberry-flavoured.html",
     "support.html",
-    "terralink-mini.html",
+    "games-terralink-mini.html",
     "webmaster.html",  ];
 
   const random = pages[Math.floor(Math.random() * pages.length)];
@@ -199,17 +199,17 @@ const coolimages = [
   {
     image: "images/coolimages/bubbletransformer.png",
     type: "iframe",
-    target: "bfdi-cards.html"
+    target: "games-bfdi-cards.html"
   },
   {
     image: "images/coolimages/nonslipshoessoha.png",
     type: "iframe",
-    target: "bfdi-cards.html"
+    target: "games-bfdi-cards.html"
   },
   {
     image: "images/coolimages/grimblygardenfree.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/makeyoucrumb.png",
@@ -219,7 +219,7 @@ const coolimages = [
   {
     image: "images/coolimages/revolutionaryearmuffs.png",
     type: "iframe",
-    target: "bfdi-cards.html"
+    target: "games-bfdi-cards.html"
   },
   {
     image: "images/coolimages/clickthiscoolimage.png",
@@ -239,17 +239,17 @@ const coolimages = [
   {
     image: "images/coolimages/9of10doctors.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/1of10doctors.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/revolutionaryheadphones.png",
     type: "iframe",
-    target: "bfdi-cards.html"
+    target: "games-bfdi-cards.html"
   },
   {
     image: "images/coolimages/imold.png",
@@ -259,27 +259,27 @@ const coolimages = [
   {
     image: "images/coolimages/blocky.png",
     type: "iframe",
-    target: "bfdi-cards.html"
+    target: "games-bfdi-cards.html"
   },
   {
     image: "images/coolimages/woody.png",
     type: "iframe",
-    target: "bfdi-cards.html"
+    target: "games-bfdi-cards.html"
   },
   {
     image: "images/coolimages/rffree.png",
     type: "iframe",
-    target: "raspberry-flavoured.html"
+    target: "mods-raspberry-flavoured.html"
   },
   {
     image: "images/coolimages/rffree2.png",
     type: "iframe",
-    target: "raspberry-flavoured.html"
+    target: "mods-raspberry-flavoured.html"
   },
   {
     image: "images/coolimages/grimblymerch.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/brothers.png",
@@ -317,32 +317,32 @@ const coolimagesTall = [
   {
     image: "images/coolimages/singlegrimblies1.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/singlegrimblies2.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/singlegrimblies3.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/singlegrimblies4.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/singlegrimblies5.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/singlegrimblies6.png",
     type: "iframe",
-    target: "grimbly-garden.html"
+    target: "games-grimbly-garden.html"
   },
   {
     image: "images/coolimages/spamtoninvest.png",
@@ -367,17 +367,17 @@ const coolimagesTall = [
   {
     image: "images/coolimages/rfpack.png",
     type: "iframe",
-    target: "raspberry-flavoured.html"
+    target: "mods-raspberry-flavoured.html"
   },
   {
     image: "images/coolimages/rfpack2.png",
     type: "iframe",
-    target: "raspberry-flavoured.html"
+    target: "mods-raspberry-flavoured.html"
   },
   {
     image: "images/coolimages/rfpack3.png",
     type: "iframe",
-    target: "raspberry-flavoured.html"
+    target: "mods-raspberry-flavoured.html"
   },
   {
     image: "images/coolimages/peachy.png",
