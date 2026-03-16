@@ -165,6 +165,7 @@ function randomPage() {
     "mods-bfdi-mod.html",
     "mods-cooks-collection.html",
     "mods-cultural-delights.html",
+    "mods-modest-magic.html",
     "mods-modest-mining.html",
     "mods-null-end-void.html",
     "mods-raspberry-flavoured.html",
