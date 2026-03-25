@@ -317,3 +317,31 @@ html, body {
   transform: scaleX(1) scaleY(1);  
   transform-origin: top right;     
 }
+
+/* Random Splashes */
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1vw;
+  margin-bottom: 1vw;
+}
+#splashText {
+  font-size: 1.5vw;
+  text-align: center;
+  color: #778899;
+  text-shadow: 0 0 5px #333355;
+  animation: splashPulse 1s infinite alternate;
+}
+#splashText {
+  cursor: pointer;
+}
+#splashText:hover {
+  filter: brightness(1.2);
+}
+@keyframes splashPulse {
+  /*from { transform: rotate(-10deg) scale(1); }
+  to   { transform: rotate(-10deg) scale(1.1); }*/
+  from { transform: scale(1) translateY(0.5vw); }
+  to   { transform: scale(1.1) translateY(0.5vw); }
+}
