@@ -520,6 +520,7 @@ const commonSplashes = [
   "I'm dying cause I'm an asparagus!",
   "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
   "I HATE THE FLOOR! I'm fine.",
+  "An appe a day keeps you grebbing through the day!",
   
   // Play My Stuff
   "Play with Cultural Delights!",
