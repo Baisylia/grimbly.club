@@ -345,3 +345,28 @@ html, body {
   from { transform: scale(1) translateY(0.5vw); }
   to   { transform: scale(1.1) translateY(0.5vw); }
 }
+
+/* Webring */
+.webring-container {
+  width: 70vw;      
+  margin: 1vw auto 0 auto; 
+  padding-top: 2vw;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  flex-wrap: wrap;  
+}
+.webring-container img {
+  width: 10vw;      
+  max-width: 260px; 
+  aspect-ratio: 880 / 310;
+  object-fit: contain;
+
+  transition: transform 0.2s, filter 0.2s;
+}
+.webring-container img:hover {
+  filter: brightness(1.1);
+}
+.webring-container img:active {
+  transform: scale(0.96);
+}
