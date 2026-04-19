@@ -314,6 +314,11 @@ const coolimages = [
     image: "images/coolimages/deltoid.png",
     type: "external",
     target: "https://ko-fi.com/baisylia"
+  },
+  {
+    image: "images/coolimages/sosmol.png",
+    type: "iframe",
+    target: "support.html"
   }
 ];
 
