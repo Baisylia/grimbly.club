@@ -1,3 +1,81 @@
+// Page Updates
+const pageUpdates = {
+    "webmaster.html": 0,
+    "support.html": 0,
+    "projects.html": 0,
+    "blog-main.html": 0,
+    "media-games.html": 0,
+    "collections-bfdi.html": 0,
+    "changelogs.html": 0,
+    "info.html": 0,
+    "credits.html": 0,
+    "links.html": 0
+};
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    refreshUpdateIcons();
+});
+function refreshUpdateIcons(){
+    document.querySelectorAll("[data-page]").forEach(button=>{
+        const page = button.dataset.page;
+        const currentRevision = pageUpdates[page] ?? 0;
+        const seenRevision = parseInt(
+            localStorage.getItem("seen_" + page) ?? -1
+        );
+
+        if(currentRevision > seenRevision){
+            button.classList.add("button-update");
+        }
+        else{
+            button.classList.remove("button-update");
+        }
+    });
+}
+
+window.addEventListener("load", () => {
+    sendUpdatesToFrame();
+});
+document.getElementById("contentFrame")?.addEventListener("load", () => {
+    sendUpdatesToFrame();
+});
+function sendUpdatesToFrame() {
+    const iframe = document.getElementById("contentFrame");
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({
+        type: "updateStatus",
+        updates: pageUpdates
+    }, "*");
+}
+
+window.addEventListener("message", (event)=>{
+    if(event.data.type === "requestUpdates"){
+        event.source.postMessage({
+            type: "updateStatus",
+            updates: pageUpdates
+        }, "*");
+    }
+
+    if(event.data.type === "pageOpened"){
+        localStorage.setItem(
+            "seen_" + event.data.page,
+            pageUpdates[event.data.page] ?? 0
+        );
+
+        refreshUpdateIcons();
+    }
+});
+function markPageSeen(page){
+    if(pageUpdates[page] === undefined){
+        return;
+    }
+    localStorage.setItem(
+        "seen_" + page,
+        pageUpdates[page]
+    );
+    refreshUpdateIcons();
+}
+
+
 // Music
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -65,6 +143,8 @@ function loadPage(page){
     const frame = document.querySelector(".content-frame");
     frame.src = page;
     localStorage.setItem("currentPage", page);
+
+    markPageSeen(page);
 }
 
 // Button Sound

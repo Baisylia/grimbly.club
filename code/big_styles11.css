@@ -161,6 +161,7 @@ html, body {
   flex: 1 1 auto;
   width: 4.5vw;
   word-wrap: break-word; 
+  position: relative;
 }
 .button-icon img {
   width: 3.8vw;
@@ -183,6 +184,18 @@ html, body {
     0 0 30px #b8e1ee,
     0 0 35px #b8e1ee;
   white-space: normal; 
+}
+.button-update::after{
+  content: "";
+  position: absolute;
+  top: -1.5vw;
+  right: -1.5vw;
+  width: 4.5vw;
+  height: 4.5vw;
+  background: url("../images/buttons/icon-notify-update.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 /* Sidebar Scrollbar */

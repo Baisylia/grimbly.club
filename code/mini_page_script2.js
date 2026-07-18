@@ -36,3 +36,58 @@ function resizeIframe() {
   const iframe = document.getElementById("contentFrame");
   iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
 }
+
+
+// Open Page
+function openPage(page){
+    window.parent.postMessage({
+        type:"pageOpened",
+        page:page
+    }, "*");
+    setTimeout(()=>{
+        window.location.href = page;
+    },100);
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+    document.querySelectorAll("[data-page]").forEach(button=>{
+        button.onclick = ()=>{
+            const page = button.dataset.page;
+            window.parent.postMessage({
+                type:"pageOpened",
+                page:page
+            }, "*");
+            window.location.href = page;
+        };
+    });
+});
+
+// Page Updates
+window.addEventListener("message", (event) => {
+    if(event.data.type === "updateStatus"){
+        refreshUpdateIcons(event.data.updates);
+    }
+});
+
+function refreshUpdateIcons(updates){
+    document.querySelectorAll("[data-page]").forEach(button=>{
+        const page = button.dataset.page;
+        const currentRevision = updates[page] ?? 0;
+        const seenRevision = parseInt(
+            localStorage.getItem("seen_" + page) ?? -1
+        );
+
+        if(currentRevision > seenRevision){
+            button.classList.add("button-update");
+        }
+        else{
+            button.classList.remove("button-update");
+        }
+    });
+}
+
+window.addEventListener("load", () => {
+    window.parent.postMessage({
+        type: "requestUpdates"
+    }, "*");
+});

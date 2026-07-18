@@ -98,6 +98,7 @@ html, body {
     flex: 0 0 auto;
     width: 10vw;
     gap: 1vw;
+    position: relative;
 }
 .button-icon img {
     width: 7vw;
@@ -110,6 +111,18 @@ html, body {
     justify-content: center; 
     align-items: left;
     flex-wrap: wrap; 
+}
+.button-update::after{
+  content: "";
+  position: absolute;
+  top: -2.5vw;
+  right: -1.5vw;
+  width: 8vw;
+  height: 8vw;
+  background: url("../images/buttons/icon-notify-update.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 /* Flags */
