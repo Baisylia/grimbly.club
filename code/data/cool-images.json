@@ -18,7 +18,7 @@
     {
       "image": "images/coolimages/grimblygardenfree.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/makeyoucrumb.png",
@@ -28,7 +28,7 @@
     {
       "image": "images/coolimages/revolutionaryearmuffs.png",
       "type": "iframe",
-      "target": "games-bfdi-cards.html"
+      "target": "media-shows.html"
     },
     {
       "image": "images/coolimages/clickthiscoolimage.png",
@@ -48,17 +48,17 @@
     {
       "image": "images/coolimages/9of10doctors.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/1of10doctors.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/revolutionaryheadphones.png",
       "type": "iframe",
-      "target": "games-bfdi-cards.html"
+      "target": "media-shows.html"
     },
     {
       "image": "images/coolimages/imold.png",
@@ -68,12 +68,12 @@
     {
       "image": "images/coolimages/blocky.png",
       "type": "iframe",
-      "target": "games-bfdi-cards.html"
+      "target": "media-shows.html"
     },
     {
       "image": "images/coolimages/woody.png",
       "type": "iframe",
-      "target": "games-bfdi-cards.html"
+      "target": "media-shows.html"
     },
     {
       "image": "images/coolimages/rffree.png",
@@ -88,7 +88,7 @@
     {
       "image": "images/coolimages/grimblymerch.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/brothers.png",
@@ -130,32 +130,32 @@
     {
       "image": "images/coolimages/singlegrimblies1.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/singlegrimblies2.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/singlegrimblies3.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/singlegrimblies4.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/singlegrimblies5.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/singlegrimblies6.png",
       "type": "iframe",
-      "target": "games-grimbly-garden.html"
+      "target": "projects.html"
     },
     {
       "image": "images/coolimages/spamtoninvest.png",
@@ -180,17 +180,17 @@
     {
       "image": "images/coolimages/rfpack.png",
       "type": "iframe",
-      "target": "mods-raspberry-flavoured.html"
+      "target": "https://www.curseforge.com/minecraft/modpacks/raspberry-flavoured"
     },
     {
       "image": "images/coolimages/rfpack2.png",
       "type": "iframe",
-      "target": "mods-raspberry-flavoured.html"
+      "target": "https://www.curseforge.com/minecraft/modpacks/raspberry-flavoured"
     },
     {
       "image": "images/coolimages/rfpack3.png",
       "type": "iframe",
-      "target": "mods-raspberry-flavoured.html"
+      "target": "https://www.curseforge.com/minecraft/modpacks/raspberry-flavoured"
     },
     {
       "image": "images/coolimages/peachy.png",
