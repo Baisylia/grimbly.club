@@ -5,8 +5,8 @@ const pageUpdates = {
     "projects.html": 1,
     "blog.html": 0,
     "media-games.html": 0,
-    "collections-bfdi.html": 1,
     "changelogs.html": 1,
+    "collections-amy.html": 0,
     "credits.html": 0,
     "links.html": 0
 };
