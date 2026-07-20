@@ -261,7 +261,7 @@ let coolimages = [];
 let coolimagesTall = [];
 
 async function loadCoolImages(){
-    const response = await fetch("code/data/cool-images.json");
+    const response = await fetch("code/data/cool-images.json",{cache:"no-store"});
     const data = await response.json();
     coolimages = data.small;
     coolimagesTall = data.tall;
@@ -330,7 +330,7 @@ let rareSplashes = [];
 let secretSplashes = [];
 
 async function loadSplashes(){
-    const response = await fetch("code/data/splashes.json");
+    const response = await fetch("code/data/splashes.json",{cache:"no-store"});
     const data = await response.json();
     commonSplashes = data.common;
     uncommonSplashes = data.uncommon;
