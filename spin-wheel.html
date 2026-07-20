@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/mini_page_styles12.css">
+        <link rel="stylesheet" href="code/spin_wheel_styles.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        
+        <!-- Page-Specific Imports and Settings -->
+        <script src="code/mini_page_script3.js"></script>
+        <script src="code/spin_wheel_script.js"></script>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="border">
+
+                <!-- Title -->
+                <h2 class="title">
+                    <br>
+                    Spin Wheel
+                </h2>
+
+                <!-- Spin Wheel -->
+                <div class="wheel-container">
+                    <img id="wheelPointer" src="images/terralink/wheelpointer.png">
+
+                    <div id="wheelSpin">
+                        <img id="wheel" src="images/terralink/wheel.png" class="wheel">
+
+                        <div id="wheelValues">
+                        </div>
+                    </div>
+                    <div id="wheelResult"></div>
+                </div>
+
+                <div class="button-center wheel-button">
+                    <button id="spinButton" class="button-regular button-style" onmousedown="soundPress()" onclick="spinWheel()">
+                        Spin for 10 Plexus
+                    </button>
+                </div>
+
+                <div id="plexusCounter">
+                    <img src="images/terralink/plexus.png">
+                    <span id="plexusText" class="text"></span>
+                </div>
+                <p class="text" id="resultText"></p>
+
+            </div>
+        </div>
+    </body>
+</html>
