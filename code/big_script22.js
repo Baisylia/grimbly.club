@@ -234,6 +234,7 @@ function randomPage() {
     "mods-alternate-timeline.html",
     "mods-null-end-void.html",
     "projects.html",
+    "spin-wheel.html",
     "support.html",
     "webmaster.html",  
   ];
