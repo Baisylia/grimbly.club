@@ -1,42 +1,34 @@
 // Load Blog Category
 let contentFolder = "content";
+let currentLoad = 0;
 
 // Load Category
 async function loadContent(type, category){
+    const loadID = ++currentLoad;
     // Hide Descriptions
     document.querySelectorAll(".category-info").forEach(info=>{
         info.classList.remove("active");
     });
-    // Show Description
     const info = document.getElementById(category + "-info");
-
-    console.log("Showing:", category + "-info", info);
-
     if(info){
         info.classList.add("active");
     }
-    // Get Index
-    const response = await fetch(
-        `${contentFolder}/index.json`,
-        {
-            cache:"no-store"
-        }
-    );
-
+    const response = await fetch(`${contentFolder}/index.json`,{cache:"no-store"});
     const index = await response.json();
+    // Stop When New Button Pressed
+    if(loadID !== currentLoad){
+        return;
+    }
     const posts = index[type][category] ?? [];
     const container = document.getElementById("contentContainer");
     container.innerHTML = "";
-
-    // Load Posts
     for(const post of posts){
-        const file = await fetch(
-            `${contentFolder}/${type}/${category}/${post}.md`,
-            {
-                cache:"no-store"
-            }
-        );
+        const file = await fetch(`${contentFolder}/${type}/${category}/${post}.md`,{cache:"no-store"});
         const markdown = await file.text();
+        // Stop When New Button Pressed
+        if(loadID !== currentLoad){
+            return;
+        }
         renderPost(markdown, container);
     }
 }
