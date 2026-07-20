@@ -1,0 +1,91 @@
+{
+    "blogs": {
+        "main": [
+            "bag",
+            "game-engines",
+            "mp3-player",
+            "youtube-inspirations",
+            "minecraft-lore",
+            "pet-peeves"
+        ],
+
+        "mc-updates": [
+            "1.17",
+            "1.18",
+            "1.19",
+            "1.20",
+            "1.20.3",
+            "1.20.5",
+            "1.21",
+            "1.21.2",
+            "1.21.4",
+            "1.21.5",
+            "1.21.6",
+            "1.21.9",
+            "1.21.11",
+            "26.1",
+            "26.2",
+            "26.3"
+        ],
+
+        "mc-mods": [
+            "mod-reviews",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"
+        ],
+
+        "ethics": [
+            "my-ethical-basis",
+            "weirdness-and-norms",
+            "opinions",
+            "religion",
+            "animals",
+            "pets",
+            "political-leaning"
+        ]
+    },
+
+    "projects": {
+        "main": [
+            "grimbly.club"
+        ],
+
+        "games": [
+            "grimbly-garden",
+            "terralink-mini",
+            "bfdi-cards",
+            "last-card",
+            "grimbly-schmeggle"
+        ],
+
+        "mods": [
+            "cultural-delights",
+            "cooks-collection",
+            "modest-magic",
+            "modest-mining",
+            "modest-masonry",
+            "raspberry-flavoured",
+            "bfdi-mod",
+            "null-end-void",
+            "alternate-timeline"
+        ]
+    }
+}

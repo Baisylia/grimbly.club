@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <!-- Imports and Settings -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1">
+        <link rel="stylesheet" href="code/mini_page_styles12.css">
+        <link rel="stylesheet" href="code/blog_styles0.css">
+        <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
+        <title>
+            grimbly.club
+        </title>
+        
+        <!-- Page-Specific Imports and Settings -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="code/mini_page_script3.js"></script>
+        <script> let contentType = "blogs"; </script>
+        <script src="code/blog_script0.js"></script>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="border">
+
+                <!-- Blogs Row -->
+                <div class="button-row">
+                    <button class="button-icon">
+                        <img src="images/buttons/blog.png" alt="Blogs">
+                    </button>
+                    
+                    <button class="button-icon" onmousedown="soundPress()" onclick="loadContent('blogs','main')">
+                        <img src="images/buttons/webmasters.png" alt="Main">
+                        <span class="icon-text">Main</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="loadContent('blogs','mc-updates')">
+                        <img src="images/buttons/mods.png" alt="Update Reviews">
+                        <span class="icon-text">Update Reviews</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="loadContent('blogs','mc-mods')">
+                        <img src="images/buttons/mods.png" alt="ModRatings">
+                        <span class="icon-text">Mod Ratings</span>
+                    </button>
+
+                    <button class="button-icon" onmousedown="soundPress()" onclick="loadContent('blogs','ethics')">
+                        <img src="images/buttons/ethics.png" alt="Ethics">
+                        <span class="icon-text">My Ethics</span>
+                    </button>
+                </div>
+                
+
+                <!-- Main -->
+                <div id="main-info" class="category-info">
+                    <!-- Title -->
+                    <h2 class="title">
+                        Main Blog
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="text">
+                        <br>
+                        Welcome to Baisylia's blog! <br> <br>
+                        I've divided the blog into sections, with this being the main one where I blog about any random 
+                        thoughts I may have. These blogs are undated because I edit them over time when my thoughts change. <br> 
+                        <br>
+                    </p>
+                </div>
+                
+                <!-- Ethics -->
+                <div id="ethics-info" class="category-info">
+                    <!-- Title -->
+                    <h2 class="title">
+                        Ethics
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="text">
+                        <br>
+                        This is the sPoOkY and cOnTrOvErSiAl blog where I talk about my ethical thoughts and opinions. <br>
+                        I've attempted to keep my discussion of these topics civilised and friendly. <br>
+                        This blog is not an attempt to force my opinions on anyone, if you do not care about my thoughts 
+                        then read some other blogs or check out another page. <br>
+                        Otherwise, I recommend you read from the top of the list downwards. <br>
+                        <br>
+                    </p>
+                </div>
+
+                <!-- Minecraft Updates -->
+                <div id="mc-updates-info" class="category-info">
+                    <!-- Title -->
+                    <h2 class="title">
+                        Minecraft Update Reviews
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="text">
+                        <br>
+                        Through my studies as a game design major, my many experiences modding Minecraft, and the 
+                        development of 
+                        <a href="navigate('mods-alternate-timeline.html')" target="_blank">
+                            my modpack,
+                        </a> 
+                        I have formed a very strong and specific view of what Minecraft should be like, and thus I have 
+                        many opinions on its updates. Here they are in chronological order, (currently from 1.17 - 26.2). <br>
+                        <br>
+                    </p>
+                </div>
+                
+                <!-- Minecraft Mods -->
+                <div id="mc-mods-info" class="category-info">
+                    <!-- Title -->
+                    <h2 class="title">
+                        Minecraft Mod Ratings
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="text">
+                        <br>
+                        raspmary and I decided to rate Minecraft's most popular mods, and post them here to go with my personal update reviews. <br>
+                        We don't want to sound like we think we know everything, but with our combined time spent modding the game and working 
+                        on our modpacks, if we can't tell a quality mod from one that is less than such, then I don't know who can. <br>
+                        <br>
+                        While we try to rate mods from a somewhat objective standpoint, these ratings are not facts and are just our opinions. <br>
+                        None of our ratings are meant to belittle or attack the developers of these mods in any way. <br>
+                        The mod ratings are in order of mod popularity on CurseForge, excluding library/performance mods. <br>
+                        <br>
+                    </p>
+                </div>
+
+
+                <!-- Flags -->
+                <div class="flag-row">
+                    <img src="images/flags/pride.gif">
+                    <img src="images/flags/transgender.gif">
+                    <img src="images/flags/lesbian.gif">
+                    <img src="images/flags/transfem.gif">
+                    <img src="images/flags/demisexual.gif">
+                    <img src="images/flags/catgender.gif">
+                    <img src="images/flags/autism.gif">
+                    <img src="images/flags/amy rose.gif">
+                </div>
+                <br> <br>
+
+                <!-- Blogs -->
+                <div id="contentContainer">
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </body>
+</html>

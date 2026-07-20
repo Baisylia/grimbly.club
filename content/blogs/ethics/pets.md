@@ -1,0 +1,9 @@
+# Pets
+
+As an animal lover I enjoy having pets, and my personal favourite animals to have as pets are cats. Some people say that it is unethical to own pets, but I believe that not only is it ethical, but also a virtuous and honorable act. There are many animals that go unloved and are at risk of being put down in animal shelters, and so adopting them as your pets is saving their lives. 
+
+However, some people choose to buy pets from breeders instead of adopting animals that need a home. Doing this is very unethical, as it supports an industry that causes animal overpopulation and therefore euthanization, and often involves the abuse of the animals used for breeding. Nobody should buy pets from breeders for any reason. The most common reason that people buy pets this way is so they can get a certain breed of animal, but prioritizing owning a breed over saving a life is a very immoral thing to do, and oftentimes you can even both rescue an animal and get the breed you want anyway. 
+
+I am also a firm believer that pets like cats should be strictly kept as indoor-only pets. The life expectency of an indoor cat is far greater than an outdoor cat, as they are immune to risks such as being hit by a car, getting illnesses from other cats, and cat fights. Keeping cats indoors also protects the local wildlife and avoids the cats getting taken by strangers who want a free cat. 
+
+The main argument I see for letting cats go outside is that 'it is in their nature' and 'they need to be able to roam', but cats spend 20~ hours of the day sleeping, and whenever they walk into a room they have been in a million times they act like they have never seen it before. Unless you live in a tiny apartment, there is enough room inside your home for your cat to stay indoors, and if you do live in conditions unsuitable for a pet, then you simply shouldn't have a pet.

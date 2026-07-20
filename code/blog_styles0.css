@@ -1,0 +1,53 @@
+.content-post h1,
+.content-post h2 {
+    font-size: 4.5vw;
+    color: black;
+    text-shadow:
+        0 0 5px #C0C3C0,
+        0 0 10px #C0C3C0,
+        0 0 15px #C0C3C0,
+        0 0 20px #C0C3C0,
+        0 0 25px #C0C3C0,
+        0 0 30px #C0C3C0,
+        0 0 35px #C0C3C0;
+}
+.content-post p,
+.content-post ul,
+.content-post ol,
+.content-post li {
+    font-size: 2.5vw;
+    color: black;
+    font-weight: bold;
+    text-shadow:
+        0 0 5px #C0C3C0,
+        0 0 10px #C0C3C0,
+        0 0 15px #C0C3C0,
+        0 0 20px #C0C3C0,
+        0 0 25px #C0C3C0,
+        0 0 30px #C0C3C0,
+        0 0 35px #C0C3C0;
+}
+.content-post img {
+    max-width: 100%;
+    width: 30vw;
+}
+.content-post .big-pic {
+    width: 60vw;
+}
+.content-post .small-pic {
+    width: 15vw;
+}
+.category-info {
+    display: none;
+}
+.category-info.active {
+    display: block;
+}
+.content-post {
+    background-image: url("../images/bloggo.png");
+    background-repeat: repeat;
+    border: 0.4vw solid #3e4953;
+    border-radius: 1vw;
+    padding: 2vw;
+    margin-bottom: 3vw;
+}

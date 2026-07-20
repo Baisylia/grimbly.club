@@ -5,13 +5,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device.width, initial-scale=1">
         <link rel="stylesheet" href="code/mini_page_styles12.css">
+        <link rel="stylesheet" href="code/blog_styles0.css">
         <audio id="button-sound" src="sounds/button_sound_heavy.mp3"></audio>
         <title>
             grimbly.club
         </title>
         
         <!-- Page-Specific Imports and Settings -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script src="code/mini_page_script3.js"></script>
+        <script> let contentType = "projects"; </script>
+        <script src="code/blog_script0.js"></script>
     </head>
 
     <body>
@@ -24,35 +28,72 @@
                         <img src="images/buttons/games.png" alt="Projects">
                     </button>
                     
-                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('projects.html', false)">
+                    <button class="button-icon" onmousedown="soundPress()" onclick="loadContent('projects','main')">
                         <img src="images/buttons/blog.png" alt="Misc">
                         <span class="icon-text">My Misc</span>
                     </button>
                     
-                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('mods.html', false)">
+                    <button class="button-icon" onmousedown="soundPress()" onclick="loadContent('projects','mods')">
                         <img src="images/buttons/mods.png" alt="Mods">
                         <span class="icon-text">My Mods</span>
                     </button>
 
-                    <button class="button-icon" onmousedown="soundPress()" onclick="navigate('games.html', false)">
+                    <button class="button-icon" onmousedown="soundPress()" onclick="loadContent('projects','games')">
                         <img src="images/buttons/games.png" alt="Games">
                         <span class="icon-text">My Games</span>
                     </button>
                 </div>
 
-                <!-- Title -->
-                <h2 class="title">
-                    <br>
-                    My Projects
-                </h2>
+                <!-- Projects -->
+                <div id="main-info" class="category-info">
+                    <!-- Title -->
+                    <h2 class="title">
+                        <br>
+                        My Projects
+                    </h2>
 
-                <!-- Text -->
-                <p class="text">
-                    <br>
-                    I have many different projects constantly in the works, with most of which being mods and games, but others being random
-                    little things I feel like doing. <br>
-                    Soon this page will list some of the different projects I've been working on over the years. <br> <br>
-                </p>
+                    <!-- Text -->
+                    <p class="text">
+                        <br>
+                        I have many different projects constantly in the works, with most of which being mods and games, but others being random
+                        little things I feel like doing. <br>
+                        Soon this page will list some of the different projects I've been working on over the years. <br> <br>
+                    </p>
+                </div>
+
+                <!-- Mods -->
+                <div id="mods-info" class="category-info">
+                    <!-- Title -->
+                    <h2 class="title">
+                        <br>
+                        My Minecraft Mods
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="text">
+                        <br>
+                        I love Minecraft but I find it difficult to play it without mods these days. <br> <br>
+                        The following are some mods that I have made and/or am developing. <br> <br> <br>
+                    </p>
+                </div>
+
+                <!-- Games -->
+                <div id="games-info" class="category-info">
+                    <!-- Title -->
+                    <h2 class="title">
+                        <br>
+                        My Games
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="text">
+                        <br>
+                        I am a game designer. I majored in game design and spend most of my time developing games and mods. <br> <br>
+                        I've got quite a long backlog of game ideas, but some of them end up leaving the ideation stage and begin development. <br> <br>
+                        The following are some game projects I've been working on over the years. <br> <br>
+                    </p>
+                </div>
+
 
                 <!-- Flags -->
                 <div class="flag-row">
@@ -64,6 +105,12 @@
                     <img src="images/flags/catgender.gif">
                     <img src="images/flags/autism.gif">
                     <img src="images/flags/amy rose.gif">
+                </div>
+                <br> <br>
+
+                <!-- Projects -->
+                <div id="contentContainer">
+
                 </div>
 
                 
