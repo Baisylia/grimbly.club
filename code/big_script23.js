@@ -3,7 +3,7 @@ const pageUpdates = {
     "webmaster.html": 0,
     "support.html": 1,
     "projects.html": 1,
-    "blog.html": 0,
+    "blog.html": 1,
     "media-games.html": 0,
     "spin-wheel.html": 0,
     "changelogs.html": 2,

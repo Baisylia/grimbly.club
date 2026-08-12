@@ -1,6 +1,7 @@
 {
     "blogs": {
         "main": [
+            "pokemon-quiz",
             "bag",
             "game-engines",
             "mp3-player",
