@@ -6,24 +6,24 @@ I am often inspired by online creators.
 The following is an unordered list of YouTube channels that have inspired me in some way.
 Hopefully none of them turn out to be terrible awful people but some likely will. :p
 
-Xploshi
-Astrid Ztar
-Zack Freedman
-TomSka & Friends
-Slimecicle
-Emma Thorne
-owiebrainhurts
-FilmCow
-jacknjellify
-Kane Pixels
-carykh
-mysticat
-Ted Nivison
-YukkoEX
-PixelzwithaZ
-TodePond
-binguschondo
-Tom Cardy
-Noodle
-exurb1a
+Xploshi,
+Astrid Ztar,
+Zack Freedman,
+TomSka & Friends,
+Slimecicle,
+Emma Thorne,
+owiebrainhurts,
+FilmCow,
+jacknjellify,
+Kane Pixels,
+carykh,
+mysticat,
+Ted Nivison,
+YukkoEX,
+PixelzwithaZ,
+TodePond,
+binguschondo,
+Tom Cardy,
+Noodle,
+exurb1a,
 FairyPrincessLucy

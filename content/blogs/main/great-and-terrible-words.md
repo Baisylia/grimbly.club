@@ -1,0 +1,18 @@
+# Great and Terrible Words
+
+There's a lot of words that get around online and often spread into real world conversations. Some of these words make me immediately respect the people that say them a lot less. Here are some of them, with explanations as to why they are terrible.
+
+- Cringe is a term used to negatively describe something for making the user physically cringe. In reality, the only thing that is cringe, is calling things cringe. This word became popular for the purposes of bullying and keeping 'weird' people in line with societal norms. Cringe culture has ravaged the world for too long, and has only led to people not being able to be themselves, especially neurodivergent people and those who don't purely align with societal expectations of their gender.
+
+- Overrated is a term used to negatively describe anything popular, with the intention being that the popularity is uncalled for or damaging. All this word really tells me however, is that the user thinks they are smarter than everyone else, or that they are too cool to like something 'mainstream'. Popular things, while not always of high quality, are popular for a reason, and it isn't some daring take to not be interested in them. Worse than that though, is a lot of popular things are actually quite good, and to use the popularity of such things as reasons for them being bad is lazy and meaningless.
+
+- Slop is a term used to negatively describe forms of art, usually for being poorly made or having little value. When used against media made by AI or a soulles corporation this word is great, but for anything else it is stupid. It has devolved to just mean 'I don't like this thing so it sucks', akin to cringe. It adds no meaningful critique and only serves to shut down those who like the media. There are many variations of slop, which are somehow worse than slop itself, and mostly just serve to self report some sad fact about the user. For example, complaining that a game is friendslop tells me that you have no friends, and are salty that you can't play it. 
+
+
+There's also a lot of words that I quite like, whether popular online or not. Here are some of them, to balance out the negativity of the stupid words.
+
+- Whimsy is a term that's become more popular online recently, and thus has begun the process of losing its meaning. It is a word describing qualities that are unusual, funny, and pleasant. I try to fit as much whimsy into my life as I can, as can be seen with this website. It is a great thing to be silly and joyous, and if you are feeling that this word description is cringe while reading it, you have fallen for the idea that you should be sad and normal. Try being more whimsical.
+
+- Crush is a term used to describe an attraction for someone that is yet to be requited. As a hopeless romantic I love a good story about people getting together (usually lesbians), but that's not why I put this word here. I don't know if it's my autism or my synesthesia, but something about this word just tickles my brain the right way. The sound of the word makes it feel like the perfect word for such a definition to me. Just ignore the other definition that means being smashed into a pancake.
+
+- Femme is a term often used for queer people that have feminine outward qualities. Like crush, this word sounds perfect to me for this definition, though it is also special to me as a trans person who is now free to be as femme as desired. Being girly for the sake of it is fun, rewarding, and fills me with gender euphoria. Give me tonnes of pink glitter and a frilly dress and I will have a wonderful day.

@@ -1,13 +1,14 @@
 {
     "blogs": {
         "main": [
+            "vegetables",
+            "great-and-terrible-words",
             "pokemon-quiz",
             "bag",
             "game-engines",
             "mp3-player",
             "youtube-inspirations",
-            "minecraft-lore",
-            "pet-peeves"
+            "minecraft-lore"
         ],
 
         "mc-updates": [
