@@ -3,11 +3,11 @@ const pageUpdates = {
     "webmaster.html": 0,
     "support.html": 1,
     "projects.html": 1,
-    "blog.html": 1,
+    "blog.html": 2,
     "media-games.html": 0,
     "spin-wheel.html": 0,
     "changelogs.html": 2,
-    "collections-amy.html": 0,
+    "collections-amy.html": 1,
     "credits.html": 0,
     "links.html": 0
 };
